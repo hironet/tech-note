@@ -1,4 +1,4 @@
-# Hiro's tech-note
+# Hiro's tech note
 
 ## 概要
 

@@ -2,5 +2,5 @@
 RewriteEngine On
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{QUERY_STRING} (.*)$
-RewriteRule . /note/index.php?%1 [L]
+RewriteRule . /tech-note/index.php?%1 [L]
 </IfModule>

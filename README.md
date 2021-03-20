@@ -1,8 +1,8 @@
-# Hiro's note
+# Hiro's tech-note
 
 ## 概要
 
-https://hironet.org/note/
+https://hironet.org/tech-note/
 
 Hiroの技術メモ
 

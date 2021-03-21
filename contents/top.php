@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-12 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-4">
       <div class="card my-2">
         <div class="card-header">OS</div>
         <ul class="list-group list-group-flush">
@@ -16,7 +16,7 @@
         </ul>
       </div><!-- card -->
     </div><!-- col -->
-    <div class="col-12 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-4">
       <div class="card my-2">
         <div class="card-header">ミドルウェア</div>
         <ul class="list-group list-group-flush">
@@ -35,7 +35,7 @@
         </ul>
       </div><!-- card -->
     </div><!-- col -->
-    <div class="col-12 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-4">
       <div class="card my-2">
         <div class="card-header">アプリケーション</div>
         <ul class="list-group list-group-flush">
@@ -45,9 +45,7 @@
         </ul>
       </div><!-- card -->
     </div><!-- col -->
-  </div><!-- row -->
-  <div class="row">
-    <div class="col-12 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-4">
       <div class="card my-2">
         <div class="card-header">ツール</div>
         <ul class="list-group list-group-flush">
@@ -72,7 +70,7 @@
         </ul>
       </div><!-- card -->
     </div><!-- col -->
-    <div class="col-12 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-4">
       <div class="card my-2">
         <div class="card-header">プログラミング</div>
         <ul class="list-group list-group-flush">

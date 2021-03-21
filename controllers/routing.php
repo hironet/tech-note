@@ -2,7 +2,7 @@
 function not_found() {
   global $contents_title;
   global $contents_path;
-  $contents_title = 'Not Foutnd';
+  $contents_title = 'Not Found';
   $contents_path = '/contents/404.php';
 }
 

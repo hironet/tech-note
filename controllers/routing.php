@@ -50,6 +50,20 @@ switch ($category) {
         $contents_path = '/contents/linux/list.php';
         $breadcrumb_list = ['Linux' => ''];
         break;
+      case 'command':
+        $meta_description = '知っておくと色んな場面で便利になるコマンドの使い方を紹介しています。';
+        $meta_keywords = 'linux,command';
+        $contents_title = 'Linuxコマンドの便利な使い方';
+        $contents_path = '/contents/linux/command.php';
+        $breadcrumb_list = ['Linux' => '?c=linux'];
+        break;
+      case 'centos7-setting':
+        $meta_description = 'CentOS 7.xを使用するにあたって、よく行う設定を紹介しています。';
+        $meta_keywords = 'linux,centos,設定';
+        $contents_title = 'CentOS 7.x 設定方法';
+        $contents_path = '/contents/linux/centos7-setting.php';
+        $breadcrumb_list = ['Linux' => '?c=linux'];
+        break;
       default:
         not_found();
         break;

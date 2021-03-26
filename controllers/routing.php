@@ -42,27 +42,51 @@ switch ($category) {
     }
     break;
   case 'linux':
+    $descriptions = [
+      'command' => '知っておくと色んな場面で便利になるコマンドの使い方を紹介しています。',
+      'centos7-setting' => 'CentOS 7.xを使用するにあたって、よく行う設定を紹介しています。',
+    ];
+    $descriptions = array_merge($descriptions, array_values($descriptions));
+
+    $keywords = [
+      'command' => 'linux,command',
+      'centos7-setting' => 'linux,centos,設定',
+    ];
+    $keywords = array_merge($keywords, array_values($keywords));
+
+    $titles = [
+      'command' => 'Linuxコマンドの便利な使い方',
+      'centos7-setting' => 'CentOS 7.x 設定方法',
+    ];
+    $titles = array_merge($titles, array_values($titles));
+
+    $links = [
+      'command' => '.?c=linux&p=command',
+      'centos7-setting' => '.?c=linux&p=centos7-setting',
+    ];
+    $links = array_merge($links, array_values($links));
+
+    $breadcrumb_list = ['Linux' => '.?c=linux'];
+
     switch ($page) {
       case 'list':
         $meta_description = 'このページには、Linuxに関する情報をまとめています。';
         $meta_keywords = 'linux';
         $contents_title = 'Linux';
-        $contents_path = '/contents/linux/list.php';
+        $contents_path = '/contents/list.php';
         $breadcrumb_list = ['Linux' => ''];
         break;
       case 'command':
-        $meta_description = '知っておくと色んな場面で便利になるコマンドの使い方を紹介しています。';
-        $meta_keywords = 'linux,command';
-        $contents_title = 'Linuxコマンドの便利な使い方';
+        $meta_description = $descriptions['command'];
+        $meta_keywords = $keywords['command'];
+        $contents_title = $titles['command'];
         $contents_path = '/contents/linux/command.php';
-        $breadcrumb_list = ['Linux' => '?c=linux'];
         break;
       case 'centos7-setting':
-        $meta_description = 'CentOS 7.xを使用するにあたって、よく行う設定を紹介しています。';
-        $meta_keywords = 'linux,centos,設定';
-        $contents_title = 'CentOS 7.x 設定方法';
+        $meta_description = $descriptions['centos7-setting'];
+        $meta_keywords = $keywords['centos7-setting'];
+        $contents_title = $titles['centos7-setting'];
         $contents_path = '/contents/linux/centos7-setting.php';
-        $breadcrumb_list = ['Linux' => '?c=linux'];
         break;
       default:
         not_found();

@@ -34,7 +34,15 @@
 
   pre.prettyprint {
     font-family: Monaco, Menlo, Consolas, 'Courier New', Courier, monospace, sans-serif;
+  }
+
+  pre.block {
     margin: 0.2rem 0 1rem 1rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  pre.inline {
+    margin: 0;
     padding: 0.2rem 0.5rem;
   }
 </style>

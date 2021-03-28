@@ -105,7 +105,7 @@ $ nmcli c up [ネットワークインタフェース名]
       </tr>
     </tbody>
   </table>
-</div>
+</div><!-- table-responsive -->
 <p>yumでDVDからパッケージをインストールする。</p>
 <pre class="prettyprint block">
 $ mkdir /media/CentOS
@@ -172,7 +172,7 @@ $ rpm -qf [ファイルパス]
       </tr>
     </tbody>
   </table>
-</div>
+</div><!-- table-responsive -->
 <h3 id="other" class="title">その他</h3>
 <p>システムの時刻・日付設定を確認する。</p>
 <pre class="prettyprint block">

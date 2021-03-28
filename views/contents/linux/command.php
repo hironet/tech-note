@@ -469,7 +469,7 @@ $ test [オプション] [文字列またはファイルパス]
       </tr>
     </tbody>
   </table>
-</div>
+</div><!-- table-responsive -->
 <h3 id="view" class="title">view</h3>
 <p>viをreadonlyモードで起動する（<code>vi -R</code>と同じ）。</p>
 <pre class="prettyprint block">

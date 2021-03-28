@@ -143,7 +143,9 @@ messages
 </pre>
 <h3 id="chmod" class="title">chmod</h3>
 <p>ディレクトリにSticky Bitを設定する。</p>
-<p>Sticky Bitが設定されたディレクトリでは、全てのユーザがディレクトリおよびファイルを書き込みできるが、所有者のみが削除を行える。</p>
+<ul>
+  <li>Sticky Bitが設定されたディレクトリでは、全てのユーザがディレクトリおよびファイルを書き込みできるが、所有者のみが削除を行える。</li>
+</ul>
 <pre class="prettyprint">
 $ chmod +t [ディレクトリパス]
 </pre>
@@ -166,7 +168,7 @@ $ curl -I [URL]
 $ curl -k [URL]
 </pre>
 <h3 id="dd" class="title">dd</h3>
-<p>I/O負荷を発生させる。</p>
+<p>I/O負荷をかける。</p>
 <pre class="prettyprint">
 $ dd if=/dev/zero of=test bs=1M count=512 oflag=direct
 </pre>
@@ -189,14 +191,20 @@ $ echo -n > [ファイルパス]
 <p><code>\n</code>の位置で改行する。</p>
 <pre class="prettyprint">
 $ echo -e 'hello\nworld'
+hello
+world
 </pre>
 <h3 id="expr" class="title">expr</h3>
-<p>四則演算する。</p>
+<p>四則演算をする。</p>
 <pre class="prettyprint">
 $ expr 100 + 200
+300
 $ expr 300 - 200
+100
 $ expr 11 '*' 11
+121
 $ expr 400 / 2
+200
 </pre>
 <h3 id="find" class="title">find</h3>
 <p>所有者がrootまたは所有グループがrootのファイルを検索する。</p>
@@ -246,7 +254,7 @@ $ grep -- [ハイフンから始まるパターン文字列] [ファイルパス
 </pre>
 <p>psコマンドのヘッダを表示し、grep自身は除いて表示する。</p>
 <pre class="prettyprint">
-$ ps aux | grep -e [U]SER -e [h]ttpd
+$ ps aux | grep -e [U]SER -e [パターン文字列]
 </pre>
 <h3 id="ip" class="title">ip</h3>
 <p>指定したIPアドレスに到達するための経路を表示する。</p>
@@ -265,7 +273,7 @@ $ lsblk
 <h3 id="lsof" class="title">lsof</h3>
 <p>ファイルを使用しているプロセスを表示する。</p>
 <pre class="prettyprint">
-$ lsof /var/log/httpd/access_log
+$ lsof [ファイルパス]
 </pre>
 <p>ポートを使用しているプロセスを表示する。</p>
 <pre class="prettyprint">
@@ -296,8 +304,8 @@ $ mktemp -d
 <h3 id="nc" class="title">nc</h3>
 <p>適当なポートをLISTEN状態にする。</p>
 <ul>
-  <li><code>-k</code>オプション … 複数コネクションを受け付けることができる。</li>
-  <li><code>-v</code>オプション … 詳細情報が出力される。</li>
+  <li><code>-k</code>オプション … 複数コネクションを受け付ける。</li>
+  <li><code>-v</code>オプション … 詳細情報を出力する。</li>
 </ul>
 <pre class="prettyprint">
 $ nc -lkv -p [ポート番号]
@@ -364,7 +372,7 @@ $ snmpwalk -v 2c -c [コミュニティ名] [IPアドレス]
 <pre class="prettyprint">
 $ ssh -o StrictHostKeyChecking=no [ユーザ名]@[ホスト名またはIPアドレス]
 </pre>
-<p>ローカルのシェルスクリプトをリモート実行する。</p>
+<p>ローカルのシェルスクリプトをリモートホストで実行する。</p>
 <pre class="prettyprint">
 $ cat [ファイルパス] | ssh [ユーザ名]@[ホスト名またはIPアドレス] bash
 </pre>
@@ -390,16 +398,16 @@ $ tar ztvf [ファイルパス]
 <h3 id="tcpdump" class="title">tcpdump</h3>
 <p>Wiresharkを使って解析するためのキャプチャファイルを取得する。</p>
 <pre class="prettyprint">
-$ tcpdump -n -i [ネットワークインタフェース] -s 0 not port 22 -w [ファイル名]
+$ tcpdump -n -i [ネットワークインタフェース名] -s 0 not port 22 -w [保存先のファイルパス]
 </pre>
 <h3 id="tcpslice" class="title">tcpslice</h3>
 <p>tcpdumpのファイルがいつからいつまでのデータを含んでいるかを確認する。</p>
 <pre class="prettyprint">
-$ tcpslice -t [tcpdumpのファイル名]
+$ tcpslice -t [tcpdumpのファイルパス]
 </pre>
 <p>tcpdumpのファイルから、2018/07/24 02:50:00～3600秒後の範囲を抽出する。</p>
 <pre class="prettyprint">
-$ tcpslice -w [抽出後のファイル名] 18y07m24d02h50m00s +3600 [tcpdumpのファイル名]
+$ tcpslice -w [保存先のファイルパス] 18y07m24d02h50m00s +3600 [tcpdumpのファイルパス]
 </pre>
 <h3 id="tee" class="title">tee</h3>
 <p>標準入力から読み込んだ内容を標準出力とファイルに出力する。</p>

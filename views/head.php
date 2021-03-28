@@ -18,12 +18,14 @@
     background-color: #5c73b7;
     color: #ffffff;
     font-size: 1.5rem;
+    margin: 2.0rem 0.0rem 0.5rem;
     opacity: 0.9;
     padding: 0.2rem 0.5rem;
   }
 
   pre.prettyprint {
     font-family: Monaco, Menlo, Consolas, 'Courier New', Courier, monospace, sans-serif;
+    margin: 0.0rem 0.0rem 1.5rem 0.5rem;
     padding: 0.2rem 0.5rem;
   }
 </style>

@@ -10,6 +10,6 @@ Hiroの技術メモ
 
 - Apache
 - HTML
-- CSS（Bootstrap v5.0）
+- CSS（Bootstrap v5.0, Google Code Prettify）
 - JavaScript
 - PHP

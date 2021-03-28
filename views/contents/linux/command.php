@@ -422,52 +422,54 @@ $ [コマンド] 2&gt;&amp;1 | tee [オプション] [ファイルパス]
 <pre class="prettyprint block">
 $ test [オプション] [文字列またはファイルパス]
 </pre>
-<table class="table table-striped table-sm">
-  <thead>
-    <tr>
-      <th>オプション</th>
-      <th>説明</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>-z</code></td>
-      <td>文字列の長さが0であれば真</td>
-    </tr>
-    <tr>
-      <td><code>-n</code></td>
-      <td>文字列の長さが0より大きければ真</td>
-    </tr>
-    <tr>
-      <td><code>-d</code></td>
-      <td>ディレクトリであれば真</td>
-    </tr>
-    <tr>
-      <td><code>-f</code></td>
-      <td>ファイルであれば真</td>
-    </tr>
-    <tr>
-      <td><code>-s</code></td>
-      <td>ファイルサイズが0より大きければ真</td>
-    </tr>
-    <tr>
-      <td><code>-e</code></td>
-      <td>ファイルが存在すれば真</td>
-    </tr>
-    <tr>
-      <td><code>-r</code></td>
-      <td>ファイルが読み取り可能であれば真</td>
-    </tr>
-    <tr>
-      <td><code>-w</code></td>
-      <td>ファイルが書き込み可能であれば真</td>
-    </tr>
-    <tr>
-      <td><code>-x</code></td>
-      <td>ファイルが実行可能であれば真</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>オプション</th>
+        <th>説明</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>-z</code></td>
+        <td>文字列の長さが0であれば真</td>
+      </tr>
+      <tr>
+        <td><code>-n</code></td>
+        <td>文字列の長さが0より大きければ真</td>
+      </tr>
+      <tr>
+        <td><code>-d</code></td>
+        <td>ディレクトリであれば真</td>
+      </tr>
+      <tr>
+        <td><code>-f</code></td>
+        <td>ファイルであれば真</td>
+      </tr>
+      <tr>
+        <td><code>-s</code></td>
+        <td>ファイルサイズが0より大きければ真</td>
+      </tr>
+      <tr>
+        <td><code>-e</code></td>
+        <td>ファイルが存在すれば真</td>
+      </tr>
+      <tr>
+        <td><code>-r</code></td>
+        <td>ファイルが読み取り可能であれば真</td>
+      </tr>
+      <tr>
+        <td><code>-w</code></td>
+        <td>ファイルが書き込み可能であれば真</td>
+      </tr>
+      <tr>
+        <td><code>-x</code></td>
+        <td>ファイルが実行可能であれば真</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <h3 id="view" class="title">view</h3>
 <p>viをreadonlyモードで起動する（<code>vi -R</code>と同じ）。</p>
 <pre class="prettyprint block">

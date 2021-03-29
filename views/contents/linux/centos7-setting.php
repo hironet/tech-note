@@ -225,7 +225,7 @@ $ crontab -l
 </pre>
 <p>フォーマット付きのdateコマンドをcronで実行する。</p>
 <ul>
-  <li>フォーマット中の<code>%</code>は、<code>\</code>でエスケープする必要がある点に注意する。</li>
+  <li>フォーマット中の<code>%</code>は、<code>\</code>でエスケープする必要がある点に注意。</li>
 </ul>
 <pre class="prettyprint block">
 $ crontab -l

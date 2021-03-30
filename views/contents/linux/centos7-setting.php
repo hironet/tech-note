@@ -6,7 +6,7 @@ $mtime = get_mtime(__FILE__);
 <?php include_once(__DIR__ . '/../common/header.php'); ?>
 <?php include_once(__DIR__ . '/../common/date.php'); ?>
 </header>
-<h2>目次</h2>
+<h2 class="title">目次</h2>
 <ol>
   <li>
     <a href="#network">ネットワーク設定</a>
@@ -24,7 +24,7 @@ $mtime = get_mtime(__FILE__);
     <a href="#other">その他</a>
   </li>
 </ol>
-<h3 id="network" class="title">ネットワーク設定</h3>
+<h2 id="network" class="title">ネットワーク設定</h2>
 <p>ネットワークインタフェースを有効化する。
 <pre class="block"><code>$ nmcli c modify [ネットワークインタフェース名] connection.autoconnect yes</code></pre>
 <p>IPアドレスとサブネットマスクを設定する。</p>
@@ -45,7 +45,7 @@ $mtime = get_mtime(__FILE__);
 <p>ネットワークインタフェースを再起動する。</p>
 <pre class="block"><code>$ nmcli c down [ネットワークインタフェース名]
 $ nmcli c up [ネットワークインタフェース名]</code></pre>
-<h3 id="yum" class="title">パッケージの管理（Yum）</h3>
+<h2 id="yum" class="title">パッケージの管理（Yum）</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>
@@ -105,10 +105,10 @@ $ umount /media/CentOS</code></pre>
   <li>事前に、<code>yum-utils</code>パッケージをインストールしておく必要がある。</li>
 </ul>
 <pre class="block"><code>$ yumdownloader --resolve [パッケージ名]</code></pre>
-<h3 id="rpm" class="title">パッケージの管理（RPM）</h3>
+<h2 id="rpm" class="title">パッケージの管理（RPM）</h2>
 <p>ファイルがどのパッケージに含まれるかを確認する。</p>
 <pre class="block"><code>$ rpm -qf [ファイルパス]</code></pre>
-<h3 id="service" class="title">サービスの操作</h3>
+<h2 id="service" class="title">サービスの操作</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>
@@ -149,7 +149,7 @@ $ umount /media/CentOS</code></pre>
     </tbody>
   </table>
 </div><!-- table-responsive -->
-<h3 id="other" class="title">その他</h3>
+<h2 id="other" class="title">その他</h2>
 <p>システムの時刻・日付設定を確認する。</p>
 <pre class="block"><code>$ timedatectl status</code></pre>
 <p>タイムゾーンを<code>Asia/Tokyo (JST)</code>に設定する。</p>

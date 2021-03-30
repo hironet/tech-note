@@ -6,7 +6,7 @@ $mtime = get_mtime(__FILE__);
 <?php include_once(__DIR__ . '/../common/header.php'); ?>
 <?php include_once(__DIR__ . '/../common/date.php'); ?>
 </header>
-<h2>目次</h2>
+<h2 class="title">目次</h2>
 <ul>
   <li>
     <a href="#arping">arping</a>

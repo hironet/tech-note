@@ -19,6 +19,15 @@
     opacity: 0.9;
   }
 
+  h2.title {
+    background-color: #5c73b7;
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 2rem 0 0.5rem;
+    opacity: 0.9;
+    padding: 0.2rem 0.5rem;
+  }
+
   h3.title {
     background-color: #5c73b7;
     color: #ffffff;

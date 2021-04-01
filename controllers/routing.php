@@ -306,30 +306,30 @@ switch ($category) {
     break;
   case 'git':
     $titles = [
-      'operation' => 'Gitの操作方法',
+      'trivia' => 'Gitの豆知識',
     ];
 
     $descriptions = [
-      'operation' => 'Gitの基本的な操作方法を紹介しています。',
+      'trivia' => '知っておくと便利なGitの豆知識を紹介しています。',
     ];
 
     $keywords = [
-      'operation' => 'git',
+      'trivia' => 'git',
     ];
 
     $links = [
-      'operation' => '.?c=git&p=operation',
+      'trivia' => '.?c=git&p=trivia',
     ];
 
     switch ($page) {
       case 'list':
         article_list('Git');
         break;
-      case 'operation':
-        $contents_title = $titles['operation'];
-        $contents_path = '/contents/git/operation.php';
-        $meta_description = $descriptions['operation'];
-        $meta_keywords = $keywords['operation'];
+      case 'trivia':
+        $contents_title = $titles['trivia'];
+        $contents_path = '/contents/git/trivia.php';
+        $meta_description = $descriptions['trivia'];
+        $meta_keywords = $keywords['trivia'];
         $breadcrumb_list = ['Git' => '.?c=git'];
         break;
       default:

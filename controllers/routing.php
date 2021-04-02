@@ -31,15 +31,31 @@ switch ($category) {
     break;
   case 'windows':
     $titles = [
+      'setting' => 'Windows 10の設定方法',
+      'command' => 'Windows 10コマンドの便利な使い方',
+      'keyboard' => 'Windows 10の便利なショートカットキー',
+      'chocolatey' => 'Chocolateyの操作方法',
     ];
 
     $descriptions = [
+      'setting' => 'Windows 10を便利にするための設定方法を紹介しています。',
+      'command' => '知っておくと色んな場面で便利になるコマンドの使い方を紹介しています。',
+      'keyboard' => '知っておくと色んな場面で便利になるショートカットキーの使い方を紹介しています。',
+      'chocolatey' => 'Chocolateyの基本的な操作方法を紹介しています。',
     ];
 
     $keywords = [
+      'setting' => 'windows 10,設定',
+      'command' => 'windows 10,コマンド',
+      'keyboard' => 'windows 10,ショートカットキー',
+      'chocolatey' => 'chocolatey',
     ];
 
     $links = [
+      'setting' => '.?c=windows10&p=setting',
+      'command' => '.?c=windows10&p=command',
+      'keyboard' => '.?c=windows10&p=keyboard',
+      'chocolatey' => '.?c=windows10&p=chocolatey',
     ];
 
     switch ($page) {
@@ -65,7 +81,7 @@ switch ($category) {
     ];
 
     $keywords = [
-      'command' => 'mac,command',
+      'command' => 'mac,コマンド',
       'keyboard' => 'mac,ショートカットキー',
       'homebrew' => 'mac,homebrew',
     ];
@@ -109,7 +125,7 @@ switch ($category) {
   case 'linux':
     $titles = [
       'command' => 'Linuxコマンドの便利な使い方',
-      'centos7-setting' => 'CentOS 7.x 設定方法',
+      'centos7-setting' => 'CentOS 7.xの設定方法',
     ];
 
     $descriptions = [
@@ -118,7 +134,7 @@ switch ($category) {
     ];
 
     $keywords = [
-      'command' => 'linux,command',
+      'command' => 'linux,コマンド',
       'centos7-setting' => 'linux,centos,設定',
     ];
 
@@ -350,7 +366,7 @@ switch ($category) {
 
     $keywords = [
       'trivia' => 'git',
-      'branch' => 'git,branch',
+      'branch' => 'git,ブランチ',
     ];
 
     $links = [

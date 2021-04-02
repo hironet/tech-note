@@ -52,15 +52,43 @@ switch ($category) {
     ];
 
     $links = [
-      'setting' => '.?c=windows10&p=setting',
-      'command' => '.?c=windows10&p=command',
-      'keyboard' => '.?c=windows10&p=keyboard',
-      'chocolatey' => '.?c=windows10&p=chocolatey',
+      'setting' => '.?c=windows&p=setting',
+      'command' => '.?c=windows&p=command',
+      'keyboard' => '.?c=windows&p=keyboard',
+      'chocolatey' => '.?c=windows&p=chocolatey',
     ];
 
     switch ($page) {
       case 'list':
         article_list('Windows');
+        break;
+      case 'setting':
+        $contents_title = $titles['setting'];
+        $contents_path = '/contents/windows/setting.php';
+        $meta_description = $descriptions['setting'];
+        $meta_keywords = $keywords['setting'];
+        $breadcrumb_list = ['Windows' => '.?c=windows'];
+        break;
+      case 'command':
+        $contents_title = $titles['command'];
+        $contents_path = '/contents/windows/command.php';
+        $meta_description = $descriptions['command'];
+        $meta_keywords = $keywords['command'];
+        $breadcrumb_list = ['Windows' => '.?c=windows'];
+        break;
+      case 'keyboard':
+        $contents_title = $titles['keyboard'];
+        $contents_path = '/contents/windows/keyboard.php';
+        $meta_description = $descriptions['keyboard'];
+        $meta_keywords = $keywords['keyboard'];
+        $breadcrumb_list = ['Windows' => '.?c=windows'];
+        break;
+      case 'chocolatey':
+        $contents_title = $titles['chocolatey'];
+        $contents_path = '/contents/windows/chocolatey.php';
+        $meta_description = $descriptions['chocolatey'];
+        $meta_keywords = $keywords['chocolatey'];
+        $breadcrumb_list = ['Windows' => '.?c=windows'];
         break;
       default:
         not_found();

@@ -372,20 +372,42 @@ switch ($category) {
     break;
   case 'vscode':
     $titles = [
+      'setting' => 'Visual Studio Codeの設定方法',
+      'keyboard' => 'Visual Studio Codeの便利なショートカットキー',
     ];
 
     $descriptions = [
+      'setting' => 'Visual Studio Codeを便利にするための設定方法を紹介しています。',
+      'keyboard' => '知っておくと色んな場面で便利になるショートカットキーの使い方を紹介しています。',
     ];
 
     $keywords = [
+      'setting' => 'vscode,設定',
+      'keyboard' => 'vscode,ショートカットキー',
     ];
 
     $links = [
+      'setting' => '.?c=vscode&p=setting',
+      'keyboard' => '.?c=vscode&p=keyboard',
     ];
 
     switch ($page) {
       case 'list':
         article_list('Visual Studio Code');
+        break;
+      case 'setting':
+        $contents_title = $titles['setting'];
+        $contents_path = '/contents/vscode/setting.php';
+        $meta_description = $descriptions['setting'];
+        $meta_keywords = $keywords['setting'];
+        $breadcrumb_list = ['Visual Studio Code' => '.?c=vscode'];
+        break;
+      case 'command':
+        $contents_title = $titles['command'];
+        $contents_path = '/contents/vscode/command.php';
+        $meta_description = $descriptions['command'];
+        $meta_keywords = $keywords['command'];
+        $breadcrumb_list = ['Visual Studio Code' => '.?c=vscode'];
         break;
       default:
         not_found();

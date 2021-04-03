@@ -273,20 +273,31 @@ switch ($category) {
     break;
   case 'mysql':
     $titles = [
+      'operation' => 'MySQLの操作方法',
     ];
 
     $descriptions = [
+      'operation' => 'MySQLの基本的な操作方法を紹介しています。',
     ];
 
     $keywords = [
+      'operation' => 'mysql',
     ];
 
     $links = [
+      'operation' => '.?c=mysql&p=operation',
     ];
 
     switch ($page) {
       case 'list':
         article_list('MySQL');
+        break;
+      case 'operation':
+        $contents_title = $titles['operation'];
+        $contents_path = '/contents/mysql/operation.php';
+        $meta_description = $descriptions['operation'];
+        $meta_keywords = $keywords['operation'];
+        $breadcrumb_list = ['MySQL' => '.?c=mysql'];
         break;
       default:
         not_found();

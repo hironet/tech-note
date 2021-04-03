@@ -306,20 +306,31 @@ switch ($category) {
     break;
   case 'wordpress':
     $titles = [
+      'performance' => 'WordPressのパフォーマンスチューニング',
     ];
 
     $descriptions = [
+      'performance' => 'WordPressのパフォーマンスチューニング方法について紹介しています。',
     ];
 
     $keywords = [
+      'performance' => 'wordpress,パフォーマンス',
     ];
 
     $links = [
+      'performance' => '.?c=wordpress&p=performance',
     ];
 
     switch ($page) {
       case 'list':
         article_list('WordPress');
+        break;
+      case 'performance':
+        $contents_title = $titles['performance'];
+        $contents_path = '/contents/wordpress/performance.php';
+        $meta_description = $descriptions['performance'];
+        $meta_keywords = $keywords['performance'];
+        $breadcrumb_list = ['WordPress' => '.?c=wordpress'];
         break;
       default:
         not_found();

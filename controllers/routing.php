@@ -402,11 +402,11 @@ switch ($category) {
         $meta_keywords = $keywords['setting'];
         $breadcrumb_list = ['Visual Studio Code' => '.?c=vscode'];
         break;
-      case 'command':
-        $contents_title = $titles['command'];
-        $contents_path = '/contents/vscode/command.php';
-        $meta_description = $descriptions['command'];
-        $meta_keywords = $keywords['command'];
+      case 'keyboard':
+        $contents_title = $titles['keyboard'];
+        $contents_path = '/contents/vscode/keyboard.php';
+        $meta_description = $descriptions['keyboard'];
+        $meta_keywords = $keywords['keyboard'];
         $breadcrumb_list = ['Visual Studio Code' => '.?c=vscode'];
         break;
       default:

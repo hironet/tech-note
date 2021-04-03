@@ -416,20 +416,31 @@ switch ($category) {
     break;
   case 'office':
     $titles = [
+      'setting' => 'Excel 2019の設定方法',
     ];
 
     $descriptions = [
+      'setting' => 'Excel 2019を便利にするための設定方法を紹介しています。',
     ];
 
     $keywords = [
+      'setting' => 'excel,設定',
     ];
 
     $links = [
+      'setting' => '.?c=office&p=setting',
     ];
 
     switch ($page) {
       case 'list':
         article_list('Microsoft Office');
+        break;
+      case 'setting':
+        $contents_title = $titles['setting'];
+        $contents_path = '/contents/office/setting.php';
+        $meta_description = $descriptions['setting'];
+        $meta_keywords = $keywords['setting'];
+        $breadcrumb_list = ['Microsoft Office' => '.?c=office'];
         break;
       default:
         not_found();

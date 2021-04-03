@@ -339,20 +339,31 @@ switch ($category) {
     break;
   case 'vim':
     $titles = [
+      'operation' => 'Vimの操作方法',
     ];
 
     $descriptions = [
+      'operation' => 'Vimの基本的な操作方法を紹介しています。',
     ];
 
     $keywords = [
+      'operation' => 'vim',
     ];
 
     $links = [
+      'operation' => '.?c=vim&p=operation',
     ];
 
     switch ($page) {
       case 'list':
         article_list('Vim');
+        break;
+      case 'operation':
+        $contents_title = $titles['operation'];
+        $contents_path = '/contents/vim/operation.php';
+        $meta_description = $descriptions['operation'];
+        $meta_keywords = $keywords['operation'];
+        $breadcrumb_list = ['Vim' => '.?c=vim'];
         break;
       default:
         not_found();

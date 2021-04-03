@@ -526,20 +526,31 @@ switch ($category) {
     break;
   case 'wireshark':
     $titles = [
+      'operation' => 'Wiresharkの操作方法',
     ];
 
     $descriptions = [
+      'operation' => 'Wiresharkの基本的な操作方法を紹介しています。',
     ];
 
     $keywords = [
+      'operation' => 'wireshark',
     ];
 
     $links = [
+      'operation' => '.?c=wireshark&p=operation',
     ];
 
     switch ($page) {
       case 'list':
         article_list('Wireshark');
+        break;
+      case 'operation':
+        $contents_title = $titles['operation'];
+        $contents_path = '/contents/wireshark/operation.php';
+        $meta_description = $descriptions['operation'];
+        $meta_keywords = $keywords['operation'];
+        $breadcrumb_list = ['Wireshark' => '.?c=wireshark'];
         break;
       default:
         not_found();

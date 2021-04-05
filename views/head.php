@@ -54,4 +54,25 @@
   code {
     font-family: Monaco, Menlo, Consolas, 'Courier New', Courier, monospace, sans-serif;
   }
+
+  div.box {
+    border: solid 3px #95ccff;
+    border-radius: 8px;
+    margin: 2rem 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+  div.box .box-title {
+    background: #FFF;
+    color: #95ccff;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: bold;
+    left: 10px;
+    line-height: 1;
+    padding: 0 9px;
+    position: absolute;
+    top: -13px;
+  }
 </style>

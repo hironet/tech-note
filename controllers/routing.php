@@ -559,20 +559,31 @@ switch ($category) {
     break;
   case 'html':
     $titles = [
+      'http-trivia' => 'HTMLの豆知識',
     ];
 
     $descriptions = [
+      'http-trivia' => '知っておくと便利なHTMLの豆知識を紹介しています。',
     ];
 
     $keywords = [
+      'http-trivia' => 'html',
     ];
 
     $links = [
+      'http-trivia' => '.?c=html&p=http-trivia',
     ];
 
     switch ($page) {
       case 'list':
         article_list('HTML/CSS');
+        break;
+      case 'http-trivia':
+        $contents_title = $titles['http-trivia'];
+        $contents_path = '/contents/html/http-trivia.php';
+        $meta_description = $descriptions['http-trivia'];
+        $meta_keywords = $keywords['http-trivia'];
+        $breadcrumb_list = ['HTML' => '.?c=html'];
         break;
       default:
         not_found();
@@ -581,20 +592,42 @@ switch ($category) {
     break;
   case 'javascript':
     $titles = [
+      'trivia' => 'JavaScriptの豆知識',
+      'technique' => 'JavaScriptのテクニック',
     ];
 
     $descriptions = [
+      'trivia' => '知っておくと便利なJavaScriptの豆知識を紹介しています。',
+      'technique' => 'JavaScriptのコードを作成する際に、知っておくと有用な書き方を紹介しています。',
     ];
 
     $keywords = [
+      'trivia' => 'javascript',
+      'technique' => 'javascript',
     ];
 
     $links = [
+      'trivia' => '.?c=javascript&p=trivia',
+      'technique' => '.?c=javascript&p=technique',
     ];
 
     switch ($page) {
       case 'list':
         article_list('JavaScript');
+        break;
+      case 'trivia':
+        $contents_title = $titles['trivia'];
+        $contents_path = '/contents/javascript/trivia.php';
+        $meta_description = $descriptions['trivia'];
+        $meta_keywords = $keywords['trivia'];
+        $breadcrumb_list = ['JavaScript' => '.?c=javascript'];
+        break;
+      case 'technique':
+        $contents_title = $titles['technique'];
+        $contents_path = '/contents/javascript/technique.php';
+        $meta_description = $descriptions['technique'];
+        $meta_keywords = $keywords['technique'];
+        $breadcrumb_list = ['JavaScript' => '.?c=javascript'];
         break;
       default:
         not_found();
@@ -625,20 +658,53 @@ switch ($category) {
     break;
   case 'ruby':
     $titles = [
+      'rbenv' => 'rbenvの操作方法',
+      'rubygems' => 'RubyGemsの操作方法',
+      'technique' => 'Rubyのテクニック',
     ];
 
     $descriptions = [
+      'rbenv' => 'rbenvの基本的な操作方法を紹介しています。',
+      'rubygems' => 'RubyGemsの基本的な操作方法を紹介しています。',
+      'technique' => 'Rubyのコードを作成する際に、知っておくと有用な書き方を紹介しています。',
     ];
 
     $keywords = [
+      'rbenv' => 'ruby,rbenv',
+      'rubygems' => 'ruby,rubygems',
+      'technique' => 'ruby',
     ];
 
     $links = [
+      'rbenv' => '.?c=ruby&p=rbenv',
+      'rubygems' => '.?c=ruby&p=rubygems',
+      'technique' => '.?c=ruby&p=technique',
     ];
 
     switch ($page) {
       case 'list':
         article_list('Ruby');
+        break;
+      case 'rbenv':
+        $contents_title = $titles['rbenv'];
+        $contents_path = '/contents/ruby/rbenv.php';
+        $meta_description = $descriptions['rbenv'];
+        $meta_keywords = $keywords['rbenv'];
+        $breadcrumb_list = ['Ruby' => '.?c=ruby'];
+        break;
+      case 'rubygems':
+        $contents_title = $titles['rubygems'];
+        $contents_path = '/contents/ruby/rubygems.php';
+        $meta_description = $descriptions['rubygems'];
+        $meta_keywords = $keywords['rubygems'];
+        $breadcrumb_list = ['Ruby' => '.?c=ruby'];
+        break;
+      case 'technique':
+        $contents_title = $titles['technique'];
+        $contents_path = '/contents/ruby/technique.php';
+        $meta_description = $descriptions['technique'];
+        $meta_keywords = $keywords['technique'];
+        $breadcrumb_list = ['Ruby' => '.?c=ruby'];
         break;
       default:
         not_found();

@@ -6,8 +6,8 @@ function article_list($category) {
   global $breadcrumb_list;
 
   $contents_title = $category;
-  $contents_path = '/contents/list.php';
   $contents_desc = "このページには、{$category}に関する情報をまとめています。";
+  $contents_path = '/contents/list.php';
   $breadcrumb_list = [$category => ''];
 }
 
@@ -55,26 +55,26 @@ switch ($category) {
         break;
       case 'setting':
         $contents_title = $titles['setting'];
-        $contents_path = '/contents/windows/setting.php';
         $contents_desc = $descs['setting'];
+        $contents_path = '/contents/windows/setting.php';
         $breadcrumb_list = ['Windows' => '.?c=windows'];
         break;
       case 'command':
         $contents_title = $titles['command'];
-        $contents_path = '/contents/windows/command.php';
         $contents_desc = $descs['command'];
+        $contents_path = '/contents/windows/command.php';
         $breadcrumb_list = ['Windows' => '.?c=windows'];
         break;
       case 'keyboard':
         $contents_title = $titles['keyboard'];
-        $contents_path = '/contents/windows/keyboard.php';
         $contents_desc = $descs['keyboard'];
+        $contents_path = '/contents/windows/keyboard.php';
         $breadcrumb_list = ['Windows' => '.?c=windows'];
         break;
       case 'chocolatey':
         $contents_title = $titles['chocolatey'];
-        $contents_path = '/contents/windows/chocolatey.php';
         $contents_desc = $descs['chocolatey'];
+        $contents_path = '/contents/windows/chocolatey.php';
         $breadcrumb_list = ['Windows' => '.?c=windows'];
         break;
       default:
@@ -107,20 +107,20 @@ switch ($category) {
         break;
       case 'command':
         $contents_title = $titles['command'];
-        $contents_path = '/contents/macos/command.php';
         $contents_desc = $descs['command'];
+        $contents_path = '/contents/macos/command.php';
         $breadcrumb_list = ['macOS' => '.?c=macos'];
         break;
       case 'keyboard':
         $contents_title = $titles['keyboard'];
-        $contents_path = '/contents/macos/keyboard.php';
         $contents_desc = $descs['keyboard'];
+        $contents_path = '/contents/macos/keyboard.php';
         $breadcrumb_list = ['macOS' => '.?c=macos'];
         break;
       case 'homebrew':
         $contents_title = $titles['homebrew'];
-        $contents_path = '/contents/macos/homebrew.php';
         $contents_desc = $descs['homebrew'];
+        $contents_path = '/contents/macos/homebrew.php';
         $breadcrumb_list = ['macOS' => '.?c=macos'];
         break;
       default:
@@ -150,14 +150,14 @@ switch ($category) {
         break;
       case 'command':
         $contents_title = $titles['command'];
-        $contents_path = '/contents/linux/command.php';
         $contents_desc = $descs['command'];
+        $contents_path = '/contents/linux/command.php';
         $breadcrumb_list = ['Linux' => '.?c=linux'];
         break;
       case 'centos7-setting':
         $contents_title = $titles['centos7-setting'];
-        $contents_path = '/contents/linux/centos7-setting.php';
         $contents_desc = $descs['centos7-setting'];
+        $contents_path = '/contents/linux/centos7-setting.php';
         $breadcrumb_list = ['Linux' => '.?c=linux'];
         break;
       default:
@@ -184,8 +184,8 @@ switch ($category) {
         break;
       case 'operation':
         $contents_title = $titles['operation'];
-        $contents_path = '/contents/docker/operation.php';
         $contents_desc = $descs['operation'];
+        $contents_path = '/contents/docker/operation.php';
         $breadcrumb_list = ['Docker' => '.?c=docker'];
         break;
       default:
@@ -250,8 +250,8 @@ switch ($category) {
         break;
       case 'operation':
         $contents_title = $titles['operation'];
-        $contents_path = '/contents/mysql/operation.php';
         $contents_desc = $descs['operation'];
+        $contents_path = '/contents/mysql/operation.php';
         $breadcrumb_list = ['MySQL' => '.?c=mysql'];
         break;
       default:
@@ -278,8 +278,8 @@ switch ($category) {
         break;
       case 'performance':
         $contents_title = $titles['performance'];
-        $contents_path = '/contents/wordpress/performance.php';
         $contents_desc = $descs['performance'];
+        $contents_path = '/contents/wordpress/performance.php';
         $breadcrumb_list = ['WordPress' => '.?c=wordpress'];
         break;
       default:
@@ -306,8 +306,8 @@ switch ($category) {
         break;
       case 'operation':
         $contents_title = $titles['operation'];
-        $contents_path = '/contents/vim/operation.php';
         $contents_desc = $descs['operation'];
+        $contents_path = '/contents/vim/operation.php';
         $breadcrumb_list = ['Vim' => '.?c=vim'];
         break;
       default:
@@ -337,14 +337,14 @@ switch ($category) {
         break;
       case 'setting':
         $contents_title = $titles['setting'];
-        $contents_path = '/contents/vscode/setting.php';
         $contents_desc = $descs['setting'];
+        $contents_path = '/contents/vscode/setting.php';
         $breadcrumb_list = ['Visual Studio Code' => '.?c=vscode'];
         break;
       case 'keyboard':
         $contents_title = $titles['keyboard'];
-        $contents_path = '/contents/vscode/keyboard.php';
         $contents_desc = $descs['keyboard'];
+        $contents_path = '/contents/vscode/keyboard.php';
         $breadcrumb_list = ['Visual Studio Code' => '.?c=vscode'];
         break;
       default:
@@ -371,8 +371,8 @@ switch ($category) {
         break;
       case 'setting':
         $contents_title = $titles['setting'];
-        $contents_path = '/contents/office/setting.php';
         $contents_desc = $descs['setting'];
+        $contents_path = '/contents/office/setting.php';
         $breadcrumb_list = ['Microsoft Office' => '.?c=office'];
         break;
       default:
@@ -402,14 +402,14 @@ switch ($category) {
         break;
       case 'trivia':
         $contents_title = $titles['trivia'];
-        $contents_path = '/contents/git/trivia.php';
         $contents_desc = $descs['trivia'];
+        $contents_path = '/contents/git/trivia.php';
         $breadcrumb_list = ['Git' => '.?c=git'];
         break;
       case 'branch':
         $contents_title = $titles['branch'];
-        $contents_path = '/contents/git/branch.php';
         $contents_desc = $descs['branch'];
+        $contents_path = '/contents/git/branch.php';
         $breadcrumb_list = ['Git' => '.?c=git'];
         break;
       default:
@@ -436,8 +436,8 @@ switch ($category) {
         break;
       case 'operation':
         $contents_title = $titles['operation'];
-        $contents_path = '/contents/vagrant/operation.php';
         $contents_desc = $descs['operation'];
+        $contents_path = '/contents/vagrant/operation.php';
         $breadcrumb_list = ['Vagrant' => '.?c=vagrant'];
         break;
       default:
@@ -464,8 +464,8 @@ switch ($category) {
         break;
       case 'operation':
         $contents_title = $titles['operation'];
-        $contents_path = '/contents/wireshark/operation.php';
         $contents_desc = $descs['operation'];
+        $contents_path = '/contents/wireshark/operation.php';
         $breadcrumb_list = ['Wireshark' => '.?c=wireshark'];
         break;
       default:
@@ -492,8 +492,8 @@ switch ($category) {
         break;
       case 'html-trivia':
         $contents_title = $titles['html-trivia'];
-        $contents_path = '/contents/html/html-trivia.php';
         $contents_desc = $descs['html-trivia'];
+        $contents_path = '/contents/html/html-trivia.php';
         $breadcrumb_list = ['HTML' => '.?c=html'];
         break;
       default:
@@ -523,14 +523,14 @@ switch ($category) {
         break;
       case 'trivia':
         $contents_title = $titles['trivia'];
-        $contents_path = '/contents/javascript/trivia.php';
         $contents_desc = $descs['trivia'];
+        $contents_path = '/contents/javascript/trivia.php';
         $breadcrumb_list = ['JavaScript' => '.?c=javascript'];
         break;
       case 'technique':
         $contents_title = $titles['technique'];
-        $contents_path = '/contents/javascript/technique.php';
         $contents_desc = $descs['technique'];
+        $contents_path = '/contents/javascript/technique.php';
         $breadcrumb_list = ['JavaScript' => '.?c=javascript'];
         break;
       default:
@@ -582,20 +582,20 @@ switch ($category) {
         break;
       case 'rbenv':
         $contents_title = $titles['rbenv'];
-        $contents_path = '/contents/ruby/rbenv.php';
         $contents_desc = $descs['rbenv'];
+        $contents_path = '/contents/ruby/rbenv.php';
         $breadcrumb_list = ['Ruby' => '.?c=ruby'];
         break;
       case 'rubygems':
         $contents_title = $titles['rubygems'];
-        $contents_path = '/contents/ruby/rubygems.php';
         $contents_desc = $descs['rubygems'];
+        $contents_path = '/contents/ruby/rubygems.php';
         $breadcrumb_list = ['Ruby' => '.?c=ruby'];
         break;
       case 'technique':
         $contents_title = $titles['technique'];
-        $contents_path = '/contents/ruby/technique.php';
         $contents_desc = $descs['technique'];
+        $contents_path = '/contents/ruby/technique.php';
         $breadcrumb_list = ['Ruby' => '.?c=ruby'];
         break;
       default:
@@ -622,8 +622,8 @@ switch ($category) {
         break;
       case 'technique':
         $contents_title = $titles['technique'];
-        $contents_path = '/contents/bash/technique.php';
         $contents_desc = $descs['technique'];
+        $contents_path = '/contents/bash/technique.php';
         $breadcrumb_list = ['Bash' => '.?c=bash'];
         break;
       default:

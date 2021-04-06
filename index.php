@@ -1,4 +1,6 @@
 <?php
+const SITE_NAME = "Hiro's tech note";
+
 $contents_title = '';
 $contents_path = '';
 $contents_desc = '';

@@ -6,12 +6,14 @@ $mtime = get_mtime(__FILE__);
 <?php include_once(__DIR__ . '/../common/header.php'); ?>
 <?php include_once(__DIR__ . '/../common/date.php'); ?>
 </header>
-<h2 class="title">システムワイドなインストール（CentOS 7.x）</h2>
-<p>1. <a href="https://github.com/rbenv/rbenv" target="_blank" rel="noopener noreferrer">rbenv</a>のクローン先を<code>/usr/local/rbenv</code>とする。</p>
-<p>2. <a href="https://github.com/rbenv/ruby-build" target="_blank" rel="noopener noreferrer">ruby-build</a>のクローン先を<code>/usr/local/rbenv/plugins/ruby-build</code>とする。</p>
+<h2 class="title">システムワイドなインストール</h2>
+<p>1. <a href="https://github.com/rbenv/rbenv" target="_blank" rel="noopener noreferrer">rbenv</a>をインストールする。インストール先は<code>/usr/local/rbenv</code>とする。</p>
+<pre class="block"><code>$ git clone https://github.com/rbenv/rbenv /usr/local/rbenv</code></pre>
+<p>2. <a href="https://github.com/rbenv/ruby-build" target="_blank" rel="noopener noreferrer">ruby-build</a>をインストールする。インストール先は<code>/usr/local/rbenv/plugins/ruby-build</code>とする。</p>
+<pre class="block"><code>$ git clone https://github.com/rbenv/rbenv /usr/local/rbenv/plugins/ruby-build</code></pre>
 <p>3. 環境変数を設定する。</p>
-<pre class="block"><code>$ vim /etc/profile.d/env.sh</code></pre>
-<pre class="block"><code>if [ -d /usr/local/rbenv/bin ]; then
+<pre class="block"><code>$ cat /etc/profile.d/env.sh
+if [ -d /usr/local/rbenv/bin ]; then
     export RBENV_ROOT='/usr/local/rbenv'
     export PATH="${RBENV_ROOT}/bin:${PATH}"
     eval "$(rbenv init -)"

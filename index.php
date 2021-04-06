@@ -1,7 +1,7 @@
 <?php
 $contents_title = '';
 $contents_path = '';
-$meta_description = '';
+$contents_desc = '';
 $breadcrumb_list = [];
 
 include_once(__DIR__ . '/controllers/routing.php');

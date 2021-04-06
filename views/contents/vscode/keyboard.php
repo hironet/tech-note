@@ -80,12 +80,12 @@ $mtime = get_mtime(__FILE__);
       </tr>
       <tr>
         <td>カーソルのある行をコピーする。</td>
-        <td></td>
+        <td><kbd>Ctrl + C</kbd></td>
         <td><kbd>command + C</kbd></td>
       </tr>
       <tr>
         <td>カーソルのある行をカットする。</td>
-        <td></td>
+        <td><kbd>Ctrl + X</kbd></td>
         <td><kbd>command + X</kbd></td>
       </tr>
       <tr>
@@ -154,12 +154,12 @@ $mtime = get_mtime(__FILE__);
     <tbody>
       <tr>
         <td>カーソルをファイルの先頭・末尾に移動する。</td>
-        <td></td>
+        <td><kbd>Ctrl + Home・End</kbd></td>
         <td><kbd>command + ↑・↓</kbd></td>
       </tr>
       <tr>
         <td>カーソルを単語毎に移動する。</td>
-        <td></td>
+        <td><kbd>Ctrl + ←・→</kbd></td>
         <td><kbd>option + ←・→</kbd></td>
       </tr>
       <tr>
@@ -193,12 +193,12 @@ $mtime = get_mtime(__FILE__);
     <tbody>
       <tr>
         <td>ファイル内を検索する。</td>
-        <td></td>
+        <td><kbd>Ctrl + F</kbd></td>
         <td><kbd>command + F</kbd></td>
       </tr>
       <tr>
         <td>複数のファイルから検索する。</td>
-        <td></td>
+        <td><kbd>Ctrl + Shift + F</kbd></td>
         <td><kbd>command + shift + F</kbd></td>
       </tr>
     </tbody>
@@ -217,12 +217,12 @@ $mtime = get_mtime(__FILE__);
     <tbody>
       <tr>
         <td>選択範囲を昇順に並び替える。</td>
-        <td></td>
+        <td><kbd>Ctrl + Shift + P</kbd> <code>Sort Lines Ascending</code></td>
         <td><kbd>command + shift + P</kbd> <code>Sort Lines Ascending</code></td>
       </tr>
       <tr>
         <td>選択範囲を降順に並び替える。</td>
-        <td></td>
+        <td><kbd>Ctrl + Shift + P</kbd> <code>Sort Lines Descending</code></td>
         <td><kbd>command + shift + P</kbd> <code>Sort Lines Descending</code></td>
       </tr>
     </tbody>

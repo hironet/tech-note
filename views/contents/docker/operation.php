@@ -220,7 +220,7 @@ $mtime = get_mtime(__FILE__);
 <pre class="block"><code>$ docker inspect [コンテナID]</code></pre>
 <h2 id="docker-compose" class="title">Docker Compose</h2>
 <h3 class="title">Docker Composeインストール</h3>
-<p><a rel="noreferrer noopener" href="https://github.com/docker/compose/releases" target="_blank">Composeリポジトリ</a>にアクセスし、ページの指示に従ってインストールする。</p>
+<p><a href="https://github.com/docker/compose/releases" target="_blank" rel="noreferrer noopener">Composeリポジトリ</a>にアクセスし、ページの指示に従ってインストールする。</p>
 <h3 class="title">イメージ作成</h3>
 <div class="table-responsive">
   <table class="table table-striped table-sm">

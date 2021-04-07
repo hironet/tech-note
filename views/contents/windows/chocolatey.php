@@ -22,7 +22,7 @@ $mtime = get_mtime(__FILE__);
   </li>
 </ul>
 <h2 id="chocolate-install" class="title">Chocolateyのインストール</h2>
-<p><a rel="noopener noreferrer" href="https://chocolatey.org/install" target="_blank">Chocolatey</a>の説明に従ってインストールする。</p>
+<p><a href="https://chocolatey.org/install" target="_blank" rel="noopener noreferrer">Chocolatey</a>の説明に従ってインストールする。</p>
 <h2 id="chocolate-verup" class="title">Chocolateyのバージョンアップ</h2>
 <pre class="block"><code>&gt; choco upgrade chocolatey</code></pre>
 <h2 id="chocolate-command" class="title">Chocolateyのコマンド</h2>

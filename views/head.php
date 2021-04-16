@@ -60,7 +60,7 @@
     margin: 2rem 0 1rem 1rem;
     padding: 0.5rem 1rem;
     position: relative;
-}
+  }
 
   div.box .box-title {
     background: #FFF;

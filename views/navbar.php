@@ -64,9 +64,6 @@
               <a class="dropdown-item" href=".?c=git">Git</a>
             </li>
             <li>
-              <a class="dropdown-item" href=".?c=vagrant">Vagrant</a>
-            </li>
-            <li>
               <a class="dropdown-item" href=".?c=wireshark">Wireshark</a>
             </li>
           </ul>

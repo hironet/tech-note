@@ -61,9 +61,6 @@
           <a href=".?c=git">Git</a>
         </li>
         <li class="list-group-item">
-          <a href=".?c=vagrant">Vagrant</a>
-        </li>
-        <li class="list-group-item">
           <a href=".?c=wireshark">Wireshark</a>
         </li>
       </ul>

@@ -42,15 +42,21 @@ $mtime = get_mtime(__FILE__);
     <tbody>
       <tr>
         <td>データベース名</td>
-        <td><code>¥d</code></td>
+        <td>
+          <code>¥d</code>
+        </td>
       </tr>
       <tr>
         <td>ホスト名</td>
-        <td><code>¥h</code></td>
+        <td>
+          <code>¥h</code>
+        </td>
       </tr>
       <tr>
         <td>ユーザ名</td>
-        <td><code>¥u</code></td>
+        <td>
+          <code>¥u</code>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -75,39 +81,63 @@ $mtime = get_mtime(__FILE__);
     <tbody>
       <tr>
         <td>MySQLサーバのバージョンを表示する。</td>
-        <td><pre class="inline"><code>SELECT version();</code></pre></td>
+        <td>
+          <pre class="inline"><code>SELECT version();</code></pre>
+        </td>
       </tr>
       <tr>
         <td>現在のデータベース名を表示する。</td>
-        <td><pre class="inline"><code>SELECT database();</code></pre></td>
+        <td>
+          <pre class="inline"><code>SELECT database();</code></pre>
+        </td>
       </tr>
       <tr>
         <td>現在のユーザ名を表示する。</td>
-        <td><pre class="inline"><code>SELECT user();</code></pre></td>
+        <td>
+          <pre class="inline"><code>SELECT user();</code></pre>
+        </td>
+      </tr>
+      <tr>
+        <td>ユーザ一覧を表示する。</td>
+        <td>
+          <pre class="inline"><code>SELECT user, host FROM mysql.user;</code></pre>
+        </td>
       </tr>
       <tr>
         <td>データベース一覧を表示する。</td>
-        <td><pre class="inline"><code>SHOW DATABASES;</code></pre></td>
+        <td>
+          <pre class="inline"><code>SHOW DATABASES;</code></pre>
+        </td>
       </tr>
       <tr>
         <td>テーブル一覧を表示する。</td>
-        <td><pre class="inline"><code>SHOW TABLES;</code></pre></td>
+        <td>
+          <pre class="inline"><code>SHOW TABLES;</code></pre>
+        </td>
       </tr>
       <tr>
         <td>トリガ一覧を表示する。</td>
-        <td><pre class="inline"><code>SHOW TRIGGERS;</code></pre></td>
+        <td>
+          <pre class="inline"><code>SHOW TRIGGERS;</code></pre>
+        </td>
       </tr>
       <tr>
         <td>テーブルのカラム構造を表示する。</td>
-        <td><pre class="inline"><code>DESC [テーブル名];</code></pre></td>
+        <td>
+          <pre class="inline"><code>DESC [テーブル名];</code></pre>
+        </td>
       </tr>
       <tr>
         <td>ストアドプロシージャの内容を表示する。</td>
-        <td><pre class="inline"><code>SHOW CREATE PROCEDURE [ストアドプロシージャ名];</code></pre></td>
+        <td>
+          <pre class="inline"><code>SHOW CREATE PROCEDURE [ストアドプロシージャ名];</code></pre>
+        </td>
       </tr>
       <tr>
         <td>ストアドファンクションの内容を表示する。</td>
-        <td><pre class="inline"><code>SHOW CREATE FUNCTION [ストアドファンクション名];</code></pre></td>
+        <td>
+          <pre class="inline"><code>SHOW CREATE FUNCTION [ストアドファンクション名];</code></pre>
+        </td>
       </tr>
     </tbody>
   </table>

@@ -292,14 +292,17 @@ switch ($category) {
   case 'mysql':
     $titles = [
       'operation' => 'MySQLの操作方法',
+      'db-and-user' => 'データベースとユーザの管理',
     ];
 
     $descs = [
       'operation' => 'MySQLの基本的な操作方法を紹介しています。',
+      'db-and-user' => 'MySQLのデータベースとユーザの管理方法を紹介しています。',
     ];
 
     $links = [
       'operation' => '.?c=mysql&p=operation',
+      'db-and-user' => '?c=mysql&p=db-and-user',
     ];
 
     $breadcrumb_list = ['MySQL' => '.?c=mysql'];
@@ -312,6 +315,11 @@ switch ($category) {
         $contents_title = $titles['operation'];
         $contents_desc = $descs['operation'];
         $contents_path = '/contents/mysql/operation.php';
+        break;
+      case 'db-and-user':
+        $contents_title = $titles['db-and-user'];
+        $contents_desc = $descs['db-and-user'];
+        $contents_path = '/contents/mysql/db-and-user.php';
         break;
       default:
         not_found();

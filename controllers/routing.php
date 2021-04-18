@@ -292,7 +292,7 @@ switch ($category) {
   case 'mysql':
     $titles = [
       'operation' => 'MySQLの操作方法',
-      'db-and-user' => 'データベースとユーザの管理',
+      'db-and-user' => 'MySQLのデータベース・ユーザ管理',
     ];
 
     $descs = [

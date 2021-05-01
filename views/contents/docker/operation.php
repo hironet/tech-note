@@ -125,7 +125,7 @@ $mtime = get_mtime(__FILE__);
     </tbody>
   </table>
 </div>
-<h3 class="title">コンテナ作成</h3>
+<h3 class="title">コンテナ作成・起動</h3>
 <pre class="block"><code>$ docker run -itd --name [コンテナ名] [イメージ名]</code></pre>
 <h3 class="title">コンテナ削除</h3>
 <div class="table-responsive">
@@ -254,6 +254,10 @@ $mtime = get_mtime(__FILE__);
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td>コンテナを作成する（起動しない）。</td>
+        <td><pre class="inline"><code>$ docker-compose up --no-start</code></pre></td>
+      </tr>
       <tr>
         <td>コンテナを作成・起動する。</td>
         <td><pre class="inline"><code>$ docker-compose up -d</code></pre></td>

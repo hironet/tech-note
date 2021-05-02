@@ -18,6 +18,9 @@ $mtime = get_mtime(__FILE__);
     <a href="#service">サービスの操作</a>
   </li>
   <li>
+    <a href="#swap">スワップ領域の設定</a>
+  </li>
+  <li>
     <a href="#hostname">ホスト名の設定</a>
   </li>
   <li>
@@ -129,6 +132,17 @@ $mtime = get_mtime(__FILE__);
     </tbody>
   </table>
 </div><!-- table-responsive -->
+<h2 id="swap" class="title">スワップ領域の設定</h2>
+<p>1. 2GB（128MB×16）のスワップファイル（<code>/swapfile</code>）を作成する。</p>
+<pre class="block"><code>$ dd if=/dev/zero of=/swapfile bs=128M count=16</code></pre>
+<p>2. スワップファイルのアクセス権を変更する。</p>
+<pre class="block"><code>$ chmod 600 /swapfile</code></pre>
+<p>3. スワップファイルにスワップ領域を作成する。</p>
+<pre class="block"><code>$ mkswap /swapfile</code></pre>
+<p>4. スワップファイルへのスワッピングを有効にする。</p>
+<pre class="block"><code>$ swapon /swapfile</code></pre>
+<p>5. OS起動時にスワップ領域を有効にする。</p>
+<pre class="block"><code>$ echo "/swapfile swap swap defaults 0 0" >> /etc/fstab</code></pre>
 <h2 id="hostname" class="title">ホスト名の設定</h2>
 <p>1. ホスト名の設定を確認する。</p>
 <pre class="block"><code>$ hostnamectl status</code></pre>

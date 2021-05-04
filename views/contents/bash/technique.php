@@ -48,14 +48,14 @@ $mtime = get_mtime(__FILE__);
 <ul>
   <li><code>$?</code>の値が0であれば<code>[真の場合の処理]</code>を実行し、0でなければ<code>[偽の場合の処理]</code>を実行する。</li>
 </ul>
-<pre class="block"><code>[ $? == 0 ] &amp;&amp; [真の場合の処理] || [偽の場合の処理]</code></pre>
+<pre class="block"><code class="bash">[ $? == 0 ] &amp;&amp; [真の場合の処理] || [偽の場合の処理]</code></pre>
 <p>エラー処理をエレガントに行う。</p>
 <ul>
   <li>エラー処理のために、<code>error</code>関数と<code>abort</code>関数を定義する。</li>
   <li><code>[コマンド] || [エラー処理]</code>は、コマンドが失敗した場合（<code>$? &gt; 0</code>）にエラー処理が行われる。</li>
   <li><code>[コマンド] &amp;&amp; [エラー処理]</code>は、コマンドが成功した場合（<code>$? = 0</code>）にエラー処理が行われる。</li>
 </ul>
-<pre class="block"><code>function error() {
+<pre class="block"><code class="bash">function error() {
     echo "ERROR: $(basename $0): $@" 1&gt;&amp;2
 }
 
@@ -71,14 +71,14 @@ yum -y update || abort 'yum update faild.'
 id vagrant &amp;&amp; abort 'vagrant user already exist.'</code></pre>
 <h2 id="string-processing" class="title">文字列処理</h2>
 <p>コマンドライン引数の数を確認する。</p>
-<pre class="block"><code>[ $# -eq 2 ] || abort "Usage: $(basename $0) [file1] [file2]"</code></pre>
+<pre class="block"><code class="bash">[ $# -eq 2 ] || abort "Usage: $(basename $0) [file1] [file2]"</code></pre>
 <p>オプションを解析する。</p>
 <ul>
   <li><code>a)</code>には、コマンド引数として<code>-a</code>が設定された場合の処理を書く。</li>
   <li><code>b)</code>には、コマンド引数として<code>-b [引数]</code>が設定された場合の処理を書く。</li>
   <li><code>\?</code>には、コマンド引数として<code>-a</code>と<code>-b [引数]</code>以外が設定された場合の処理を書く。</li>
 </ul>
-<pre class="block"><code>while getopts ab: OPT; do
+<pre class="block"><code class="bash">while getopts ab: OPT; do
     case ${OPT} in
         a) FLAG_A=1
             ;;
@@ -92,7 +92,7 @@ done</code></pre>
 <ul>
   <li><code>${変数名%%パターン}</code>により、後方一致でのマッチ部分を削除できる（最長マッチ）。</li>
 </ul>
-<pre class="block"><code>$ hostname=www.google.co.jp
+<pre class="block"><code class="shell">$ hostname=www.google.co.jp
 $ echo ${hostname}
 www.google.co.jp
 $ echo ${hostname%%.*}
@@ -101,14 +101,14 @@ www</code></pre>
 <ul>
   <li><code>fold -w [数値]</code>により、生成する文字列の文字数を指定する。</li>
 </ul>
-<pre class="block"><code>cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 20 | head -n 1</code></pre>
+<pre class="block"><code class="bash">cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 20 | head -n 1</code></pre>
 <p>実行スクリプトのファイル名を除いた絶対パスを取得する。</p>
-<pre class="block"><code>script_dir=$(cd $(dirname $0); pwd)</code></pre>
+<pre class="block"><code class="bash">script_dir=$(cd $(dirname $0); pwd)</code></pre>
 <p>関数の呼び出し元に文字列を返す。</p>
 <ul>
   <li>関数の標準出力が戻り値になる。</li>
 </ul>
-<pre class="block"><code>function test_func() {
+<pre class="block"><code class="bash">function test_func() {
     echo 'hello, world'
 }
 
@@ -119,19 +119,19 @@ echo ${var}</code></pre>
 <ul>
   <li>読み込むファイルには、スペースで区切られた1行の文字列が格納されている想定。</li>
 </ul>
-<pre class="block"><code>array=($(cat [ファイルパス]))</code></pre>
+<pre class="block"><code class="bash">array=($(cat [ファイルパス]))</code></pre>
 <p>配列をコピーする。</p>
-<pre class="block"><code>array_new=(${array[@]})</code></pre>
+<pre class="block"><code class="bash">array_new=(${array[@]})</code></pre>
 <p>配列の先頭にデータを追加する。</p>
-<pre class="block"><code>array=(1 ${array[@]})
+<pre class="block"><code class="bash">array=(1 ${array[@]})
 array=('hello' ${array[@]})</code></pre>
 <p>配列の末尾にデータを追加する。</p>
-<pre class="block"><code>array+=(3)
+<pre class="block"><code class="bash">array+=(3)
 array+=('world')</code></pre>
 <p>配列の要素数を取得する。</p>
-<pre class="block"><code>num=${#array[@]}</code></pre>
+<pre class="block"><code class="bash">num=${#array[@]}</code></pre>
 <p>配列の要素毎に処理する。</p>
-<pre class="block"><code>for val in ${array[@]}; do
+<pre class="block"><code class="bash">for val in ${array[@]}; do
     echo ${val}  # 何らかの処理
 done</code></pre>
 <h2 id="date-processing" class="title">日付処理</h2>
@@ -139,16 +139,16 @@ done</code></pre>
 <ul>
   <li><code>tail -n+4</code>は、4行目から行末までを表示する（行頭から3行目まではカットする）。</li>
 </ul>
-<pre class="block"><code>ls -t test_*.log | tail -n+4 | xargs rm -f</code></pre>
+<pre class="block"><code class="bash">ls -t test_*.log | tail -n+4 | xargs rm -f</code></pre>
 <p>更新日時が3日前以前（72時間前～過去）のファイルを削除する。</p>
-<pre class="block"><code>find [ディレクトリパス] -type f -mtime +3 -exec rm -f {} \;</code></pre>
+<pre class="block"><code class="bash">find [ディレクトリパス] -type f -mtime +3 -exec rm -f {} \;</code></pre>
 <p>更新日時が新しい2つのファイルについて、差分を確認する。</p>
-<pre class="block"><code>ls -t test_*.log | head -2 | xargs diff</code></pre>
+<pre class="block"><code class="bash">ls -t test_*.log | head -2 | xargs diff</code></pre>
 <p>今週が第何週目かを求める。</p>
-<pre class="block"><code>expr $(date +%U) - $(date -d "$(date +%m)/1" +%U) + 1</code></pre>
+<pre class="block"><code class="bash">expr $(date +%U) - $(date -d "$(date +%m)/1" +%U) + 1</code></pre>
 <h2 id="file-processing" class="title">ファイル処理</h2>
 <p>ファイルから1行ずつ読み込んで処理する。</p>
-<pre class="block"><code>while read line; do
+<pre class="block"><code class="bash">while read line; do
     data=(${line})
     hostname=${data[0]}
     username=${data[1]}
@@ -158,7 +158,7 @@ done &lt;&lt; FILE_CONTENTS
     $(grep -v -e '^\s*#' -e '^\s*$' [ファイル名])
 FILE_CONTENTS</code></pre>
 <p>ファイルの末尾100行のみ残し、それ以前の行を削除する。</p>
-<pre class="block"><code>max_line=100
+<pre class="block"><code class="bash">max_line=100
 target_file=[ファイルパス]
 
 num_line=$(wc -l ${target_file} | awk '{ print $1 }')
@@ -167,14 +167,14 @@ if [ ${num_line} -gt ${max_line} ]; then
     sed -i -e "1,${delete_line}d" ${target_file}
 fi</code></pre>
 <p>ファイルの内容をソートし、元のファイルに結果を出力する。</p>
-<pre class="block"><code>target_file=[ファイルパス]
+<pre class="block"><code class="bash">target_file=[ファイルパス]
 
 tmp_file=$(mktemp)
 sort ${target_file} &gt; ${tmp_file}
 mv ${tmp_file} ${target_file}</code></pre>
 <h2 id="automation" class="title">自動化</h2>
 <p>パスワード認証のSSHでコマンドを実行する。</p>
-<pre class="block"><code>username='[ユーザ名]'
+<pre class="block"><code class="bash">username='[ユーザ名]'
 hostname='[ホスト名またはIPアドレス]'
 password='[パスワード]'
 command1='[コマンド1]'
@@ -213,7 +213,7 @@ expect \"${username}@${hostname}'s password:\" {
 interact
 "</code></pre>
 <p>デーモンとして動作するプログラムを起動・停止する。</p>
-<pre class="block"><code>#!/bin/bash
+<pre class="block"><code class="bash">#!/bin/bash
 
 . /etc/rc.d/init.d/functions
 
@@ -269,12 +269,12 @@ exit 0</code></pre>
 <ul>
   <li><code>/bin/bash</code>に<code>-x</code>オプションを付ける。</li>
 </ul>
-<pre class="block"><code>#!/bin/bash -x</code></pre>
+<pre class="block"><code class="bash">#!/bin/bash -x</code></pre>
 <p>ループカウンタを使う。</p>
-<pre class="block"><code>for i in $(seq 1 10); do
+<pre class="block"><code class="bash">for i in $(seq 1 10); do
     echo ${i}
 done</code></pre>
-<pre class="block"><code>count=0
+<pre class="block"><code class="bash">count=0
 while true; do
     count=$(expr ${count} + 1)
     [ ${count} == 10 ] &amp;&amp; break
@@ -283,5 +283,5 @@ done</code></pre>
 <ul>
   <li>変数<code>var</code>が空だった場合、<code>'/tmp'</code>を設定する。</li>
 </ul>
-<pre class="block"><code>var=$1
+<pre class="block"><code class="bash">var=$1
 var=${var:='/tmp'}</code></pre>

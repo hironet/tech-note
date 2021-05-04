@@ -28,55 +28,55 @@ $mtime = get_mtime(__FILE__);
   <tbody>
     <tr>
       <td>インストールされているパッケージ一覧を表示する。</td>
-      <td><pre class="inline"><code>$ brew list</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew list</code></pre></td>
     </tr>
     <tr>
       <td>インストール可能なパッケージ一覧を表示する。</td>
-      <td><pre class="inline"><code>$ brew search</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew search</code></pre></td>
     </tr>
     <tr>
       <td>パッケージ情報を検索する。</td>
-      <td><pre class="inline"><code>$ brew search [Formula]</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew search [Formula]</code></pre></td>
     </tr>
     <tr>
       <td>パッケージをインストールする。</td>
-      <td><pre class="inline"><code>$ brew install [Formula]</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew install [Formula]</code></pre></td>
     </tr>
     <tr>
       <td>GUIパッケージをインストールする。</td>
-      <td><pre class="inline"><code>$ brew install [Formula] --cask</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew install [Formula] --cask</code></pre></td>
     </tr>
     <tr>
       <td>パッケージをアンインストールする。</td>
-      <td><pre class="inline"><code>$ brew uninstall [Formula]</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew uninstall [Formula]</code></pre></td>
     </tr>
     <tr>
       <td>Homebrew本体とFormulaを更新する。</td>
-      <td><pre class="inline"><code>$ brew update</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew update</code></pre></td>
     </tr>
     <tr>
       <td>バージョンが古くなったパッケージ一覧を表示する。</td>
-      <td><pre class="inline"><code>$ brew outdated</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew outdated</code></pre></td>
     </tr>
     <tr>
       <td>バージョンが古くなったGUIパッケージ一覧を表示する。</td>
-      <td><pre class="inline"><code>$ brew outdated --cask --greedy</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew outdated --cask --greedy</code></pre></td>
     </tr>
     <tr>
       <td>インストールされている全てのパッケージを更新する。</td>
-      <td><pre class="inline"><code>$ brew upgrade</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew upgrade</code></pre></td>
     </tr>
     <tr>
       <td>インストールされている全てのGUIパッケージを更新する。</td>
-      <td><pre class="inline"><code>$ brew upgrade --cask --greedy</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew upgrade --cask --greedy</code></pre></td>
     </tr>
     <tr>
       <td>インストールされている個別のパッケージを更新する。</td>
-      <td><pre class="inline"><code>$ brew upgrade [Formula]</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew upgrade [Formula]</code></pre></td>
     </tr>
     <tr>
       <td>Homebrewの問題を診断する。</td>
-      <td><pre class="inline"><code>$ brew doctor</code></pre></td>
+      <td><pre class="inline"><code class="shell"># brew doctor</code></pre></td>
     </tr>
   </tbody>
 </table>

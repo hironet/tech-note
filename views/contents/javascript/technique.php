@@ -11,7 +11,7 @@ $mtime = get_mtime(__FILE__);
 <ul>
   <li><code>typeof</code>演算子は、オブジェクト型の場合、いずれも<code>object</code>が返されるが、以下の方法であれば、型を示す文字列を取得できる。</li>
 </ul>
-<pre class="block"><code>var typeOf = function (obj) {
+<pre class="block"><code class="javascript">var typeOf = function (obj) {
   return Object.prototype.toString.call(obj).slice(8, -1);
 };
 

@@ -20,12 +20,12 @@ $mtime = get_mtime(__FILE__);
 </ul>
 <h2 id="startup" class="title">mysqlコマンドラインクライアントの起動</h2>
 <p>MySQLサーバに接続する。</p>
-<pre class="block"><code>$ mysql -u [ユーザ名] -p -h[ホスト名] [データベース名]</code></pre>
+<pre class="block"><code class="shell">$ mysql -u [ユーザ名] -p -h[ホスト名] [データベース名]</code></pre>
 <p>SQL文を実行する。</p>
-<pre class="block"><code>$ mysql -u [ユーザ名] -p -h[ホスト名] [データベース名] -e "[コマンド]"</code></pre>
-<pre class="block"><code>$ mysql -u [ユーザ名] -p -h[ホスト名] [データベース名] -e "SOURCE [ファイル名]"</code></pre>
+<pre class="block"><code class="shell">$ mysql -u [ユーザ名] -p -h[ホスト名] [データベース名] -e "[コマンド]"</code></pre>
+<pre class="block"><code class="shell">$ mysql -u [ユーザ名] -p -h[ホスト名] [データベース名] -e "SOURCE [ファイル名]"</code></pre>
 <p>使用するデータベースを選択する。</p>
-<pre class="block"><code>use [データベース名]</code></pre>
+<pre class="block"><code class="sql">use [データベース名]</code></pre>
 <h2 id="operation" class="title">mysqlコマンドラインクライアントの操作</h2>
 <p>プロンプトの文字列を変更する。</p>
 <ul>
@@ -61,14 +61,14 @@ $mtime = get_mtime(__FILE__);
     </tbody>
   </table>
 </div>
-<pre class="block"><code>prompt [プロンプトとして表示する文字列]</code></pre>
+<pre class="block"><code class="sql">prompt [プロンプトとして表示する文字列]</code></pre>
 <p>入力中の命令を<code>;</code>で実行する前にキャンセルする。</p>
-<pre class="block"><code>SELECT * FROM user
+<pre class="block"><code class="sql">SELECT * FROM user
 ¥c</code></pre>
 <p>結果を縦に出力する。</p>
-<pre class="block"><code>SELECT * FROM user¥G</code></pre>
+<pre class="block"><code class="sql">SELECT * FROM user¥G</code></pre>
 <p>SQL文が保存されたテキストファイルを実行する。</p>
-<pre class="block"><code>SOURCE [ファイル名]</code></pre>
+<pre class="block"><code class="sql">SOURCE [ファイル名]</code></pre>
 <h2 id="show" class="title">各種情報の表示</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
@@ -82,67 +82,67 @@ $mtime = get_mtime(__FILE__);
       <tr>
         <td>MySQLサーバのバージョンを表示する。</td>
         <td>
-          <pre class="inline"><code>SELECT version();</code></pre>
+          <pre class="inline"><code class="sql">SELECT version();</code></pre>
         </td>
       </tr>
       <tr>
         <td>現在のユーザ名を表示する。</td>
         <td>
-          <pre class="inline"><code>SELECT user();</code></pre>
+          <pre class="inline"><code class="sql">SELECT user();</code></pre>
         </td>
       </tr>
       <tr>
         <td>ユーザ一覧を表示する。</td>
         <td>
-          <pre class="inline"><code>SELECT user, host FROM mysql.user;</code></pre>
+          <pre class="inline"><code class="sql">SELECT user, host FROM mysql.user;</code></pre>
         </td>
       </tr>
       <tr>
         <td>ユーザの権限を表示する。</td>
         <td>
-          <pre class="inline"><code>SHOW GRANTS FOR [ユーザ名];</code></pre>
+          <pre class="inline"><code class="sql">SHOW GRANTS FOR [ユーザ名];</code></pre>
         </td>
       </tr>
       <tr>
         <td>現在のデータベース名を表示する。</td>
         <td>
-          <pre class="inline"><code>SELECT database();</code></pre>
+          <pre class="inline"><code class="sql">SELECT database();</code></pre>
         </td>
       </tr>
       <tr>
         <td>データベース一覧を表示する。</td>
         <td>
-          <pre class="inline"><code>SHOW DATABASES;</code></pre>
+          <pre class="inline"><code class="sql">SHOW DATABASES;</code></pre>
         </td>
       </tr>
       <tr>
         <td>テーブル一覧を表示する。</td>
         <td>
-          <pre class="inline"><code>SHOW TABLES;</code></pre>
+          <pre class="inline"><code class="sql">SHOW TABLES;</code></pre>
         </td>
       </tr>
       <tr>
         <td>トリガ一覧を表示する。</td>
         <td>
-          <pre class="inline"><code>SHOW TRIGGERS;</code></pre>
+          <pre class="inline"><code class="sql">SHOW TRIGGERS;</code></pre>
         </td>
       </tr>
       <tr>
         <td>テーブルのカラム構造を表示する。</td>
         <td>
-          <pre class="inline"><code>DESC [テーブル名];</code></pre>
+          <pre class="inline"><code class="sql">DESC [テーブル名];</code></pre>
         </td>
       </tr>
       <tr>
         <td>ストアドプロシージャの内容を表示する。</td>
         <td>
-          <pre class="inline"><code>SHOW CREATE PROCEDURE [ストアドプロシージャ名];</code></pre>
+          <pre class="inline"><code class="sql">SHOW CREATE PROCEDURE [ストアドプロシージャ名];</code></pre>
         </td>
       </tr>
       <tr>
         <td>ストアドファンクションの内容を表示する。</td>
         <td>
-          <pre class="inline"><code>SHOW CREATE FUNCTION [ストアドファンクション名];</code></pre>
+          <pre class="inline"><code class="sql">SHOW CREATE FUNCTION [ストアドファンクション名];</code></pre>
         </td>
       </tr>
     </tbody>

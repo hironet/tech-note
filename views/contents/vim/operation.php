@@ -142,21 +142,21 @@ $mtime = get_mtime(__FILE__);
 <h2 id="macro" class="title">マクロ</h2>
 <h3 class="title">マクロの登録</h3>
 <p>1. <code>[登録するアルファベット1文字]</code>に対してマクロの登録を開始する。</p>
-<pre class="block"><code>q [登録するアルファベット1文字]</code></pre>
+<pre class="block"><code class="shell">q [登録するアルファベット1文字]</code></pre>
 <p>2. 登録したい操作を行う。</p>
 <p>3. マクロの登録を終了する。</p>
-<pre class="block"><code>q</code></pre>
+<pre class="block"><code class="shell">q</code></pre>
 <h3 class="title">マクロの実行</h3>
 <p>登録したマクロを1回だけ実行する。</p>
-<pre class="block"><code>@[登録したアルファベット1文字]</code></pre>
+<pre class="block"><code class="shell">@[登録したアルファベット1文字]</code></pre>
 <p>登録したマクロを5回実行する。</p>
-<pre class="block"><code>5@[登録したアルファベット1文字]</code></pre>
+<pre class="block"><code class="shell">5@[登録したアルファベット1文字]</code></pre>
 <h2 id="other" class="title">その他</h2>
 <p>設定ファイル（.vimrcなど）を再読み込みする。</p>
-<pre class="block"><code>:source [設定ファイル]</code></pre>
+<pre class="block"><code class="shell">:source [設定ファイル]</code></pre>
 <p>特定の文字列が含まれる行を削除する。</p>
-<pre class="block"><code>:g/[特定の文字列]/d</code></pre>
+<pre class="block"><code class="shell">:g/[特定の文字列]/d</code></pre>
 <p>数値を別の文字列に置換する。</p>
-<pre class="block"><code>:%s/\d\+/[置換後の文字列]/g</code></pre>
+<pre class="block"><code class="shell">:%s/\d\+/[置換後の文字列]/g</code></pre>
 <p>100文字で改行する。</p>
-<pre class="block"><code>:%s/.\{100}/&amp;\r/g</code></pre>
+<pre class="block"><code class="shell">:%s/.\{100}/&amp;\r/g</code></pre>

@@ -17,13 +17,13 @@ $mtime = get_mtime(__FILE__);
 </ul>
 <h3 id="pbcopy" class="title">pbcopy</h3>
 <p>ターミナルへの入力内容をクリップボードにコピーする（入力の終了は<kbd>control + D</kbd>を押す）。</p>
-<pre class="block"><code>$ pbcopy</code></pre>
+<pre class="block"><code class="shell">$ pbcopy</code></pre>
 <p>ファイルの内容をクリップボードにコピーする。</p>
-<pre class="block"><code>$ pbcopy &lt; ~/.ssh/id_rsa.pub</code></pre>
+<pre class="block"><code class="shell">$ pbcopy &lt; ~/.ssh/id_rsa.pub</code></pre>
 <p>クリップボードを空にする。</p>
-<pre class="block"><code>$ pbcopy &lt; /dev/null</code></pre>
+<pre class="block"><code class="shell">$ pbcopy &lt; /dev/null</code></pre>
 <h3 id="pbpaste" class="title">pbpaste</h3>
 <p>クリップボードからペーストする。</p>
-<pre class="block"><code>$ pbpaste</code></pre>
+<pre class="block"><code class="shell">$ pbpaste</code></pre>
 <p>クリップボードから書式情報を削除する。</p>
-<pre class="block"><code>$ pbpaste -Prefer txt | pbcopy</code></pre>
+<pre class="block"><code class="shell">$ pbpaste -Prefer txt | pbcopy</code></pre>

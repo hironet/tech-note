@@ -384,17 +384,27 @@ switch ($category) {
     break;
   case 'php':
     $titles = [
+      'array' => 'PHPの配列の操作方法',
     ];
 
     $descs = [
+      'array' => 'PHPの配列の操作方法を紹介しています。',
     ];
 
     $links = [
+      'array' => '.?c=php&p=array',
     ];
+
+    $breadcrumb_list = ['PHP' => '.?c=php'];
 
     switch ($page) {
       case 'list':
         article_list('PHP');
+        break;
+      case 'array':
+        $contents_title = $titles['array'];
+        $contents_desc = $descs['array'];
+        $contents_path = '/contents/php/array.php';
         break;
       default:
         not_found();

@@ -52,7 +52,7 @@ switch ($category) {
     ];
 
     $descs = [
-      'technique' => 'Bashシェルスクリプトを作成する際に、知っておくと有用な書き方を紹介しています。',
+      'technique' => 'Bashシェルスクリプトを作成する際に、知っておくと有用な書き方について書いています。',
     ];
 
     $links = [
@@ -81,7 +81,7 @@ switch ($category) {
     ];
 
     $descs = [
-      'operation' => 'Dockerの基本的な操作方法を紹介しています。',
+      'operation' => 'Dockerの基本的な操作方法について書いています。',
     ];
 
     $links = [
@@ -111,8 +111,8 @@ switch ($category) {
     ];
 
     $descs = [
-      'trivia' => '知っておくと便利なGitの豆知識を紹介しています。',
-      'branch' => 'ブランチの操作方法を紹介しています。',
+      'trivia' => '知っておくと便利なGitの豆知識について書いています。',
+      'branch' => 'Gitを使った開発で必須となるブランチの操作方法について書いています。',
     ];
 
     $links = [
@@ -147,7 +147,7 @@ switch ($category) {
     ];
 
     $descs = [
-      'html-trivia' => '知っておくと便利なHTMLの豆知識を紹介しています。',
+      'html-trivia' => '知っておくと便利なHTMLの豆知識について書いています。',
     ];
 
     $links = [
@@ -177,8 +177,8 @@ switch ($category) {
     ];
 
     $descs = [
-      'trivia' => '知っておくと便利なJavaScriptの豆知識を紹介しています。',
-      'technique' => 'JavaScriptのコードを作成する際に、知っておくと有用な書き方を紹介しています。',
+      'trivia' => '知っておくと便利なJavaScriptの豆知識について書いています。',
+      'technique' => 'JavaScriptのコードを作成する際に、知っておくと有用な書き方について書いています。',
     ];
 
     $links = [
@@ -215,9 +215,9 @@ switch ($category) {
     ];
 
     $descs = [
-      'amzn2-setting' => 'Amazon Linux 2を使用するにあたって、よく行う設定を紹介しています。',
-      'centos7-setting' => 'CentOS 7.xを使用するにあたって、よく行う設定を紹介しています。',
-      'command' => '知っておくと色んな場面で便利になるコマンドの使い方を紹介しています。',
+      'amzn2-setting' => 'Amazon Linux 2を使用するにあたって、よく行う設定について書いています。',
+      'centos7-setting' => 'CentOS 7.xを使用するにあたって、よく行う設定について書いています。',
+      'command' => '知っておくと色んな場面で便利になるコマンドの使い方について書いています。',
     ];
 
     $links = [
@@ -260,9 +260,9 @@ switch ($category) {
     ];
 
     $descs = [
-      'command' => '知っておくと色んな場面で便利になるコマンドの使い方を紹介しています。',
-      'keyboard' => '知っておくと色んな場面で便利になるショートカットキーの使い方を紹介しています。',
-      'homebrew' => 'Homebrewの基本的な操作方法を紹介しています。',
+      'command' => '知っておくと色んな場面で便利になるコマンドの使い方について書いています。',
+      'keyboard' => '知っておくと色んな場面で便利になるショートカットキーの使い方について書いています。',
+      'homebrew' => 'macOSのパッケージ管理ツールであるHomebrewの基本的な操作方法について書いています。',
     ];
 
     $links = [
@@ -304,8 +304,8 @@ switch ($category) {
     ];
 
     $descs = [
-      'operation' => 'MySQLの基本的な操作方法を紹介しています。',
-      'db-and-user' => 'MySQLのデータベースとユーザの管理方法を紹介しています。',
+      'operation' => 'MySQLの基本的な操作方法について書いています。',
+      'db-and-user' => 'MySQLのデータベースとユーザの管理方法について書いています。',
     ];
 
     $links = [
@@ -359,7 +359,7 @@ switch ($category) {
     ];
 
     $descs = [
-      'setting' => 'Excel 2019を便利にするための設定方法を紹介しています。',
+      'setting' => 'Excel 2019を便利にするための設定方法について書いています。',
     ];
 
     $links = [
@@ -388,7 +388,7 @@ switch ($category) {
     ];
 
     $descs = [
-      'array' => 'PHPの配列の操作方法を紹介しています。',
+      'array' => 'PHPの配列の操作方法について書いています。',
     ];
 
     $links = [
@@ -419,9 +419,9 @@ switch ($category) {
     ];
 
     $descs = [
-      'rbenv' => 'rbenvの基本的な操作方法を紹介しています。',
-      'rubygems' => 'RubyGemsの基本的な操作方法を紹介しています。',
-      'technique' => 'Rubyのコードを作成する際に、知っておくと有用な書き方を紹介しています。',
+      'rbenv' => 'Rubyのバージョン管理ツールであるrbenvの基本的な操作方法について書いています。',
+      'rubygems' => 'Rubyのパッケージ管理ツールであるRubyGemsの基本的な操作方法について書いています。',
+      'technique' => 'Rubyのコードを作成する際に、知っておくと有用な書き方について書いています。',
     ];
 
     $links = [
@@ -462,7 +462,7 @@ switch ($category) {
     ];
 
     $descs = [
-      'operation' => 'Vagrantの基本的な操作方法を紹介しています。',
+      'operation' => 'Vagrantの基本的な操作方法について書いています。',
     ];
 
     $links = [
@@ -491,7 +491,7 @@ switch ($category) {
     ];
 
     $descs = [
-      'operation' => 'Vimの基本的な操作方法を紹介しています。',
+      'operation' => 'Vimの基本的な操作方法について書いています。',
     ];
 
     $links = [
@@ -521,8 +521,8 @@ switch ($category) {
     ];
 
     $descs = [
-      'setting' => 'Visual Studio Codeを便利にするための設定方法を紹介しています。',
-      'keyboard' => '知っておくと色んな場面で便利になるショートカットキーの使い方を紹介しています。',
+      'setting' => 'Visual Studio Codeを便利にするための設定方法について書いています。',
+      'keyboard' => '知っておくと色んな場面で便利になるショートカットキーの使い方について書いています。',
     ];
 
     $links = [
@@ -560,10 +560,10 @@ switch ($category) {
     ];
 
     $descs = [
-      'setting' => 'Windows 10を便利にするための設定方法を紹介しています。',
-      'command' => '知っておくと色んな場面で便利になるコマンドの使い方を紹介しています。',
-      'keyboard' => '知っておくと色んな場面で便利になるショートカットキーの使い方を紹介しています。',
-      'chocolatey' => 'Chocolateyの基本的な操作方法を紹介しています。',
+      'setting' => 'Windows 10を便利にするための設定方法について書いています。',
+      'command' => '知っておくと色んな場面で便利になるコマンドの使い方について書いています。',
+      'keyboard' => '知っておくと色んな場面で便利になるショートカットキーの使い方について書いています。',
+      'chocolatey' => 'Windowsのソフトウェア管理ツールであるChocolateyの基本的な操作方法について書いています。',
     ];
 
     $links = [
@@ -610,7 +610,7 @@ switch ($category) {
     ];
 
     $descs = [
-      'operation' => 'Wiresharkの基本的な操作方法を紹介しています。',
+      'operation' => 'パケットキャプチャソフトであるWiresharkの基本的な操作方法について書いています。',
     ];
 
     $links = [
@@ -639,7 +639,7 @@ switch ($category) {
     ];
 
     $descs = [
-      'performance' => 'WordPressのパフォーマンスチューニング方法について紹介しています。',
+      'performance' => 'WordPressのパフォーマンスチューニング方法について書いています。',
     ];
 
     $links = [

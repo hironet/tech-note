@@ -63,33 +63,41 @@ echo "製品名は{$products[1][product_name]}です。";  # 製品名はiPhone1
 <p>配列から複数の変数に代入する。</p>
 <pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
 list($color_1, $color_2, $color_3) = $colors;
-echo "{$color_1}, {$color_2}, {$color_3}";  # red, green, blue</code></pre>
+echo $color_1, PHP_EOL;  # red
+echo $color_2, PHP_EOL;  # green
+echo $color_3, PHP_EOL;  # blue</code></pre>
 <p>配列の1番目と2番目の要素のみ変数に代入する。</p>
 <pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
 list($color_1, $color_2) = $colors;
-echo "{$color_1}, {$color_2}";  # red, green</code></pre>
+echo $color_1, PHP_EOL;  # red
+echo $color_2, PHP_EOL;  # green</code></pre>
 <p>配列の1番目と3番目の要素のみ変数に代入する。</p>
 <pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
 list($color_1, , $color_3) = $colors;
-echo "{$color_1}, {$color_3}";  # red, blue</code></pre>
+echo $color_1, PHP_EOL;  # red
+echo $color_3, PHP_EOL;  # blue</code></pre>
 <p>配列の3番目の要素のみ変数に代入する。</p>
 <pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
 list(, , $color_3) = $colors;
-echo "{$color_3}";  # blue</code></pre>
+echo $color_3, PHP_EOL;  # blue</code></pre>
 <h3 class="title">配列の分解（短縮構文の場合）</h3>
 <p>配列から複数の変数に代入する。</p>
 <pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
 [$color_1, $color_2, $color_3] = $colors;
-echo "{$color_1}, {$color_2}, {$color_3}";  # red, green, blue</code></pre>
+echo $color_1, PHP_EOL;  # red
+echo $color_2, PHP_EOL;  # green
+echo $color_3, PHP_EOL;  # blue</code></pre>
 <p>配列の1番目と2番目の要素のみ変数に代入する。</p>
 <pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
 [$color_1, $color_2] = $colors;
-echo "{$color_1}, {$color_2}";  # red, green</code></pre>
+echo $color_1, PHP_EOL;  # red
+echo $color_2, PHP_EOL;  # green</code></pre>
 <p>配列の1番目と3番目の要素のみ変数に代入する。</p>
 <pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
 [$color_1, , $color_3] = $colors;
-echo "{$color_1}, {$color_3}";  # red, blue</code></pre>
+echo $color_1, PHP_EOL;  # red
+echo $color_3, PHP_EOL;  # blue</code></pre>
 <p>配列の3番目の要素のみ変数に代入する。</p>
 <pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
 [, , $color_3] = $colors;
-echo "{$color_3}";  # blue</code></pre>
+echo $color_3, PHP_EOL;  # blue</code></pre>

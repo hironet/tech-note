@@ -25,17 +25,17 @@ $mtime = get_mtime(__FILE__);
 <p>短縮構文で空の配列を作成する。</p>
 <pre class="block"><code class="php">$colors = [];</code></pre>
 <h3 class="title">配列の作成・初期化（添字配列の場合）</h3>
-<p>array()で添字配列を初期化する。</p>
+<p>array()で添字配列を作成・初期化する。</p>
 <pre class="block"><code class="php">$colors = array('red', 'green', 'blue');
 echo $colors[0];  # red</code></pre>
-<p>短縮構文で添字配列を初期化する。</p>
+<p>短縮構文で添字配列を作成・初期化する。</p>
 <pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
 echo $colors[2];  # blue</code></pre>
 <h3 class="title">配列の作成・初期化（連想配列の場合）</h3>
-<p>array()で連想配列を初期化する。</p>
+<p>array()で連想配列を作成・初期化する。</p>
 <pre class="block"><code class="php">$product = array('product_no' => 10, 'product_name' => 'iPhone 12', 'price' => 94380);
 echo $product['product_name'];  # iPhone 12</code></pre>
-<p>短縮構文で連想配列を初期化する。</p>
+<p>短縮構文で連想配列を作成・初期化する。</p>
 <pre class="block"><code class="php">$product = ['product_no' => 10, 'product_name' => 'iPhone 12', 'price' => 94380];
 echo $product['price'];  # 94380</code></pre>
 <h2 id="string" class="title">配列の文字列への展開</h2>

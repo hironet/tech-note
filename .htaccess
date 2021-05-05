@@ -1,6 +1,5 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteRule ^sitemap\.xml$ - [L]
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_URI} !(^/img/)
 RewriteCond %{REQUEST_URI} !\.webp$

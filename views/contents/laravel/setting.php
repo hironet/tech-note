@@ -1,0 +1,12 @@
+<?php
+$ptime = '2021-05-05 00:00:00';
+$mtime = get_mtime(__FILE__);
+?>
+<header>
+<?php include_once(__DIR__ . '/../common/header.php'); ?>
+<?php include_once(__DIR__ . '/../common/date.php'); ?>
+</header>
+<h2 class="title">プロジェクト作成</h2>
+<p>新しいプロジェクトを作成する。</p>
+<pre class="block"><code class="shell">$ composer create-project laravel/laravel [プロジェクト名] --prefer-dist
+$ chown -R [Webサーバのユーザ名]:[Webサーバのユーザが所属するグループ名] [プロジェクト名]</code></pre>

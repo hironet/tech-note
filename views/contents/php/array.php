@@ -15,7 +15,10 @@ $mtime = get_mtime(__FILE__);
     <a href="#2dime-array">2次元配列の基本操作</a>
   </li>
   <li>
-    <a href="#string">配列の文字列への展開</a>
+    <a href="#string">配列と文字列</a>
+  </li>
+  <li>
+    <a href="#function">配列と関数</a>
   </li>
   <li>
     <a href="#convenient">配列の便利な操作</a>
@@ -74,7 +77,8 @@ echo $products[1]['product_name'];  # iPhone 12 Pro
 ];
 echo $products[2]['price'];  # 129580
 </code></pre>
-<h2 id="string" class="title">配列の文字列への展開</h2>
+<h2 id="string" class="title">配列と文字列</h2>
+<h3 class="title">文字列への展開</h3>
 <p>1次元配列の値を文字列内に展開する。</p>
 <ul>
   <li>配列を<code>{}</code>で囲む必要はない。</li>
@@ -94,6 +98,25 @@ echo "製品名は$product[product_name]です。";  # 製品名はiPhone12で�
   ['product_no' => 13, 'product_name' => 'iPhone 12 Pro Max', 'price' => 129580]
 ];
 echo "製品名は{$products[1][product_name]}です。";  # 製品名はiPhone12 Proです。</code></pre>
+<h2 id="function" class="title">配列と関数</h2>
+<h3 class="title">関数への参照渡し</h3>
+<p>配列の参照を関数に渡し、関数内で配列の値を変更する。</p>
+<ul>
+  <li>関数の引数名の前に<code>&amp;</code>を付けると参照渡しになる。</li>
+</ul>
+<pre class="block"><code class="php">function change_color(&amp;$colors) {
+  $colors[1] = 'yellow';
+}
+
+$colors = array('red', 'green', 'blue');
+echo $colors[0];  # red
+echo $colors[1];  # green
+echo $colors[2];  # brue
+change_color($colors);
+echo $colors[0];  # red
+echo $colors[1];  # yellow
+echo $colors[2];  # brue
+</code></pre>
 <h2 id="convenient" class="title">配列の便利な操作</h2>
 <h3 class="title">配列の分解（list構文の場合）</h3>
 <p>配列から複数の変数に代入する。</p>

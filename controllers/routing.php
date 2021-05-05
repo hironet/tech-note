@@ -234,6 +234,35 @@ switch ($category) {
         break;
     }
     break;
+  case 'laravel':
+    $titles = [
+      'setting' => 'Laravelの設定方法',
+    ];
+
+    $descs = [
+      'setting' => 'Laravelを使用するにあたって、よく行う設定について書いています。',
+    ];
+
+    $links = [
+      'setting' => '.?c=laravel&p=setting',
+    ];
+
+    $breadcrumb_list = ['Laravel' => '.?c=laravel'];
+
+    switch ($page) {
+      case 'list':
+        article_list('Laravel');
+        break;
+      case 'setting':
+        $contents_title = $titles['setting'];
+        $contents_desc = $descs['setting'];
+        $contents_path = '/contents/laravel/setting.php';
+        break;
+      default:
+        not_found();
+        break;
+    }
+    break;
   case 'linux':
     $titles = [
       'amzn2-setting' => 'Amazon Linux 2の設定方法',

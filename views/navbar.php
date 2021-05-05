@@ -96,6 +96,14 @@
             </li>
           </ul>
         </li>
+        <li class="nav-item dropdown">
+          <a id="category-dropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"  aria-expanded="false">フレームワーク</a>
+          <ul class="dropdown-menu" aria-labelledby="category-dropdown">
+            <li>
+              <a class="dropdown-item" href=".?c=laravel">Laravel</a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div><!-- container-fluid -->

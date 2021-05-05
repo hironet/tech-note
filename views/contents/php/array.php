@@ -33,17 +33,17 @@ $mtime = get_mtime(__FILE__);
 <h3 class="title">1次元配列の作成・初期化（添字配列の場合）</h3>
 <p>array()で添字配列を作成・初期化する。</p>
 <pre class="block"><code class="php">$colors = array('red', 'green', 'blue');
-echo $colors[0];  # red</code></pre>
+echo $colors[0], PHP_EOL;  # red</code></pre>
 <p>短縮構文で添字配列を作成・初期化する。</p>
 <pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
-echo $colors[2];  # blue</code></pre>
+echo $colors[2], PHP_EOL;  # blue</code></pre>
 <h3 class="title">1次元配列の作成・初期化（連想配列の場合）</h3>
 <p>array()で連想配列を作成・初期化する。</p>
 <pre class="block"><code class="php">$product = array('product_no' => 11, 'product_name' => 'iPhone 12', 'price' => 94380);
-echo $product['product_name'];  # iPhone 12</code></pre>
+echo $product['product_name'], PHP_EOL;  # iPhone 12</code></pre>
 <p>短縮構文で連想配列を作成・初期化する。</p>
 <pre class="block"><code class="php">$product = ['product_no' => 11, 'product_name' => 'iPhone 12', 'price' => 94380];
-echo $product['price'];  # 94380</code></pre>
+echo $product['price'], PHP_EOL;  # 94380</code></pre>
 <h2 id="2dime-array" class="title">2次元配列の基本操作</h2>
 <h3 class="title">2次元配列の作成・初期化（添字配列の場合）</h3>
 <p>array()で添字配列を作成・初期化する。</p>
@@ -52,14 +52,14 @@ echo $product['price'];  # 94380</code></pre>
   array('yellow', 'cyan', 'magenta'),
   array('black', 'white')
 );
-echo $colors[0][0];  # red</code></pre>
+echo $colors[0][0], PHP_EOL;  # red</code></pre>
 <p>短縮構文で添字配列を作成・初期化する。</p>
 <pre class="block"><code class="php">$colors = [
   ['red', 'green', 'blue'],
   ['yellow', 'cyan', 'magenta'],
   ['black', 'white']
 ];
-echo $colors[2][1];  # white</code></pre>
+echo $colors[2][1], PHP_EOL;  # white</code></pre>
 <h3 class="title">2次元配列の作成・初期化（連想配列の場合）</h3>
 <p>array()で連想配列を作成・初期化する。</p>
 <pre class="block"><code class="php">$products = array(
@@ -67,7 +67,7 @@ echo $colors[2][1];  # white</code></pre>
   array('product_no' => 12, 'product_name' => 'iPhone 12 Pro', 'price' => 117480),
   array('product_no' => 13, 'product_name' => 'iPhone 12 Pro Max', 'price' => 129580)
 );
-echo $products[1]['product_name'];  # iPhone 12 Pro
+echo $products[1]['product_name'], PHP_EOL;  # iPhone 12 Pro
 </code></pre>
 <p>短縮構文で連想配列を作成・初期化する。</p>
 <pre class="block"><code class="php">$products = [
@@ -75,47 +75,40 @@ echo $products[1]['product_name'];  # iPhone 12 Pro
   ['product_no' => 12, 'product_name' => 'iPhone 12 Pro', 'price' => 117480],
   ['product_no' => 13, 'product_name' => 'iPhone 12 Pro Max', 'price' => 129580]
 ];
-echo $products[2]['price'];  # 129580
+echo $products[2]['price'], PHP_EOL;  # 129580
 </code></pre>
 <h2 id="string" class="title">配列と文字列</h2>
 <h3 class="title">文字列への展開</h3>
-<p>1次元配列の値を文字列内に展開する。</p>
+<p>添字配列を文字列内に展開する。</p>
 <ul>
-  <li>配列を<code>{}</code>で囲む必要はない。</li>
-  <li>キーを<code>'</code>（シングルクォーテーション）で囲んではならない。</li>
+  <li>配列を<code>{}</code>で囲む。</li>
+</ul>
+<pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
+echo "色は{$colors[0]}です。", PHP_EOL;  # 色はredです。</code></pre>
+<p>連想配列の値を文字列内に展開する。</p>
+<ul>
+  <li>配列を<code>{}</code>で囲む。</li>
 </ul>
 <pre class="block"><code class="php">$product = ['product_no' => 11, 'product_name' => 'iPhone 12', 'price' => 94380];
-echo "製品名は{$product[product_name]}です。";  # 製品名はiPhone12です。
-echo "製品名は$product[product_name]です。";  # 製品名はiPhone12です。</code></pre>
-<p>多次元配列の値を文字列内に展開する。</p>
-<ul>
-  <li>必ず配列を<code>{}</code>で囲む必要がある。</li>
-  <li>キーを<code>'</code>（シングルクォーテーション）で囲んではならない。</li>
-</ul>
-<pre class="block"><code class="php">$products = [
-  ['product_no' => 11, 'product_name' => 'iPhone 12', 'price' => 94380],
-  ['product_no' => 12, 'product_name' => 'iPhone 12 Pro', 'price' => 117480],
-  ['product_no' => 13, 'product_name' => 'iPhone 12 Pro Max', 'price' => 129580]
-];
-echo "製品名は{$products[1][product_name]}です。";  # 製品名はiPhone12 Proです。</code></pre>
+echo "製品名は{$product['product_name']}です。", PHP_EOL;  # 製品名はiPhone12です。</code></pre>
 <h2 id="function" class="title">配列と関数</h2>
 <h3 class="title">関数への参照渡し</h3>
 <p>配列の参照を関数に渡し、関数内で配列の値を変更する。</p>
 <ul>
-  <li>関数の引数名の前に<code>&amp;</code>を付けると参照渡しになる。</li>
+  <li>関数の引数名の前に<code>&amp;</code>を付ける。</li>
 </ul>
 <pre class="block"><code class="php">function change_color(&amp;$colors) {
   $colors[1] = 'yellow';
 }
 
 $colors = array('red', 'green', 'blue');
-echo $colors[0];  # red
-echo $colors[1];  # green
-echo $colors[2];  # brue
+echo $colors[0], PHP_EOL;  # red
+echo $colors[1], PHP_EOL;  # green
+echo $colors[2], PHP_EOL;  # brue
 change_color($colors);
-echo $colors[0];  # red
-echo $colors[1];  # yellow
-echo $colors[2];  # brue
+echo $colors[0], PHP_EOL;  # red
+echo $colors[1], PHP_EOL;  # yellow
+echo $colors[2], PHP_EOL;  # brue
 </code></pre>
 <h2 id="convenient" class="title">配列の便利な操作</h2>
 <h3 class="title">配列の分解（list構文の場合）</h3>

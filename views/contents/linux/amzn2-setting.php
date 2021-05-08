@@ -146,9 +146,9 @@ $mtime = get_mtime(__FILE__);
 <h2 id="hostname" class="title">ホスト名の設定</h2>
 <p>1. ホスト名の設定を確認する。</p>
 <pre class="block"><code class="shell"># hostnamectl status</code></pre>
-<p>2. ホスト名を<code>hoge.hironet.org</code>に設定する。</p>
-<pre class="block"><code class="shell"># hostnamectl set-hostname hoge.hironet.org</code></pre>
-<p>3. ホスト名が<code>hoge.hironet.org</code>に設定されたことを確認する。</p>
+<p>2. ホスト名を<code>hoge.example.com</code>に設定する。</p>
+<pre class="block"><code class="shell"># hostnamectl set-hostname hoge.example.com</code></pre>
+<p>3. ホスト名が<code>hoge.example.com</code>に設定されたことを確認する。</p>
 <pre class="block"><code class="shell"># hostnamectl status</code></pre>
 <h2 id="locale" class="title">ロケールの設定</h2>
 <p>1. ロケールの設定を確認する。</p>

@@ -2,7 +2,7 @@
 
 ## 概要
 
-https://hironet.org/tech-note/
+https://engineer-hiro.com/tech-note/
 
 Hiroの技術メモ
 

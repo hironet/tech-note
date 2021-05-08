@@ -3,7 +3,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <?php if (strcmp($_SERVER['HTTP_HOST'], 'hironet.org') === 0) { ?>
-<script src="https://hironet.org/portfolio/common.js"></script>
+<script src="https://engineer-hiro.com/portfolio/common.js"></script>
 <?php } else { ?>
 <script src="https://dev-php.hironet.org/portfolio/common.js"></script>
 <?php } ?>

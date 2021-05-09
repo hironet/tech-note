@@ -2,8 +2,4 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/hybrid.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<?php if (strcmp($_SERVER['HTTP_HOST'], 'engineer-hiro.com') === 0) { ?>
 <script src="https://engineer-hiro.com/portfolio/common.js"></script>
-<?php } else { ?>
-<script src="https://dev-php.hironet.org/portfolio/common.js"></script>
-<?php } ?>

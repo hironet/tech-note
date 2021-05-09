@@ -2,9 +2,11 @@
 
 ## 概要
 
-https://engineer-hiro.com/tech-note/
+- Hiroの技術メモ
 
-Hiroの技術メモ
+## サイト
+
+https://engineer-hiro.com/tech-note/
 
 ## 技術要素
 

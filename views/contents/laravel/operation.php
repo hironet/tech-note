@@ -12,3 +12,6 @@ $mtime = get_mtime(__FILE__);
 $ composer create-project laravel/laravel [プロジェクト名] --prefer-dist
 $ chown -R [Webサーバのユーザ名]:[Webサーバのユーザが所属するグループ名] [プロジェクト名]/storage/
 $ chown -R [Webサーバのユーザ名]:[Webサーバのユーザが所属するグループ名] [プロジェクト名]/bootstrap/cache/</code></pre>
+<h2 class="title">コントローラ作成</h2>
+<pre class="block"><code class="shell">$ cd [プロジェクト名]
+$ php artisan make:controller [コントローラ名]</code></pre>

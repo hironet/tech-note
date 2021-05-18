@@ -7,7 +7,7 @@
 
 ## サイト
 
-https://portfolio.engineer-hiro.com/tech-note/
+https://tech-note.engineer-hiro.com/
 
 ## 技術要素
 

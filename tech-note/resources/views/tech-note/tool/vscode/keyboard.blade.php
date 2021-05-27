@@ -1,0 +1,277 @@
+@extends('layouts/app')
+
+@php
+$mtime = '2021-04-03 00:00:00';
+@endphp
+
+@section('contents')
+@include('components.header')
+<h2 id="" class="title">目次</h2>
+<ul>
+  <li>
+    <a href="#setting">設定</a>
+  </li>
+  <li>
+    <a href="#file">ファイル編集</a>
+  </li>
+  <li>
+    <a href="#tab">タブ操作</a>
+  </li>
+  <li>
+    <a href="#cursor">カーソル操作</a>
+  </li>
+  <li>
+    <a href="#search">検索</a>
+  </li>
+  <li>
+    <a href="#sort">並び替え</a>
+  </li>
+  <li>
+    <a href="#emmet">Emmet</a>
+  </li>
+  <li>
+    <a href="#browser">open in browser</a>
+  </li>
+</ul>
+<h2 id="setting" class="title">設定</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>操作</th>
+        <th>Windowsの場合</th>
+        <th>macOSの場合</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>コマンドパレットを開く。</td>
+        <td><kbd>Ctrl + Shift + P</kbd></td>
+        <td><kbd>command + shift + P</kbd></td>
+      </tr>
+      <tr>
+        <td>設定画面を開く。</td>
+        <td><kbd>Ctrl + ,</kbd></td>
+        <td><kbd>command + ,</kbd></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h2 id="file" class="title">ファイル編集</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>操作</th>
+        <th>Windowsの場合</th>
+        <th>macOSの場合</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>新規ファイルを作成する。</td>
+        <td><kbd>Ctrl + N</kbd></td>
+        <td><kbd>command + N</kbd></td>
+      </tr>
+      <tr>
+        <td>ファイルを開く。</td>
+        <td><kbd>Ctrl + O</kbd></td>
+        <td><kbd>command + O</kbd></td>
+      </tr>
+      <tr>
+        <td>カーソルのある行をコピーする。</td>
+        <td><kbd>Ctrl + C</kbd></td>
+        <td><kbd>command + C</kbd></td>
+      </tr>
+      <tr>
+        <td>カーソルのある行をカットする。</td>
+        <td><kbd>Ctrl + X</kbd></td>
+        <td><kbd>command + X</kbd></td>
+      </tr>
+      <tr>
+        <td>カーソルのある行を上・下に移動する。</td>
+        <td><kbd>Alt + ↑・↓</kbd></td>
+        <td><kbd>option + ↑・↓</kbd></td>
+      </tr>
+      <tr>
+        <td>元に戻す（undo）。</td>
+        <td><kbd>Ctrl + Z</kbd></td>
+        <td><kbd>command + Z</kbd>
+        </td>
+      </tr>
+      <tr>
+        <td>やり直す（redo）。</td>
+        <td><kbd>Ctrl + Y</kbd></td>
+        <td><kbd>command + shift + Z</kbd></td>
+      </tr>
+      <tr>
+        <td>コメントアウトをオン・オフにする。</td>
+        <td><kbd>Ctrl + /</kbd></td>
+        <td><kbd>command + /</kbd></td>
+      </tr>
+      <tr>
+        <td>インデントを整える。</td>
+        <td><kbd>Shift + Alt + F</kbd></td>
+        <td><kbd>shift + option + F</kbd></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h2 id="tab" class="title">タブ操作</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>操作</th>
+        <th>Windowsの場合</th>
+        <th>macOSの場合</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>右のタブに移動する。</td>
+        <td><kbd>Ctrl + Tab</kbd></td>
+        <td><kbd>control + tab</kbd></td>
+      </tr>
+      <tr>
+        <td>左・右のタブに移動する。</td>
+        <td></td>
+        <td><kbd>command + option + ←・→</kbd></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h2 id="cursor" class="title">カーソル操作</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>操作</th>
+        <th>Windowsの場合</th>
+        <th>macOSの場合</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>カーソルをファイルの先頭・末尾に移動する。</td>
+        <td><kbd>Ctrl + Home・End</kbd></td>
+        <td><kbd>command + ↑・↓</kbd></td>
+      </tr>
+      <tr>
+        <td>カーソルを単語毎に移動する。</td>
+        <td><kbd>Ctrl + ←・→</kbd></td>
+        <td><kbd>option + ←・→</kbd></td>
+      </tr>
+      <tr>
+        <td>カーソルを指定した行に移動する。</td>
+        <td><kbd>Ctrl + G</kbd></td>
+        <td><kbd>control + G</kbd></td>
+      </tr>
+      <tr>
+        <td>カーソルを上・下に挿入する。</td>
+        <td><kbd>Ctrl + Alt + ↑・↓</kbd></td>
+        <td><kbd>command + option + ↑・↓</kbd></td>
+      </tr>
+      <tr>
+        <td>カーソル位置にある単語と同じ単語を1つずつ範囲範囲に追加する。</td>
+        <td><kbd>Ctrl + Shift + L</kbd></td>
+        <td><kbd>command + D</kbd></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h2 id="search" class="title">検索</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>操作</th>
+        <th>Windowsの場合</th>
+        <th>macOSの場合</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ファイル内を検索する。</td>
+        <td><kbd>Ctrl + F</kbd></td>
+        <td><kbd>command + F</kbd></td>
+      </tr>
+      <tr>
+        <td>複数のファイルから検索する。</td>
+        <td><kbd>Ctrl + Shift + F</kbd></td>
+        <td><kbd>command + shift + F</kbd></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h2 id="sort" class="title">並び替え</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>操作</th>
+        <th>Windowsの場合</th>
+        <th>macOSの場合</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>選択範囲を昇順に並び替える。</td>
+        <td><kbd>Ctrl + Shift + P</kbd> <code>Sort Lines Ascending</code></td>
+        <td><kbd>command + shift + P</kbd> <code>Sort Lines Ascending</code></td>
+      </tr>
+      <tr>
+        <td>選択範囲を降順に並び替える。</td>
+        <td><kbd>Ctrl + Shift + P</kbd> <code>Sort Lines Descending</code></td>
+        <td><kbd>command + shift + P</kbd> <code>Sort Lines Descending</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h2 id="emmet" class="title">Emmet</h2>
+<p>HTML5の雛形を入力する。</p>
+<ul>
+  <li><code>html:5</code>と入力し、<kbd>tab</kbd>を押す、または、<kbd>! tab</kbd>を押すと、以下が自動的に入力される。</li>
+</ul>
+<pre class="block"><code>&lt;!DOCTYPE html>
+&lt;html lang="ja">
+&lt;head>
+  &lt;meta charset="UTF-8">
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+  &lt;title>Document&lt;/title>
+&lt;/head>
+&lt;body>
+
+&lt;/body>
+&lt;/html></code></pre>
+<p>リストを入力する。</p>
+<ul>
+  <li><kbd>ul&gt;li*5</kbd>と入力し、<kbd>Enter</kbd>を押すと、以下が自動的に入力される。</li>
+</ul>
+<pre class="block"><code>&lt;ul>
+  &lt;li>&lt;/li>
+  &lt;li>&lt;/li>
+  &lt;li>&lt;/li>
+  &lt;li>&lt;/li>
+  &lt;li>&lt;/li>
+&lt;/ul></code></pre>
+<h2 id="browser" class="title">open in browser</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>操作</th>
+        <th>Windowsの場合</th>
+        <th>macOSの場合</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ファイルをWebブラウザで開く。</td>
+        <td><kbd>Alt + B</kbd></td>
+        <td><kbd>option + B</kbd></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+@endsection

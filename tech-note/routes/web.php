@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\TechNoteController;
+Route::get('/{category_id?}/{subcategory_id?}/{page_id?}', TechNoteController::class);

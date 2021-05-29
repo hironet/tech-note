@@ -19,7 +19,7 @@ class ArticleController extends Controller
                 ];
                 $data['article_title'] = config('const.CATEGORY_NAMES')[$category_id][1];
                 $data['article_titles'] = config('const.ARTICLE_TITLES')[$category_id];
-                return view('tech-note.category', $data);
+                return view('article.category', $data);
             } else if (array_key_exists($subcategory_id, config('const.SUBCATEGORY_NAMES')[$category_id])) {
                 if (empty($article_id)) {
                     /* サブカテゴリ画面 */
@@ -29,7 +29,7 @@ class ArticleController extends Controller
                     ];
                     $data['article_title'] = config('const.SUBCATEGORY_NAMES')[$category_id][$subcategory_id][1];
                     $data['article_titles'] = config('const.ARTICLE_TITLES')[$category_id][$subcategory_id];
-                    return view('tech-note.subcategory', $data);
+                    return view('article.subcategory', $data);
                 } else if (array_key_exists($article_id, config('const.ARTICLE_TITLES')[$category_id][$subcategory_id])) {
                     /* 個別画面 */
                     $data['breadcrumb'] = [
@@ -37,11 +37,11 @@ class ArticleController extends Controller
                         config('const.SUBCATEGORY_NAMES')[$category_id][$subcategory_id][1] => config('const.SUBCATEGORY_NAMES')[$category_id][$subcategory_id][0],
                     ];
                     $data['article_title'] = config('const.ARTICLE_TITLES')[$category_id][$subcategory_id][$article_id][1];
-                    return view("tech-note.{$category_id}.{$subcategory_id}.{$article_id}", $data);
+                    return view("article.{$category_id}.{$subcategory_id}.{$article_id}", $data);
                 }
             }
         }
         $data['article_title'] = 'Not Found';
-        return view('tech-note.404', $data);
+        return view('article.404', $data);
     }
 }

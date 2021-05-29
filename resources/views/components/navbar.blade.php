@@ -9,11 +9,11 @@
         <li class="nav-item">
           <a class="nav-link" href="/">ホーム</a>
         </li>
-@foreach ($subcategory_names as $_category_id => $_subcategories)
+@foreach ($subcategory_names as $_category => $_subcategories)
         <li class="nav-item dropdown">
-          <a id="category-dropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"  aria-expanded="false">{{ $category_names[$_category_id][1] }}</a>
+          <a id="category-dropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"  aria-expanded="false">{{ $category_names[$_category][1] }}</a>
           <ul class="dropdown-menu" aria-labelledby="category-dropdown">
-@foreach ($_subcategories as $_subcategory_id => $_subcategory_info)
+@foreach ($_subcategories as $_subcategory => $_subcategory_info)
             <li>
               <a class="dropdown-item" href="{{ $_subcategory_info[0]}}">{{ $_subcategory_info[1] }}</a>
             </li>

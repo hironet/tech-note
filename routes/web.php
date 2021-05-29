@@ -18,7 +18,7 @@ Route::get('/', function() {
     $data['category_names'] = config('const.CATEGORY_NAMES');
     $data['subcategory_names'] = config('const.SUBCATEGORY_NAMES');
 
-    return view('top', $data);
+    return view('welcome', $data);
 });
 
 use App\Http\Controllers\ArticleController;

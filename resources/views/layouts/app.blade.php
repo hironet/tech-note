@@ -38,7 +38,7 @@
   <hr class="featurette-divider">
   <footer>
     <div class="container text-center my-3">
-      <small>&copy; {{ date('Y') }} ITエンジニア Hiro</small>
+      <small>&copy; {{ date('Y') }} ITエンジニアHiro</small>
     </div>
   </footer>
   <!-- for Bootstrap -->

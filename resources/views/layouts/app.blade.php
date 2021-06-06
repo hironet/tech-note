@@ -49,6 +49,6 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <!-- for engineer-hiro.com common.js -->
-  <script src="https://engineer-hiro.com/common.js"></script>
+  <script src="{{ secure_asset('/js/common.js') }}"></script>
 </body>
 </html>

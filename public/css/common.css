@@ -30,6 +30,17 @@ h3.title {
   padding: 0.2rem 0.5rem;
 }
 
+a:link, a:visited {
+  text-decoration:none;
+  outline:none;
+}
+
+a:hover {
+  color:#000000;
+  text-decoration:none;
+  outline:none;
+}
+
 ul, ol {
   padding-left: 2rem;
 }

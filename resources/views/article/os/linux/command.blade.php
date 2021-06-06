@@ -105,6 +105,9 @@ $description = '知っておくと色んな場面で便利になるコマンド�
   <li>
     <a href="#view">view</a>
   </li>
+  <li>
+    <a href="#yes">yes</a>
+  </li>
 </ul>
 <h3 id="arping" class="title">arping</h3>
 <p>同一セグメント上で、pingに応答しないノードの存在を確認する。</p>
@@ -344,4 +347,7 @@ $ expr 400 / 2
 <h3 id="view" class="title">view</h3>
 <p>viをreadonlyモードで起動する（<code>vi -R</code>と同じ）。</p>
 <pre class="block"><code class="shell">$ view [ファイルパス]</code></pre>
+<h3 id="yes" class="title">yes</h3>
+<p>CPUに高い負荷をかける。</p>
+<pre class="block"><code class="shell">$ yes > /dev/null</code></pre>
 @endsection

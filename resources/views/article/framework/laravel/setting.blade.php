@@ -33,12 +33,16 @@ $description = 'Laravelの設定方法について書いています。';
 <pre class="block"><code>&hellip;
 APP_NAME=Laravel
 &hellip;
+APP_ENV=local
+&hellip;
 APP_URL=http://localhost
 &hellip;
 </code></pre>
 <h5>修正後</h5>
 <pre class="block"><code>&hellip;
 APP_NAME=[アプリケーション名]
+&hellip;
+APP_ENV=production
 &hellip;
 APP_URL=[URL]
 &hellip;

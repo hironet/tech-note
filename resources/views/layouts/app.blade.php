@@ -48,7 +48,7 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/hybrid.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-  <!-- for engineer-hiro.com common.js -->
+  <!-- for tech-note.engineer-hiro.com common.js -->
   <script src="{{ secure_asset('/js/common.js') }}"></script>
 </body>
 </html>

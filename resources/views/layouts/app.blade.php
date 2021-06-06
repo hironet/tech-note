@@ -11,7 +11,7 @@
   <meta name="google-site-verification" content="1QRBbOm10zCDZez2WTlhjFb9l22KICKWZlwzT7JTWRI" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
   <link href="https://engineer-hiro.com/common.css" rel="stylesheet">
-  <link href="{{ secure_asset('/css/common.css') }}" rel="stylesheet">
+  <link href="{{ secure_asset('/css/tech-note.css') }}" rel="stylesheet">
 @empty ($article_title)
   <title>{{ config('const.SITE_NAME') }}</title>
 @else

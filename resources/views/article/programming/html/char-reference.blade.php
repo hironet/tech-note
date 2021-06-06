@@ -77,7 +77,7 @@ $description = 'HTMLの文字参照について書いています。';
         <td>&#8682;</td>
         <td>&amp;#8682;</td>
         <td></td>
-        <td>Mac Caps Lockキー</td>
+        <td>Mac capsキー</td>
       </tr>
       <tr>
         <td>&#8984;</td>

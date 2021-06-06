@@ -1,6 +1,6 @@
 <nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">{{ config('const.SITE_NAME') }}</a>
+    <a class="navbar-brand" href="/">{{ config('article.SITE_NAME') }}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -9,9 +9,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/">ホーム</a>
         </li>
-@foreach (config('const.SUBCATEGORY_NAMES') as $_category => $_subcategories)
+@foreach (config('article.SUBCATEGORY_NAMES') as $_category => $_subcategories)
         <li class="nav-item dropdown">
-          <a id="category-dropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"  aria-expanded="false">{{ config('const.CATEGORY_NAMES')[$_category][1] }}</a>
+          <a id="category-dropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"  aria-expanded="false">{{ config('article.CATEGORY_NAMES')[$_category][1] }}</a>
           <ul class="dropdown-menu" aria-labelledby="category-dropdown">
 @foreach ($_subcategories as $_subcategory => $_subcategory_info)
             <li>

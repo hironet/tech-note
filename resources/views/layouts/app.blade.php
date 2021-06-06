@@ -13,9 +13,9 @@
   <link href="{{ secure_asset('/css/common.css') }}" rel="stylesheet">
   <link href="{{ secure_asset('/css/tech-note.css') }}" rel="stylesheet">
 @empty ($article_title)
-  <title>{{ config('const.SITE_NAME') }}</title>
+  <title>{{ config('article.SITE_NAME') }}</title>
 @else
-  <title>{{ $article_title }} | {{ config('const.SITE_NAME') }}</title>
+  <title>{{ $article_title }} | {{ config('article.SITE_NAME') }}</title>
 @endempty
 </head>
 <body>

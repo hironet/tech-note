@@ -1,10 +1,5 @@
 @extends('layouts/app')
 
-@php
-$mtime = '2021-04-01 00:00:00';
-$description = '知っておくと色んな場面で便利になるコマンドの使い方について書いています。';
-@endphp
-
 @section('contents')
 @include('components.header')
 <h2 class="title">目次</h2>

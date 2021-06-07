@@ -1,10 +1,5 @@
 @extends('layouts/app')
 
-@php
-$mtime = '2021-04-03 00:00:00';
-$description = 'Visual Studio Codeを便利にするための設定方法について書いています。';
-@endphp
-
 @section('contents')
 @include('components.header')
 <h2 class="title">基本設定</h2>

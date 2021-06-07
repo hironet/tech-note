@@ -1,10 +1,5 @@
 @extends('layouts/app')
 
-@php
-$mtime = '2021-03-29 00:00:00';
-$description = 'Bashシェルスクリプトを作成する際に、知っておくと有用な書き方について書いています。';
-@endphp
-
 @section('contents')
 @include('components.header')
 <h2 class="title">目次</h2>

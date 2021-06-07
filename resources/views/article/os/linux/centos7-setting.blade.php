@@ -1,10 +1,5 @@
 @extends('layouts/app')
 
-@php
-$mtime = '2021-03-25 00:00:00';
-$description = 'CentOS 7.xを使用するにあたって、よく行う設定について書いています。';
-@endphp
-
 @section('contents')
 @include('components.header')
 <h2 class="title">目次</h2>

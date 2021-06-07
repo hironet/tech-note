@@ -1,10 +1,5 @@
 @extends('layouts/app')
 
-@php
-$mtime = '2021-05-04 00:00:00';
-$description = 'S3の基本的な操作方法を書いています。';
-@endphp
-
 @section('contents')
 @include('components.header')
 <h2 class="title">S3のコマンド</h2>

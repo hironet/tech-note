@@ -1,10 +1,5 @@
 @extends('layouts/app')
 
-@php
-$mtime = '2021-06-06 00:00:00';
-$description = 'Laravelの設定方法について書いています。';
-@endphp
-
 @section('contents')
 @include('components.header')
 <h2 class="title">設定方法</h2>

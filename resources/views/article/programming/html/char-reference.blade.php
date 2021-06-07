@@ -1,10 +1,5 @@
 @extends('layouts/app')
 
-@php
-$mtime = '2021-06-06 00:00:00';
-$description = 'HTMLの文字参照について書いています。';
-@endphp
-
 @section('contents')
 @include('components.header')
 <h2 class="title">文字参照一覧</h2>

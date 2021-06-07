@@ -1,10 +1,5 @@
 @extends('layouts/app')
 
-@php
-$mtime = '2021-04-02 00:00:00';
-$description = '知っておくと色んな場面で便利になるコマンドの使い方について書いています。';
-@endphp
-
 @section('contents')
 @include('components.header')
 <h3 class="title">ディスク全体を消去する（diskpart）</h3>

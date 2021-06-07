@@ -1,10 +1,5 @@
 @extends('layouts/app')
 
-@php
-$mtime = '2021-04-05 00:00:00';
-$description = '知っておくと便利なJavaScriptの豆知識について書いています。';
-@endphp
-
 @section('contents')
 @include('components.header')
 <h3 class="title">即時実行関数の書き方</h3>

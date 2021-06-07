@@ -1,10 +1,5 @@
 @extends('layouts/app')
 
-@php
-$mtime = '2021-04-03 00:00:00';
-$description = 'WordPressのパフォーマンスチューニング方法について書いています。';
-@endphp
-
 @section('contents')
 @include('components.header')
 <h3 class="title">リビジョン削除</h3>

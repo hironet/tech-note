@@ -328,9 +328,13 @@
 </ul>
 <pre class="block"><code class="shell">$ docker run -itd --name [コンテナ名] -v mydata:/usr/share/nginx/html [イメージ名]</code></pre>
 <h2 id="docker-other" class="title">その他</h2>
-<p class="title">停止しているコンテナ、未使用のイメージ、未使用のデータボリュームを全て削除する。</p>
+<p>Dockerイメージの変更履歴を表示する。</p>
+<pre class="block"><code class="shell">$ docker history [イメージ名]</code></pre>
+<p>Dockerデーモンによって使用されているディスク総容量を表示する。</p>
+<pre class="block"><code class="shell">$ docker system df</code></pre>
+<p>停止しているコンテナ、未使用のイメージ、未使用のデータボリュームを全て削除する。</p>
 <pre class="block"><code class="shell">$ docker system prune</code></pre>
-<p class="title">コンテナとホストOS間でファイルをコピーする。</p>
+<p>コンテナとホストOS間でファイルをコピーする。</p>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>
@@ -351,12 +355,12 @@
     </tbody>
   </table>
 </div><!-- /.table-responsive -->
-<p class="title">コンテナのリソース使用状況をライブで表示し続ける。</p>
+<p>コンテナのリソース使用状況をライブで表示し続ける。</p>
 <pre class="block"><code class="shell">$ docker stats</code></pre>
-<p class="title">コンテナで実行しているプロセスを確認する。</p>
+<p>コンテナで実行しているプロセスを確認する。</p>
 <pre class="block"><code class="shell">$ docker top [コンテナID]</code></pre>
-<p class="title">コンテナで実行しているプロセス毎のCPU・メモリ使用率を確認する。</p>
+<p>コンテナで実行しているプロセス毎のCPU・メモリ使用率を確認する。</p>
 <pre class="block"><code class="shell">$ docker top [コンテナID] aux</code></pre>
-<p class="title">プロセスIDからコンテナIDを特定する。</p>
+<p>プロセスIDからコンテナIDを特定する。</p>
 <pre class="block"><code class="shell">$ cat /proc/[プロセスID]/cgroup</code></pre>
 @endsection

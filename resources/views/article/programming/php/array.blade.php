@@ -17,7 +17,10 @@
     <a href="#function">配列と関数</a>
   </li>
   <li>
-    <a href="#convenient">配列の便利な操作</a>
+    <a href="#convenient-oper">配列の便利な操作</a>
+  </li>
+  <li>
+    <a href="#convenient-func">配列の便利な関数</a>
   </li>
 </ul>
 <h2 id="1dime-array" class="title">1次元配列の基本操作</h2>
@@ -106,7 +109,7 @@ echo $colors[0], PHP_EOL;  # red
 echo $colors[1], PHP_EOL;  # yellow
 echo $colors[2], PHP_EOL;  # brue
 </code></pre>
-<h2 id="convenient" class="title">配列の便利な操作</h2>
+<h2 id="convenient-oper" class="title">配列の便利な操作</h2>
 <h3 class="title">配列の分解（list構文の場合）</h3>
 <p>配列から複数の変数に代入する。</p>
 <pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
@@ -149,4 +152,9 @@ echo $color_3, PHP_EOL;  # blue</code></pre>
 <pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
 [, , $color_3] = $colors;
 echo $color_3, PHP_EOL;  # blue</code></pre>
+<h2 id="convenient-func" class="title">配列の便利な関数</h2>
+<h3 class="title">count関数</h3>
+<p>配列の要素数をカウントする。</p>
+<pre class="block"><code class="php">$colors = ['red', 'green', 'blue'];
+echo count($colors);  # 3</code></pre>
 @endsection

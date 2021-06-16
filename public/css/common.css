@@ -58,8 +58,8 @@ code {
 }
 
 div.box {
-  border: solid 3px #95ccff;
   border-radius: 8px;
+  border: solid 3px #95ccff;
   margin: 2rem 0 1rem 1rem;
   padding: 0.5rem 1rem;
   position: relative;

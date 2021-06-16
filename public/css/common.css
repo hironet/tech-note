@@ -78,7 +78,7 @@ div.box .box-title {
   top: -13px;
 }
 
-/* ボタンのスタイル */
+/* ページトップに戻るボタン */
 button#page-top {
   /* buttonタグのリセットCSS */
   appearance: none;
@@ -95,6 +95,7 @@ button#page-top {
   display: flex;
   height: 50px;
   justify-content: center;
+  opacity: 0.7;
   position: fixed;
   right: 15px;
   transition: all 0.3s ease;
@@ -102,7 +103,7 @@ button#page-top {
   z-index: 100;
 }
 
-/* 矢印のスタイル */
+/* ページトップに戻るボタン：矢印 */
 button#page-top::before {
   border-right: solid 3px #fff;
   border-top: solid 3px #fff;
@@ -113,7 +114,7 @@ button#page-top::before {
   width: 12px;
 }
 
-/* ホバー時のスタイル */
+/* ページトップに戻るボタン：ホバー時 */
 button#page-top:hover {
   transform: scale(1.1);
 }

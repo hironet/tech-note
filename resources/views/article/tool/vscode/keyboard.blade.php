@@ -2,8 +2,7 @@
 
 @section('contents')
 @include('components.header')
-<h2 id="" class="title">目次</h2>
-<ul>
+<ul class="toc">
   <li>
     <a href="#setting">設定</a>
   </li>

@@ -2,8 +2,7 @@
 
 @section('contents')
 @include('components.header')
-<h2 class="title">目次</h2>
-<ol>
+<ul class="toc">
   <li>
     <a href="#network">ネットワーク設定</a>
   </li>
@@ -19,7 +18,7 @@
   <li>
     <a href="#other">その他</a>
   </li>
-</ol>
+</ul>
 <h2 id="network" class="title">ネットワーク設定</h2>
 <p>ネットワークインタフェースを有効化する。
 <pre class="block"><code class="shell"># nmcli c modify [ネットワークインタフェース名] connection.autoconnect yes</code></pre>

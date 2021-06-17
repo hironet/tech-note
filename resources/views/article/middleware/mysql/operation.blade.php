@@ -2,8 +2,7 @@
 
 @section('contents')
 @include('components.header')
-<h2 class="title">目次</h2>
-<ul>
+<ul class="toc">
   <li>
     <a href="#startup">mysqlコマンドラインクライアントの起動</a>
   </li>

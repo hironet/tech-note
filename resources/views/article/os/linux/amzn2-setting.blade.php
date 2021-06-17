@@ -2,8 +2,7 @@
 
 @section('contents')
 @include('components.header')
-<h2 class="title">目次</h2>
-<ol>
+<ul class="toc">
   <li>
     <a href="#yum">パッケージの管理（Yum）</a>
   </li>
@@ -28,7 +27,7 @@
   <li>
     <a href="#other">その他</a>
   </li>
-</ol>
+</ul>
 <h2 id="yum" class="title">パッケージの管理（Yum）</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">

@@ -1,26 +1,24 @@
-<header>
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="/">ホーム</a>
-      </li>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="/">ホーム</a>
+    </li>
 @foreach ($breadcrumb as $_name => $_url)
 @empty ($_url)
-      <li class="breadcrumb-item active" aria-current="page">{{ $_name }}</li>
+    <li class="breadcrumb-item active" aria-current="page">{{ $_name }}</li>
 @else
-      <li class="breadcrumb-item">
-        <a href="{{ $_url }}">{{ $_name }}</a>
-      </li>
+    <li class="breadcrumb-item">
+      <a href="{{ $_url }}">{{ $_name }}</a>
+    </li>
 @endempty
 @endforeach
-    </ol>
-  </nav>
-  <h1>{{ $article_title }}</h1>
+  </ol>
+</nav>
+<h1>{{ $article_title }}</h1>
 @if (isset($article_mtime))
-  <p>更新日：
-    <time itemprop="dateModified" datetime="{{ (new DateTime($article_mtime))->format(DateTime::ATOM) }}">
-      {{ (new DateTime($article_mtime))->format('Y年m月d日') }}
-    </time>
-  </p>
+<p>更新日：
+  <time itemprop="dateModified" datetime="{{ (new DateTime($article_mtime))->format(DateTime::ATOM) }}">
+    {{ (new DateTime($article_mtime))->format('Y年m月d日') }}
+  </time>
+</p>
 @endif
-</header>

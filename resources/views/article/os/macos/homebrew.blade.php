@@ -2,14 +2,16 @@
 
 @section('contents')
 @include('components.header')
-<ul class="toc">
-  <li>
-    <a href="#homebrew-install">Homebrewのインストール</a>
-  </li>
-  <li>
-    <a href="#homebrew-command">Homebrewのコマンド</a>
-  </li>
-</ul>
+<nav>
+  <ul class="toc">
+    <li>
+      <a href="#homebrew-install">Homebrewのインストール</a>
+    </li>
+    <li>
+      <a href="#homebrew-command">Homebrewのコマンド</a>
+    </li>
+  </ul>
+</nav>
 <h2 id="homebrew-install" class="title">Homebrewのインストール</h3>
 <p><a href="https://brew.sh/index_ja.html" target="_blank" rel="noopener noreferrer">Homebrew</a>の説明に従ってインストールする。</p>
 <h2 id="homebrew-command" class="title">Homebrewのコマンド</h3>

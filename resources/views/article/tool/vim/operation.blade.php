@@ -2,17 +2,19 @@
 
 @section('contents')
 @include('components.header')
-<ul class="toc">
-  <li>
-    <a href="#command">コマンド</a>
-  </li>
-  <li>
-    <a href="#macro">マクロ</a>
-  </li>
-  <li>
-    <a href="#other">その他</a>
-  </li>
-</ul>
+<nav>
+  <ul class="toc">
+    <li>
+      <a href="#command">コマンド</a>
+    </li>
+    <li>
+      <a href="#macro">マクロ</a>
+    </li>
+    <li>
+      <a href="#other">その他</a>
+    </li>
+  </ul>
+</nav>
 <h2 id="command" class="title">コマンド</h2>
 <h3 class="title">文字列操作</h3>
 <div class="table-responsive">

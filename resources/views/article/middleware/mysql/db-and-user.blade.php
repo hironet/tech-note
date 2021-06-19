@@ -2,14 +2,16 @@
 
 @section('contents')
 @include('components.header')
-<ul class="toc">
-  <li>
-    <a href="#database">データベース管理</a>
-  </li>
-  <li>
-    <a href="#user">ユーザ管理</a>
-  </li>
-</ul>
+<nav>
+  <ul class="toc">
+    <li>
+      <a href="#database">データベース管理</a>
+    </li>
+    <li>
+      <a href="#user">ユーザ管理</a>
+    </li>
+  </ul>
+</nav>
 <h2 id="database" class="title">データベース管理</h2>
 <h3 class="title">データベース作成</h3>
 <p>1. 作成するデータベースが存在しないことを確認する。</p>

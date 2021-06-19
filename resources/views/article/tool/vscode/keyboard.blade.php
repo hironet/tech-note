@@ -2,32 +2,34 @@
 
 @section('contents')
 @include('components.header')
-<ul class="toc">
-  <li>
-    <a href="#setting">設定</a>
-  </li>
-  <li>
-    <a href="#file">ファイル編集</a>
-  </li>
-  <li>
-    <a href="#tab">タブ操作</a>
-  </li>
-  <li>
-    <a href="#cursor">カーソル操作</a>
-  </li>
-  <li>
-    <a href="#search">検索</a>
-  </li>
-  <li>
-    <a href="#sort">並び替え</a>
-  </li>
-  <li>
-    <a href="#emmet">Emmet</a>
-  </li>
-  <li>
-    <a href="#browser">open in browser</a>
-  </li>
-</ul>
+<nav>
+  <ul class="toc">
+    <li>
+      <a href="#setting">設定</a>
+    </li>
+    <li>
+      <a href="#file">ファイル編集</a>
+    </li>
+    <li>
+      <a href="#tab">タブ操作</a>
+    </li>
+    <li>
+      <a href="#cursor">カーソル操作</a>
+    </li>
+    <li>
+      <a href="#search">検索</a>
+    </li>
+    <li>
+      <a href="#sort">並び替え</a>
+    </li>
+    <li>
+      <a href="#emmet">Emmet</a>
+    </li>
+    <li>
+      <a href="#browser">open in browser</a>
+    </li>
+  </ul>
+</nav>
 <h2 id="setting" class="title">設定</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">

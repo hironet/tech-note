@@ -2,20 +2,22 @@
 
 @section('contents')
 @include('components.header')
-<ul class="toc">
-  <li>
-    <a href="#chocolate-install">Chocolateyのインストール</a>
-  </li>
-  <li>
-    <a href="#chocolate-verup">Chocolateyのバージョンアップ</a>
-  </li>
-  <li>
-    <a href="#chocolate-command">Chocolateyのコマンド</a>
-  </li>
-  <li>
-    <a href="#chocolate-other">その他</a>
-  </li>
-</ul>
+<nav>
+  <ul class="toc">
+    <li>
+      <a href="#chocolate-install">Chocolateyのインストール</a>
+    </li>
+    <li>
+      <a href="#chocolate-verup">Chocolateyのバージョンアップ</a>
+    </li>
+    <li>
+      <a href="#chocolate-command">Chocolateyのコマンド</a>
+    </li>
+    <li>
+      <a href="#chocolate-other">その他</a>
+    </li>
+  </ul>
+</nav>
 <h2 id="chocolate-install" class="title">Chocolateyのインストール</h2>
 <p><a href="https://chocolatey.org/install" target="_blank" rel="noopener noreferrer">Chocolatey</a>の説明に従ってインストールする。</p>
 <h2 id="chocolate-verup" class="title">Chocolateyのバージョンアップ</h2>

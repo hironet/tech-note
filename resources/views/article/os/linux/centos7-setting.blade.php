@@ -2,23 +2,25 @@
 
 @section('contents')
 @include('components.header')
-<ul class="toc">
-  <li>
-    <a href="#network">ネットワーク設定</a>
-  </li>
-  <li>
-    <a href="#yum">パッケージの管理（Yum）</a>
-  </li>
-  <li>
-    <a href="#rpm">パッケージの管理（RPM）</a>
-  </li>
-  <li>
-    <a href="#service">サービスの操作</a>
-  </li>
-  <li>
-    <a href="#other">その他</a>
-  </li>
-</ul>
+<nav>
+  <ul class="toc">
+    <li>
+      <a href="#network">ネットワーク設定</a>
+    </li>
+    <li>
+      <a href="#yum">パッケージの管理（Yum）</a>
+    </li>
+    <li>
+      <a href="#rpm">パッケージの管理（RPM）</a>
+    </li>
+    <li>
+      <a href="#service">サービスの操作</a>
+    </li>
+    <li>
+      <a href="#other">その他</a>
+    </li>
+  </ul>
+</nav>
 <h2 id="network" class="title">ネットワーク設定</h2>
 <p>ネットワークインタフェースを有効化する。
 <pre class="block"><code class="shell"># nmcli c modify [ネットワークインタフェース名] connection.autoconnect yes</code></pre>

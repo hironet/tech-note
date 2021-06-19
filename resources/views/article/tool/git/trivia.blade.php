@@ -2,17 +2,19 @@
 
 @section('contents')
 @include('components.header')
-<ul class="toc">
-  <li>
-    <a href="#create-repo">リポジトリ作成</a>
-  </li>
-  <li>
-    <a href="#local-repo">ローカルリポジトリに対する操作</a>
-  </li>
-  <li>
-    <a href="#remote-repo">リモートリポジトリに対する操作</a>
-  </li>
-</ul>
+<nav>
+  <ul class="toc">
+    <li>
+      <a href="#create-repo">リポジトリ作成</a>
+    </li>
+    <li>
+      <a href="#local-repo">ローカルリポジトリに対する操作</a>
+    </li>
+    <li>
+      <a href="#remote-repo">リモートリポジトリに対する操作</a>
+    </li>
+  </ul>
+</nav>
 <h2 id="create-repo" class="title">リポジトリ作成</h2>
 <p>ローカルにリポジトリを新規作成する。</p>
 <pre class="block"><code class="shell">$ cd [リポジトリのパス]

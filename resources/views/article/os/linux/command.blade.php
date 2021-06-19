@@ -2,107 +2,109 @@
 
 @section('contents')
 @include('components.header')
-<ul class="toc">
-  <li>
-    <a href="#arping">arping</a>
-  </li>
-  <li>
-    <a href="#awk">awk</a>
-  </li>
-  <li>
-    <a href="#basename">basename</a>
-  </li>
-  <li>
-    <a href="#chmod">chmod</a>
-  </li>
-  <li>
-    <a href="#chown">chown</a>
-  </li>
-  <li>
-    <a href="#curl">curl</a>
-  </li>
-  <li>
-    <a href="#dd">dd</a>
-  </li>
-  <li>
-    <a href="#dirname">dirname</a>
-  </li>
-  <li>
-    <a href="#dmidecode">dmidecode</a>
-  </li>
-  <li>
-    <a href="#echo">echo</a>
-  </li>
-  <li>
-    <a href="#expr">expr</a>
-  </li>
-  <li>
-    <a href="#find">find</a>
-  </li>
-  <li>
-    <a href="#grep">grep</a>
-  </li>
-  <li>
-    <a href="#ip">ip</a>
-  </li>
-  <li>
-    <a href="#lsblk">lsblk</a>
-  </li>
-  <li>
-    <a href="#lsof">lsof</a>
-  </li>
-  <li>
-    <a href="#mkpasswd">mkpasswd</a>
-  </li>
-  <li>
-    <a href="#mktemp">mktemp</a>
-  </li>
-  <li>
-    <a href="#nc">nc</a>
-  </li>
-  <li>
-    <a href="#nohup">nohup</a>
-  </li>
-  <li>
-    <a href="#readlink">readlink</a>
-  </li>
-  <li>
-    <a href="#sed">sed</a>
-  </li>
-  <li>
-    <a href="#snmpwalk">snmpwalk</a>
-  </li>
-  <li>
-    <a href="#ssh">ssh</a>
-  </li>
-  <li>
-    <a href="#strace">strace</a>
-  </li>
-  <li>
-    <a href="#tail">tail</a>
-  </li>
-  <li>
-    <a href="#tar">tar</a>
-  </li>
-  <li>
-    <a href="#tcpdump">tcpdump</a>
-  </li>
-  <li>
-    <a href="#tcpslice">tcpslice</a>
-  </li>
-  <li>
-    <a href="#tee">tee</a>
-  </li>
-  <li>
-    <a href="#test">test</a>
-  </li>
-  <li>
-    <a href="#view">view</a>
-  </li>
-  <li>
-    <a href="#yes">yes</a>
-  </li>
-</ul>
+<nav>
+  <ul class="toc">
+    <li>
+      <a href="#arping">arping</a>
+    </li>
+    <li>
+      <a href="#awk">awk</a>
+    </li>
+    <li>
+      <a href="#basename">basename</a>
+    </li>
+    <li>
+      <a href="#chmod">chmod</a>
+    </li>
+    <li>
+      <a href="#chown">chown</a>
+    </li>
+    <li>
+      <a href="#curl">curl</a>
+    </li>
+    <li>
+      <a href="#dd">dd</a>
+    </li>
+    <li>
+      <a href="#dirname">dirname</a>
+    </li>
+    <li>
+      <a href="#dmidecode">dmidecode</a>
+    </li>
+    <li>
+      <a href="#echo">echo</a>
+    </li>
+    <li>
+      <a href="#expr">expr</a>
+    </li>
+    <li>
+      <a href="#find">find</a>
+    </li>
+    <li>
+      <a href="#grep">grep</a>
+    </li>
+    <li>
+      <a href="#ip">ip</a>
+    </li>
+    <li>
+      <a href="#lsblk">lsblk</a>
+    </li>
+    <li>
+      <a href="#lsof">lsof</a>
+    </li>
+    <li>
+      <a href="#mkpasswd">mkpasswd</a>
+    </li>
+    <li>
+      <a href="#mktemp">mktemp</a>
+    </li>
+    <li>
+      <a href="#nc">nc</a>
+    </li>
+    <li>
+      <a href="#nohup">nohup</a>
+    </li>
+    <li>
+      <a href="#readlink">readlink</a>
+    </li>
+    <li>
+      <a href="#sed">sed</a>
+    </li>
+    <li>
+      <a href="#snmpwalk">snmpwalk</a>
+    </li>
+    <li>
+      <a href="#ssh">ssh</a>
+    </li>
+    <li>
+      <a href="#strace">strace</a>
+    </li>
+    <li>
+      <a href="#tail">tail</a>
+    </li>
+    <li>
+      <a href="#tar">tar</a>
+    </li>
+    <li>
+      <a href="#tcpdump">tcpdump</a>
+    </li>
+    <li>
+      <a href="#tcpslice">tcpslice</a>
+    </li>
+    <li>
+      <a href="#tee">tee</a>
+    </li>
+    <li>
+      <a href="#test">test</a>
+    </li>
+    <li>
+      <a href="#view">view</a>
+    </li>
+    <li>
+      <a href="#yes">yes</a>
+    </li>
+  </ul>
+</nav>
 <h3 id="arping" class="title">arping</h3>
 <p>同一セグメント上で、pingに応答しないノードの存在を確認する。</p>
 <pre class="block"><code class="shell">$ arping [IPアドレス]</code></pre>

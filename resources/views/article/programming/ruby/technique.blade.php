@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h2 class="title">変数</h2>
 <p>変数がnilであることを防ぐ。</p>
 <ul>

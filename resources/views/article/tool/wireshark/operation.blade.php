@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h2 class="title">フィルタ</h2>
 <h3 class="title">フレーム</h3>
 <p>特定の時間でフィルタする。</p>

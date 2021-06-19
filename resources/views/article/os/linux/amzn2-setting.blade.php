@@ -1,35 +1,37 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
-<nav>
-  <ul class="toc">
-    <li>
-      <a href="#yum">パッケージの管理（Yum）</a>
-    </li>
-    <li>
-      <a href="#rpm">パッケージの管理（RPM）</a>
-    </li>
-    <li>
-      <a href="#service">サービスの操作</a>
-    </li>
-    <li>
-      <a href="#swap">スワップ領域の設定</a>
-    </li>
-    <li>
-      <a href="#hostname">ホスト名の設定</a>
-    </li>
-    <li>
-      <a href="#locale">ロケールの設定</a>
-    </li>
-    <li>
-      <a href="#timezone">タイムゾーンの設定</a>
-    </li>
-    <li>
-      <a href="#other">その他</a>
-    </li>
-  </ul>
-</nav>
+  <nav>
+    <ul class="toc">
+      <li>
+        <a href="#yum">パッケージの管理（Yum）</a>
+      </li>
+      <li>
+        <a href="#rpm">パッケージの管理（RPM）</a>
+      </li>
+      <li>
+        <a href="#service">サービスの操作</a>
+      </li>
+      <li>
+        <a href="#swap">スワップ領域の設定</a>
+      </li>
+      <li>
+        <a href="#hostname">ホスト名の設定</a>
+      </li>
+      <li>
+        <a href="#locale">ロケールの設定</a>
+      </li>
+      <li>
+        <a href="#timezone">タイムゾーンの設定</a>
+      </li>
+      <li>
+        <a href="#other">その他</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 <h2 id="yum" class="title">パッケージの管理（Yum）</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">

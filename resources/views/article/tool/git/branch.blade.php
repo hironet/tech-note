@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h2 class="title">ブランチ操作</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">

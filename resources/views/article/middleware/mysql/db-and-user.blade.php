@@ -1,17 +1,19 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
-<nav>
-  <ul class="toc">
-    <li>
-      <a href="#database">データベース管理</a>
-    </li>
-    <li>
-      <a href="#user">ユーザ管理</a>
-    </li>
-  </ul>
-</nav>
+  <nav>
+    <ul class="toc">
+      <li>
+        <a href="#database">データベース管理</a>
+      </li>
+      <li>
+        <a href="#user">ユーザ管理</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 <h2 id="database" class="title">データベース管理</h2>
 <h3 class="title">データベース作成</h3>
 <p>1. 作成するデータベースが存在しないことを確認する。</p>

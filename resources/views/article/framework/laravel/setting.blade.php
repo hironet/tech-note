@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h2 class="title">設定方法</h2>
 <h3 class="title">プロジェクトの初期設定</h3>
 <h4><code>.env</code>の設定変更</h4>

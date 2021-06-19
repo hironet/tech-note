@@ -1,29 +1,31 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
-<nav>
-  <ul class="toc">
-    <li>
-      <a href="#1dime-array">1次元配列の基本操作</a>
-    </li>
-    <li>
-      <a href="#2dime-array">2次元配列の基本操作</a>
-    </li>
-    <li>
-      <a href="#string">配列と文字列</a>
-    </li>
-    <li>
-      <a href="#function">配列と関数</a>
-    </li>
-    <li>
-      <a href="#convenient-oper">配列の便利な操作</a>
-    </li>
-    <li>
-      <a href="#convenient-func">配列の便利な関数</a>
-    </li>
-  </ul>
-</nav>
+  <nav>
+    <ul class="toc">
+      <li>
+        <a href="#1dime-array">1次元配列の基本操作</a>
+      </li>
+      <li>
+        <a href="#2dime-array">2次元配列の基本操作</a>
+      </li>
+      <li>
+        <a href="#string">配列と文字列</a>
+      </li>
+      <li>
+        <a href="#function">配列と関数</a>
+      </li>
+      <li>
+        <a href="#convenient-oper">配列の便利な操作</a>
+      </li>
+      <li>
+        <a href="#convenient-func">配列の便利な関数</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 <h2 id="1dime-array" class="title">1次元配列の基本操作</h2>
 <h3 class="title">空の1次元配列の作成</h3>
 <p>array()で空の配列を作成する。</p>

@@ -1,17 +1,19 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
-<nav>
-  <ul class="toc">
-    <li>
-      <a href="#pbcopy">pbcopy</a>
-    </li>
-    <li>
-      <a href="#pbpaste">pbpaste</a>
-    </li>
-  </ul>
-</nav>
+  <nav>
+    <ul class="toc">
+      <li>
+        <a href="#pbcopy">pbcopy</a>
+      </li>
+      <li>
+        <a href="#pbpaste">pbpaste</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 <h3 id="pbcopy" class="title">pbcopy</h3>
 <p>ターミナルへの入力内容をクリップボードにコピーする（入力の終了は<kbd>control + D</kbd>を押す）。</p>
 <pre class="block"><code class="shell">$ pbcopy</code></pre>

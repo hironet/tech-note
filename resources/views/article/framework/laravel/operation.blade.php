@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h2 class="title">Laravelのコマンド</h2>
 <h3 class="title">バージョン確認</h3>
 <p>Laravelのバージョンを確認する。</p>

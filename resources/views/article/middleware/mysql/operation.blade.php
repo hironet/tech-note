@@ -1,20 +1,22 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
-<nav>
-  <ul class="toc">
-    <li>
-      <a href="#startup">mysqlコマンドラインクライアントの起動</a>
-    </li>
-    <li>
-      <a href="#operation">mysqlコマンドラインクライアントの操作</a>
-    </li>
-    <li>
-      <a href="#show">各種情報の表示</a>
-    </li>
-  </ul>
-</nav>
+  <nav>
+    <ul class="toc">
+      <li>
+        <a href="#startup">mysqlコマンドラインクライアントの起動</a>
+      </li>
+      <li>
+        <a href="#operation">mysqlコマンドラインクライアントの操作</a>
+      </li>
+      <li>
+        <a href="#show">各種情報の表示</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 <h2 id="startup" class="title">mysqlコマンドラインクライアントの起動</h2>
 <p>MySQLサーバに接続する。</p>
 <pre class="block"><code class="shell">$ mysql -u [ユーザ名] -p -h[ホスト名] [データベース名]</code></pre>

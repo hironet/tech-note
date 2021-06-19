@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h3 class="title">ディスク全体を消去する（diskpart）</h3>
 <p>1. diskpartを起動する。</p>
 <pre class="block"><code class="shell">&gt; diskpart</code></pre>

@@ -1,29 +1,31 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
-<nav>
-  <ul class="toc">
-    <li>
-      <a href="#docker-image">Dockerイメージの管理</a>
-    </li>
-    <li>
-      <a href="#docker-container">Dockerコンテナの管理</a>
-    </li>
-    <li>
-      <a href="#docker-compose">Docker Compose</a>
-    </li>
-    <li>
-      <a href="#docker-network">ネットワーク管理</a>
-    </li>
-    <li>
-      <a href="#docker-data">データ管理</a>
-    </li>
-    <li>
-      <a href="#docker-other">その他</a>
-    </li>
-  </ul>
-</nav>
+  <nav>
+    <ul class="toc">
+      <li>
+        <a href="#docker-image">Dockerイメージの管理</a>
+      </li>
+      <li>
+        <a href="#docker-container">Dockerコンテナの管理</a>
+      </li>
+      <li>
+        <a href="#docker-compose">Docker Compose</a>
+      </li>
+      <li>
+        <a href="#docker-network">ネットワーク管理</a>
+      </li>
+      <li>
+        <a href="#docker-data">データ管理</a>
+      </li>
+      <li>
+        <a href="#docker-other">その他</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 <h2 id="docker-image" class="title">Dockerイメージの管理</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">

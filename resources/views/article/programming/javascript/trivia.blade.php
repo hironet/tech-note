@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h3 class="title">即時実行関数の書き方</h3>
 <p>functionを使用する場合は、以下の2パターンのどちらでもよい。</p>
 <pre class="block"><code class="javascript">(function () {

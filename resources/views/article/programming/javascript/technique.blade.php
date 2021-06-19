@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h2 class="title">オブジェクト</h2>
 <p>型を示す文字列を取得する。</p>
 <ul>

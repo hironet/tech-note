@@ -1,20 +1,22 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
-<nav>
-  <ul class="toc">
-    <li>
-      <a href="#command">コマンド</a>
-    </li>
-    <li>
-      <a href="#macro">マクロ</a>
-    </li>
-    <li>
-      <a href="#other">その他</a>
-    </li>
-  </ul>
-</nav>
+  <nav>
+    <ul class="toc">
+      <li>
+        <a href="#command">コマンド</a>
+      </li>
+      <li>
+        <a href="#macro">マクロ</a>
+      </li>
+      <li>
+        <a href="#other">その他</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 <h2 id="command" class="title">コマンド</h2>
 <h3 class="title">文字列操作</h3>
 <div class="table-responsive">

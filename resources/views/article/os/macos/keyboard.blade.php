@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h3 class="title">スクリーンショットを撮る</h3>
 <table class="table table-striped table-sm">
   <thead>

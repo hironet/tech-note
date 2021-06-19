@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h2 class="title">Excelのオプション</h2>
 <p>ユーザー名を設定する。</p>
 <figure class="figure">

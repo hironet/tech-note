@@ -1,12 +1,14 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
-<nav>
-  <ul class="toc">
-    <li><a href="#command">S3のコマンド</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul class="toc">
+      <li><a href="#command">S3のコマンド</a></li>
+    </ul>
+  </nav>
+</header>
 <h2 id="command" class="title">S3のコマンド</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">

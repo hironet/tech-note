@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h2 class="title">基本設定</h2>
 <p>1. コマンドパレットを開く。</p>
 <p>2. <code>settings.json</code>と入力する。</p>

@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h2 class="title">リスト</h2>
 <p>リストタグを入れ子にする。</p>
 <ul>

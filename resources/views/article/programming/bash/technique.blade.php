@@ -1,35 +1,37 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
-<nav>
-  <ul class="toc">
-    <li>
-      <a href="#coding-rules">コーディングルール</a>
-    </li>
-    <li>
-      <a href="#simplified-notation">簡略記法</a>
-    </li>
-    <li>
-      <a href="#string-processing">文字列処理</a>
-    </li>
-    <li>
-      <a href="#array-processing">配列処理</a>
-    </li>
-    <li>
-      <a href="#date-processing">日付処理</a>
-    </li>
-    <li>
-      <a href="#file-processing">ファイル処理</a>
-    </li>
-    <li>
-      <a href="#automation">自動化</a>
-    </li>
-    <li>
-      <a href="#other">その他</a>
-    </li>
-  </ul>
-</nav>
+  <nav>
+    <ul class="toc">
+      <li>
+        <a href="#coding-rules">コーディングルール</a>
+      </li>
+      <li>
+        <a href="#simplified-notation">簡略記法</a>
+      </li>
+      <li>
+        <a href="#string-processing">文字列処理</a>
+      </li>
+      <li>
+        <a href="#array-processing">配列処理</a>
+      </li>
+      <li>
+        <a href="#date-processing">日付処理</a>
+      </li>
+      <li>
+        <a href="#file-processing">ファイル処理</a>
+      </li>
+      <li>
+        <a href="#automation">自動化</a>
+      </li>
+      <li>
+        <a href="#other">その他</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 <h2 id="coding-rules" class="title">コーディングルール</h2>
 <p>コーディングルールを決める（以下は一例）。
 <ul>

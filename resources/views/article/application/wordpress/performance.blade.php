@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h3 class="title">リビジョン削除</h3>
 <p>データベース（MySQL）に接続し、以下SQLを実行する。</p>
 <pre class="block"><code class="sql">USE wordpress;

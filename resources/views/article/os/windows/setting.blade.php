@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('contents')
+<header>
 @include('components.header')
+</header>
 <h3 class="title">CapsLockキーをControlキーに変更する</h3>
 <p>1. ctrl2capをインストールする。</p>
 <pre class="block"><code class="shell">&gt; choco install -y ctrl2cap</code></pre>

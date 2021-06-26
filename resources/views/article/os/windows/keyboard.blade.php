@@ -3,8 +3,24 @@
 @section('contents')
 <header>
 @include('components.header')
+  <nav>
+    <ul class="toc">
+      <li>
+        <a href="#system-info">システム情報</a>
+      </li>
+      <li>
+        <a href="#folder">フォルダ・ファイル操作</a>
+      </li>
+      <li>
+        <a href="#input">文字入力</a>
+      </li>
+      <li>
+        <a href="#screenshot">スクリーンショット</a>
+      </li>
+    </ul>
+  </nav>
 </header>
-<h3 class="title">システム情報</h3>
+<h2 id="system-info" class="title">システム情報</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>
@@ -61,7 +77,7 @@
     </tbody>
   </table>
 </div><!-- /.table-responsive -->
-<h3 class="title">フォルダ・ファイル操作</h3>
+<h2 id="folder" class="title">フォルダ・ファイル操作</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>
@@ -86,7 +102,7 @@
     </tbody>
   </table>
 </div><!-- /.table-responsive -->
-<h3 class="title">文字入力</h3>
+<h2 id="input" class="title">文字入力</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>
@@ -103,7 +119,7 @@
     </tbody>
   </table>
 </div><!-- /.table-responsive -->
-<h3 class="title">スクリーンショット</h3>
+<h2 id="screenshot" class="title">スクリーンショット</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>

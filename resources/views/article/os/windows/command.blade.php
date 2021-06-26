@@ -3,8 +3,16 @@
 @section('contents')
 <header>
 @include('components.header')
+  <nav>
+    <ul class="toc">
+      <li>
+        <a href="#diskpart">diskpart</a>
+      </li>
+    </ul>
+  </nav>
 </header>
-<h3 class="title">ディスク全体を消去する（diskpart）</h3>
+<h2 id="diskpart" class="title">diskpart</h2>
+<h3 class="oper">ディスク全体を消去する</h3>
 <p>1. diskpartを起動する。</p>
 <pre class="block"><code class="shell">&gt; diskpart</code></pre>
 <p>2. ディスク一覧を表示する。</p>

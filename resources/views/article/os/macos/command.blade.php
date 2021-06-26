@@ -14,16 +14,19 @@
     </ul>
   </nav>
 </header>
-<h3 id="pbcopy" class="title">pbcopy</h3>
-<p>ターミナルへの入力内容をクリップボードにコピーする（入力の終了は<kbd>control + D</kbd>を押す）。</p>
+<h2 id="pbcopy" class="title">pbcopy</h2>
+<h3 class="oper">ターミナルへの入力内容をクリップボードにコピーする</h3>
 <pre class="block"><code class="shell">$ pbcopy</code></pre>
-<p>ファイルの内容をクリップボードにコピーする。</p>
+<ul>
+  <li>入力終了時は<kbd>control + D</kbd>を押す</li>
+</ul>
+<h3 class="oper">ファイルの内容をクリップボードにコピーする</h3>
 <pre class="block"><code class="shell">$ pbcopy &lt; ~/.ssh/id_rsa.pub</code></pre>
-<p>クリップボードを空にする。</p>
+<h3 class="oper">クリップボードを空にする</h3>
 <pre class="block"><code class="shell">$ pbcopy &lt; /dev/null</code></pre>
-<h3 id="pbpaste" class="title">pbpaste</h3>
-<p>クリップボードからペーストする。</p>
+<h2 id="pbpaste" class="title">pbpaste</h2>
+<h3 class="oper">クリップボードからペーストする</h3>
 <pre class="block"><code class="shell">$ pbpaste</code></pre>
-<p>クリップボードから書式情報を削除する。</p>
+<h3 class="oper">クリップボードから書式情報を削除する</h3>
 <pre class="block"><code class="shell">$ pbpaste -Prefer txt | pbcopy</code></pre>
 @endsection

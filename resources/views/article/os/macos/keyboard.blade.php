@@ -3,8 +3,18 @@
 @section('contents')
 <header>
 @include('components.header')
+  <nav>
+    <ul class="toc">
+      <li>
+        <a href="#screenshot">スクリーンショット</a>
+      </li>
+      <li>
+        <a href="#other">その他</a>
+      </li>
+    </ul>
+  </nav>
 </header>
-<h3 class="title">スクリーンショットを撮る</h3>
+<h2 id="screenshot" class="title">スクリーンショット</h2>
 <table class="table table-striped table-sm">
   <thead>
     <tr>
@@ -27,7 +37,7 @@
     </tr>
   </tbody>
 </table>
-<h3 class="title">その他</h3>
+<h2 id="other" class="title">その他</h2>
 <table class="table table-striped table-sm">
   <thead>
     <tr>

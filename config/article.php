@@ -228,9 +228,33 @@ return [
             'docker' => [
                 'operation' => [
                     '/article/middleware/docker/operation',
-                    'Dockerの操作方法',
+                    'Dockerの基本操作',
                     'Dockerの基本的な操作方法について書いています。',
                     '2021-03-30',
+                ],
+                'docker-compose' => [
+                    '/article/middleware/docker/docker-compose',
+                    'Docker Compose',
+                    'Docker Composeの基本的な操作方法について書いています。',
+                    '2021-06-26',
+                ],
+                'network' => [
+                    '/article/middleware/docker/network',
+                    'Dockerネットワーク管理',
+                    'Dockerネットワーク管理について書いています。',
+                    '2021-06-26',
+                ],
+                'volume' => [
+                    '/article/middleware/docker/volume',
+                    'Dockerデータ管理',
+                    'Dockerデータ管理について書いています。',
+                    '2021-06-26',
+                ],
+                'trivia' => [
+                    '/article/middleware/docker/trivia',
+                    'Dockerの豆知識',
+                    '知っておくと便利なDockerの豆知識について書いています。',
+                    '2021-06-26',
                 ],
             ],
             'nginx' => [

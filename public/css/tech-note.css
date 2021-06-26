@@ -22,6 +22,15 @@ h3.oper {
   padding: 0.2rem 0.5rem;
 }
 
+h4.oper {
+  border-bottom: solid 3px #5c73b7;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  opacity: 0.9;
+  padding: 0.2rem 0.5rem;
+}
+
 nav.navbar {
   background-color: #5c73b7;
   opacity: 0.9;

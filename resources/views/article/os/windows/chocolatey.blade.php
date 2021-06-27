@@ -25,20 +25,20 @@
 <h2 id="verup" class="title">Chocolateyのバージョンアップ</h2>
 <pre class="block"><code class="shell">&gt; choco upgrade chocolatey</code></pre>
 <h2 id="command" class="title">Chocolateyのコマンド</h2>
-<h3 class="oper">インストールされているパッケージ一覧を表示する</h3>
+<h3 class="desc">インストールされているパッケージ一覧を表示する</h3>
 <pre class="block"><code class="shell">&gt; choco list -l</code></pre>
-<h3 class="oper">パッケージを検索する</h3>
+<h3 class="desc">パッケージを検索する</h3>
 <pre class="block"><code class="shell">&gt; choco list [パッケージ名]</code></pre>
-<h3 class="oper">パッケージをインストールする</h3>
+<h3 class="desc">パッケージをインストールする</h3>
 <pre class="block"><code class="shell">&gt; choco install -y [パッケージ名]</code></pre>
-<h3 class="oper">パッケージをアンインストールする</h3>
+<h3 class="desc">パッケージをアンインストールする</h3>
 <pre class="block"><code class="shell">&gt; choco uninstall [パッケージ名]</code></pre>
-<h3 class="oper">インストールされている全てのパッケージを更新する</h3>
+<h3 class="desc">インストールされている全てのパッケージを更新する</h3>
 <pre class="block"><code class="shell">&gt; choco upgrade -y all</code></pre>
-<h3 class="oper">インストールされている個別のパッケージを更新する</h3>
+<h3 class="desc">インストールされている個別のパッケージを更新する</h3>
 <pre class="block"><code class="shell">&gt; choco upgrade -y [パッケージ名]</code></pre>
 <h2 id="useful" class="title">便利な操作</h2>
-<h3 class="oper">パッケージ名を記載したXMLファイルからパッケージをインストールする</h3>
+<h3 class="desc">パッケージ名を記載したXMLファイルからパッケージをインストールする</h3>
 <pre class="block"><code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;packages&gt;
   &lt;package id="7zip" /&gt;

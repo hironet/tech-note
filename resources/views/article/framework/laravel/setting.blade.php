@@ -15,7 +15,7 @@
   </nav>
 </header>
 <h2 id="project" class="title">プロジェクトの初期設定</h2>
-<h3 class="oper"><code>.env</code>を設定する</h3>
+<h3 class="desc"><code>.env</code>を設定する</h3>
 <h4 class="left-line">修正前</h4>
 <pre class="block"><code>&hellip;
 APP_NAME=Laravel
@@ -34,7 +34,7 @@ APP_ENV=production
 APP_URL=[URL]
 &hellip;
 </code></pre>
-<h3 class="oper"><code>config/app.php</code>を設定する</h3>
+<h3 class="desc"><code>config/app.php</code>を設定する</h3>
 <h4 class="left-line">修正前</h4>
 <pre class="block"><code class="php">&hellip;
     'timezone' => 'UTC',

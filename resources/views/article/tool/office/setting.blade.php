@@ -12,14 +12,14 @@
   </nav>
 </header>
 <h2 id="option" class="title">Excelのオプション</h2>
-<h3 class="oper">ユーザー名を設定する</h3>
+<h3 class="desc">ユーザー名を設定する</h3>
 <img class="figure-img" src="/img/office/excel2019-username.webp" alt="ユーザー名の設定">
-<h3 class="oper">オートコレクトを無効にする</h3>
+<h3 class="desc">オートコレクトを無効にする</h3>
 <img class="figure-img" src="/img/office/excel2019-auto-correct.webp" alt="オートコレクトの設定">
-<h3 class="oper">アドレスをハイパーリンクに変更しない</h3>
+<h3 class="desc">アドレスをハイパーリンクに変更しない</h3>
 <img class="figure-img" src="/img/office/excel2019-input-auto-format.webp" alt="入力オートフォーマットの設定">
-<h3 class="oper">オートコンプリートを無効にする</h3>
+<h3 class="desc">オートコンプリートを無効にする</h3>
 <img class="figure-img" src="/img/office/excel2019-auto-complete.webp" alt="オートコンプリートの設定">
-<h3 class="oper">クイックアクセスツールバーを設定する</h3>
+<h3 class="desc">クイックアクセスツールバーを設定する</h3>
 <img class="figure-img" src="/img/office/excel2019-quick-access.webp" alt="クイックアクセスツールバーの設定">
 @endsection

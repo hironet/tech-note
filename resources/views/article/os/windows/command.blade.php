@@ -12,7 +12,7 @@
   </nav>
 </header>
 <h2 id="diskpart" class="title">diskpart</h2>
-<h3 class="oper">ディスク全体を消去する</h3>
+<h3 class="desc">ディスク全体を消去する</h3>
 <p>1. diskpartを起動する。</p>
 <pre class="block"><code class="shell">&gt; diskpart</code></pre>
 <p>2. ディスク一覧を表示する。</p>

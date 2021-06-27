@@ -12,7 +12,7 @@
   </nav>
 </header>
 <h2 id="list" class="title">リスト</h2>
-<h3 class="oper">リストタグを入れ子にする</h3>
+<h3 class="desc">リストタグを入れ子にする</h3>
 <p><code>&lt;ul&gt;...&lt;/ul&gt;</code>は、<code>&lt;li&gt;...&lt;/li&gt;</code>の中に入れることで、入れ子にできる。</p>
 <pre class="block"><code>&lt;ul&gt;
   &lt;li&gt;米国&lt;/li&gt;
@@ -48,7 +48,7 @@
     &lt;li&gt;大阪&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/ul&gt;</code></pre>
-<h3 class="oper">リストタグに他の要素を入れ子にする</h3>
+<h3 class="desc">リストタグに他の要素を入れ子にする</h3>
 <p><code>&lt;ul&gt;...&lt;/ul&gt;</code>の中には、<code>&lt;div&gt;...&lt;/div&gt;</code>、<code>&lt;span&gt;...&lt;/span&gt;</code>、<code>&lt;h1&gt;...&lt;/h1&gt;</code>、<code>&lt;p&gt;...&lt;/p&gt;</code>、<code>&lt;img&gt;</code>、などの要素を入れ子にできる。</p>
 <pre class="block"><code>&lt;ul&gt;
   &lt;li&gt;Windows

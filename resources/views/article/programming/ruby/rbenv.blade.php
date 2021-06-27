@@ -27,21 +27,21 @@ if [ -d /usr/local/rbenv/bin ]; then
     eval "$(rbenv init -)"
 fi</code></pre>
 <h2 id="command" class="title">rbenvのコマンド</h2>
-<h3 class="oper">インストールしたRubyの全てのバージョンを表示する</h3>
+<h3 class="desc">インストールしたRubyの全てのバージョンを表示する</h3>
 <pre class="block"><code class="shell">$ rbenv versions</code></pre>
-<h3 class="oper">現在使用しているRubyのバージョンを表示する</h3>
+<h3 class="desc">現在使用しているRubyのバージョンを表示する</h3>
 <pre class="block"><code class="shell">$ rbenv version</code></pre>
-<h3 class="oper">インストール可能なRubyのバージョンを表示する</h3>
+<h3 class="desc">インストール可能なRubyのバージョンを表示する</h3>
 <pre class="block"><code class="shell">$ rbenv install -l</code></pre>
-<h3 class="oper">特定のバージョンのRubyをインストールする</h3>
+<h3 class="desc">特定のバージョンのRubyをインストールする</h3>
 <pre class="block"><code class="shell">$ rbenv install [バージョン番号]
 $ rbenv rehash</code></pre>
-<h3 class="oper">特定のバージョンのRubyをアンインストールする</h3>
+<h3 class="desc">特定のバージョンのRubyをアンインストールする</h3>
 <pre class="block"><code class="shell">$ rbenv uninstall [バージョン番号]
 $ rbenv rehash</code></pre>
-<h3 class="oper">使用するRubyのバージョンを設定する</h3>
+<h3 class="desc">使用するRubyのバージョンを設定する</h3>
 <pre class="block"><code class="shell">$ rbenv global [バージョン番号]</code></pre>
-<h3 class="oper">gemパッケージをインストールする</h3>
+<h3 class="desc">gemパッケージをインストールする</h3>
 <pre class="block"><code class="shell">$ gem install [gemパッケージ名]
 $ rbenv rehash</code></pre>
 @endsection

@@ -225,7 +225,7 @@
   </table>
 </div><!-- /.table-responsive -->
 <h2 id="emmet" class="title">Emmet</h2>
-<h3 class="oper">HTML5の雛形を入力する</h3>
+<h3 class="desc">HTML5の雛形を入力する</h3>
 <p><code>html:5</code>と入力し、<kbd>tab</kbd>を押す、または、<kbd>! tab</kbd>を押すと、以下が自動的に入力される。</p>
 <pre class="block"><code>&lt;!DOCTYPE html>
 &lt;html lang="ja">
@@ -238,7 +238,7 @@
 
 &lt;/body>
 &lt;/html></code></pre>
-<h3 class="oper">リストを入力する</h3>
+<h3 class="desc">リストを入力する</h3>
 <p><code>ul&gt;li*5</code>と入力し、<kbd>Enter</kbd>を押すと、以下が自動的に入力される。</p>
 <pre class="block"><code>&lt;ul>
   &lt;li>&lt;/li>

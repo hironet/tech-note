@@ -41,7 +41,7 @@ h3.left-line, h4.left-line {
   padding: 0.2rem 0.5rem;
 }
 
-h3.oper, h4.oper {
+h3.desc, h4.desc {
   border-bottom: solid 3px #5c73b7;
   font-size: 1.2rem;
   margin-bottom: 1rem;

@@ -13,21 +13,21 @@
 </header>
 <h2 id="filter" class="title">フィルタ</h2>
 <h3 class="left-line">フレーム</h3>
-<h4 class="oper">特定の時間でフィルタする</h4>
+<h4 class="desc">特定の時間でフィルタする</h4>
 <pre class="block"><code class="shell">frame.time>="2018-04-01 12:30:00" &amp;&amp; frame.time&lt;="2018-04-01 13:00:00"</code></pre>
 <ul>
   <li>「2018/04/01 12:30:00～2018/04/01 13:00:00」でフィルタする。</li>
 </ul>
 <h3 class="left-line">TCP</h3>
-<h4 class="oper">TCPフラグでフィルタする</h4>
+<h4 class="desc">TCPフラグでフィルタする</h4>
 <pre class="block"><code class="shell">tcp.flags.syn==1</code></pre>
 <pre class="block"><code class="shell">tcp.flags.fin==1</code></pre>
 <pre class="block"><code class="shell">tcp.flags.reset==1</code></pre>
 <pre class="block"><code class="shell">tcp.flags.ack==1</code></pre>
-<h4 class="oper">問題のあるTCPセグメントでフィルタする</h4>
+<h4 class="desc">問題のあるTCPセグメントでフィルタする</h4>
 <pre class="block"><code class="shell">tcp.analysis.flags &amp;&amp; !tcp.analysis.window_update</code></pre>
 <h3 class="left-line">HTTP</h3>
-<h4 class="oper">HTTPメソッドでフィルタする</h4>
+<h4 class="desc">HTTPメソッドでフィルタする</h4>
 <pre class="block"><code class="shell">http.request.method=="GET"
 http.request.method=="HEAD"
 http.request.method=="POST"
@@ -36,8 +36,8 @@ http.request.method=="PUT"
 http.request.method=="DELETE"
 http.request.method=="TRACE"
 http.request.method=="CONNECT"</code></pre>
-<h4 class="oper">HTTPステータスコードでフィルタする</h4>
+<h4 class="desc">HTTPステータスコードでフィルタする</h4>
 <pre class="block"><code class="shell">http.response.code==200</code></pre>
-<h4 class="oper">特定のURLでフィルタする</h4>
+<h4 class="desc">特定のURLでフィルタする</h4>
 <pre class="block"><code class="shell">http.request.uri contains "google.co.jp"</code></pre>
 @endsection

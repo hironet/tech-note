@@ -18,7 +18,7 @@
   </nav>
 </header>
 <h2 id="command" class="title">コマンド</h2>
-<h3 class="title">文字列操作</h3>
+<h3 class="left-line">文字列操作</h3>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>
@@ -51,7 +51,7 @@
     </tbody>
   </table>
 </div><!-- /.table-responsive -->
-<h3 class="title">文字コード・改行コード操作</h3>
+<h3 class="left-line">文字コード・改行コード操作</h3>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>

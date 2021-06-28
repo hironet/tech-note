@@ -24,8 +24,8 @@
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-<div class="box">
-  <span class="box-title">表示結果</span>
+<div class="html-result">
+  <span class="title">表示結果</span>
   <ul>
     <li>米国</li>
     <li>中国</li>
@@ -37,7 +37,7 @@
       </ul>
     </li>
   </ul>
-</div><!-- /.box -->
+</div><!-- /.html-result -->
 <p>以下の書き方は、<code>&lt;ul&gt;...&lt;/ul&gt;</code>が<code>&lt;li&gt;...&lt;/li&gt;</code>の中に入っていないため、誤っている。</p>
 <pre class="block"><code>&lt;ul&gt;
   &lt;li&gt;米国&lt;/li&gt;
@@ -61,8 +61,8 @@
     &lt;p&gt;UNIX系オペレーティングシステムの1つ&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-<div class="box">
-  <span class="box-title">表示結果</span>
+<div class="html-result">
+  <span class="title">表示結果</span>
   <ul>
     <li>
       Windows
@@ -77,5 +77,5 @@
       <p>UNIX系オペレーティングシステムの1つ</p>
     </li>
   </ul>
-</div><!-- /.box -->
+</div><!-- /.html-result -->
 @endsection

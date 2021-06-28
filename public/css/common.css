@@ -10,8 +10,8 @@ nav.navbar {
 h2.title {
   background-color: #5c73b7;
   color: #ffffff;
-  font-size: 1.8rem;
-  margin: 2rem 0 0.5rem;
+  font-size: 1.6rem;
+  margin: 1rem 0;
   opacity: 0.9;
   padding: 0.2rem 0.5rem;
 }
@@ -36,8 +36,7 @@ h4.title {
 h3.desc, h4.desc {
   border-bottom: solid 2px #5c73b7;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
-  margin-top: 1.5rem;
+  margin: 1rem 0;
   opacity: 0.9;
   padding: 0.2rem 0.5rem;
 }
@@ -57,15 +56,6 @@ a:hover {
   text-decoration: none;
 }
 
-p, ul, ol, li {
-  margin: 0;
-  padding: 0;
-}
-
-ul, ol {
-  padding-left: 2rem;
-}
-
 /* 目次（table of contents） */
 ul.toc {
   border: solid 2px #5c9ee7;
@@ -80,7 +70,7 @@ ul.toc li {
   border-bottom: dashed 1px silver;
   line-height: 1.5;
   list-style-type: none!important;
-  padding: 0.5rem 0 0.5rem 1.4rem;
+  padding: 0.5rem 0 0.5rem 1rem;
 }
 
 /* 目次の最後の点線を削除 */
@@ -113,15 +103,17 @@ ul.toc li:after {
   position: absolute;
 }
 
-div.box {
+/* HTML表示結果 */
+div.html-result {
   border-radius: 8px;
   border: solid 3px #95ccff;
-  margin: 2rem 0 1rem 1rem;
+  margin: 1.5rem 0.5rem 1rem;
   padding: 0.5rem 1rem;
   position: relative;
 }
 
-div.box .box-title {
+/* HTML表示結果のタイトル */
+div.html-result .title {
   background: #fff;
   color: #95ccff;
   display: inline-block;
@@ -134,7 +126,7 @@ div.box .box-title {
   top: -13px;
 }
 
-div.profile-box {
+div.simple-box {
   border: solid 1px #000;
   border-radius: 8px;
   padding: 0.5rem 1rem;
@@ -183,12 +175,7 @@ button#page-top:hover {
 }
 
 pre.block {
-  margin: 0.2rem 0 1rem 0.5rem;
-  padding: 0.2rem 0.5rem;
-}
-
-pre.inline {
-  margin: 0;
+  margin: 1rem 0;
   padding: 0.2rem 0.5rem;
 }
 

@@ -18,6 +18,9 @@ Route::view('/', 'welcome');
 use App\Http\Controllers\ArticleController;
 Route::get('/article/{category?}/{subcategory?}/{article?}', ArticleController::class);
 
+use App\Http\Controllers\SitemapController;
+Route::get('/sitemap.xml', SitemapController::class);
+
 Route::fallback(function () {
     $data['article_title'] = 'Not Found';
     return view('404', $data);

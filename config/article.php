@@ -3,6 +3,8 @@
 return [
     'SITE_NAME' => "Hiro's tech note",
 
+    'SITE_DESC' => 'このサイトは、ITエンジニアHiroのテクノロジーノートです。',
+
     'CATEGORY_NAMES' => [
         'cloud' => [
             '/article/cloud',

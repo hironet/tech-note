@@ -30,24 +30,14 @@ $ git update-server-info</code></pre>
 <h2 id="local-repo" class="title">ローカルリポジトリに対する操作</h2>
 <h3 class="desc">変更履歴を1行で表示する</h3>
 <pre class="block"><code class="shell">$ git log --oneline</code></pre>
-<h3 class="desc">ステージとワークツリーの差分を確認する</h3>
+<h3 class="desc">ワークツリーとステージの差分を確認する</h3>
 <pre class="block"><code class="shell">$ git diff [ファイルパス]</code></pre>
 <ul>
   <li><code>[ファイルパス]</code>を省略すると、全てのファイルについて確認する。</li>
 </ul>
-<h3 class="desc">ワークツリーの変更を取り消す</h3>
-<pre class="block"><code class="shell">$ git checkout -- [ファイルパス]</code></pre>
-<ul>
-  <li><code>[ファイルパス]</code>を省略すると、全てのファイルについて元に戻す。</li>
-</ul>
-<h3 class="desc">ステージの変更を取り消す</h3>
-<pre class="block"><code class="shell">$ git reset HEAD [ファイルパス]</code></pre>
-<ul>
-  <li><code>[ファイルパス]</code>を省略すると、全てのファイルについて元に戻す。</li>
-</ul>
 <h3 class="desc">ステージへの追加とコミットを同時に行う</h3>
 <pre class="block"><code class="shell">$ git commit -am "[メッセージ]"</code></pre>
-<h3 class="desc">直前のコミットメッセージをやり直す</h3>
+<h3 class="desc">直前のコミットをやり直す</h3>
 <pre class="block"><code class="shell">$ git commit --amend</code></pre>
 <ul>
   <li>必ず<code>git push</code>実行前に実行すること。</li>
@@ -70,6 +60,24 @@ $ git update-server-info</code></pre>
     fi' HEAD</code></pre>
 <ul>
   <li><code>[変更前の名前]</code>、<code>[変更後の名前]</code>、<code>[変更後のメールアドレス]</code>の箇所を置換して実行する。</li>
+</ul>
+<h3 class="desc">ワークツリーの変更を取り消す</h3>
+<pre class="block"><code class="shell">$ git checkout -- [ファイルパス]</code></pre>
+<ul>
+  <li><code>[ファイルパス]</code>を省略すると、全てのファイルについて元に戻す。</li>
+</ul>
+<h3 class="desc">ステージの変更を取り消す</h3>
+<p>以下のどちらかのコマンドを実行する。</p>
+<pre class="block"><code class="shell">$ git reset --mixed HEAD [ファイルパス]</code></pre>
+<pre class="block"><code class="shell">$ git reset HEAD [ファイルパス]</code></pre>
+<ul>
+  <li><code>--mixed</code>オプションは省略してよい。</li>
+  <li><code>[ファイルパス]</code>を省略すると、全てのファイルについて元に戻す。</li>
+</ul>
+<h3 class="desc">ワークツリーとステージの変更を取り消す</h3>
+<pre class="block"><code class="shell">$ git reset --hard HEAD [ファイルパス]</code></pre>
+<ul>
+  <li><code>[ファイルパス]</code>を省略すると、全てのファイルについて元に戻す。</li>
 </ul>
 <h2 id="remote-repo" class="title">リモートリポジトリに対する操作</h2>
 <h3 class="desc">originのURLを確認する</h3>

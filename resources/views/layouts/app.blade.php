@@ -14,14 +14,14 @@
 @endif
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+@isset ($noindex)
+  <meta name="robots" content="noindex">
+@endisset
 @empty ($article_description)
   <meta name="description" content="{{ config('article.SITE_DESC') }}">
 @else
   <meta name="description" content="{{ config('article.SITE_DESC') }}{{ $article_description }}">
 @endempty
-@isset ($noindex)
-  <meta name="robots" content="noindex">
-@endisset
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ secure_asset('/css/common.css') }}">
 @empty ($article_title)

@@ -17,9 +17,9 @@
 <h2 id="system" class="title">システム全体の設定</h2>
 <h3 class="desc">CapsLockキーをControlキーに変更する</h3>
 <p>1. ctrl2capをインストールする。</p>
-<pre class="block"><code class="shell">&gt; choco install -y ctrl2cap</code></pre>
+<pre class="code-block"><code class="shell">&gt; choco install -y ctrl2cap</code></pre>
 <p>2. ctrl2capを実行する。</p>
-<pre class="block"><code class="shell">&gt; cd C:\ProgramData\chocolatey\lib\ctrl2cap\tools
+<pre class="code-block"><code class="shell">&gt; cd C:\ProgramData\chocolatey\lib\ctrl2cap\tools
 &gt; .\ctrl2cap.exe /install</code></pre>
 <p>3. Windowsを再起動する。</p>
 <h3 class="desc">ユーザ共通のスタートメニューを設定する</h3>

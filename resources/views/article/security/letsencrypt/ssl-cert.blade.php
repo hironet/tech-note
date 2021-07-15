@@ -13,7 +13,7 @@
 </header>
 <h2 id="create" class="title">SSLサーバ証明書の作成</h2>
 <p>1. 以下のコマンドを実行する。</p>
-<pre class="block"><code class="shell"># /usr/bin/certbot certonly \
+<pre class="code-block"><code class="shell"># /usr/bin/certbot certonly \
 --manual \
 --agree-tos \
 --no-eff-email \
@@ -41,7 +41,7 @@ Press Enter to Continue
 </code></pre>
 <p>2. 出力メッセージに従って、DNSサーバにTXTレコードを登録する。</p>
 <p>3. <kbd>Enter</kbd>を押す。</p>
-<pre class="block"><code class="shell">
+<pre class="code-block"><code class="shell">
 Waiting for verification...
 Cleaning up challenges
 
@@ -63,7 +63,7 @@ IMPORTANT NOTES:
 <p>6. Webサーバに設定ファイルを再読み込みさせる。</p>
 <h2 id="update" class="title">SSLサーバ証明書の更新</h2>
 <p>1. 以下のコマンドを実行する。</p>
-<pre class="block"><code class="shell"># /usr/bin/certbot renew \
+<pre class="code-block"><code class="shell"># /usr/bin/certbot renew \
 --manual \
 --agree-tos \
 --no-eff-email \
@@ -78,7 +78,7 @@ IMPORTANT NOTES:
 <p>6. Webサーバに設定ファイルを再読み込みさせる。</p>
 <h2 id="delete" class="title">SSLサーバ証明書の削除</h2>
 <p>1. 以下のコマンドを実行する。</p>
-<pre class="block"><code class="shell"># certbot revoke --cert-path /etc/letsencrypt/live/[ドメイン名]/cert.pem
+<pre class="code-block"><code class="shell"># certbot revoke --cert-path /etc/letsencrypt/live/[ドメイン名]/cert.pem
 Saving debug log to /var/log/letsencrypt/letsencrypt.log
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -88,7 +88,7 @@ and later versions of the cert?
 (Y)es (recommended)/(N)o:
 </code></pre>
 <p>2. <code>Y</code>を入力し、<kbd>Enter</kbd>を押す。</p>
-<pre class="block"><code class="shell">(Y)es (recommended)/(N)o: Y
+<pre class="code-block"><code class="shell">(Y)es (recommended)/(N)o: Y
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Deleted all files relating to certificate investor-hiro.com.

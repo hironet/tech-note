@@ -16,11 +16,11 @@
 </header>
 <h2 id="install" class="title">システムワイドなインストール</h2>
 <p>1. <a href="https://github.com/rbenv/rbenv" target="_blank" rel="noopener noreferrer">rbenv</a>をインストールする。インストール先は<code>/usr/local/rbenv</code>とする。</p>
-<pre class="block"><code class="shell">$ git clone https://github.com/rbenv/rbenv /usr/local/rbenv</code></pre>
+<pre class="code-block"><code class="shell">$ git clone https://github.com/rbenv/rbenv /usr/local/rbenv</code></pre>
 <p>2. <a href="https://github.com/rbenv/ruby-build" target="_blank" rel="noopener noreferrer">ruby-build</a>をインストールする。インストール先は<code>/usr/local/rbenv/plugins/ruby-build</code>とする。</p>
-<pre class="block"><code class="shell">$ git clone https://github.com/rbenv/rbenv /usr/local/rbenv/plugins/ruby-build</code></pre>
+<pre class="code-block"><code class="shell">$ git clone https://github.com/rbenv/rbenv /usr/local/rbenv/plugins/ruby-build</code></pre>
 <p>3. 環境変数を設定する。</p>
-<pre class="block"><code class="bash">$ cat /etc/profile.d/env.sh
+<pre class="code-block"><code class="bash">$ cat /etc/profile.d/env.sh
 if [ -d /usr/local/rbenv/bin ]; then
     export RBENV_ROOT='/usr/local/rbenv'
     export PATH="${RBENV_ROOT}/bin:${PATH}"
@@ -28,20 +28,20 @@ if [ -d /usr/local/rbenv/bin ]; then
 fi</code></pre>
 <h2 id="command" class="title">rbenvのコマンド</h2>
 <h3 class="desc">インストールしたRubyの全てのバージョンを表示する</h3>
-<pre class="block"><code class="shell">$ rbenv versions</code></pre>
+<pre class="code-block"><code class="shell">$ rbenv versions</code></pre>
 <h3 class="desc">現在使用しているRubyのバージョンを表示する</h3>
-<pre class="block"><code class="shell">$ rbenv version</code></pre>
+<pre class="code-block"><code class="shell">$ rbenv version</code></pre>
 <h3 class="desc">インストール可能なRubyのバージョンを表示する</h3>
-<pre class="block"><code class="shell">$ rbenv install -l</code></pre>
+<pre class="code-block"><code class="shell">$ rbenv install -l</code></pre>
 <h3 class="desc">特定のバージョンのRubyをインストールする</h3>
-<pre class="block"><code class="shell">$ rbenv install [バージョン番号]
+<pre class="code-block"><code class="shell">$ rbenv install [バージョン番号]
 $ rbenv rehash</code></pre>
 <h3 class="desc">特定のバージョンのRubyをアンインストールする</h3>
-<pre class="block"><code class="shell">$ rbenv uninstall [バージョン番号]
+<pre class="code-block"><code class="shell">$ rbenv uninstall [バージョン番号]
 $ rbenv rehash</code></pre>
 <h3 class="desc">使用するRubyのバージョンを設定する</h3>
-<pre class="block"><code class="shell">$ rbenv global [バージョン番号]</code></pre>
+<pre class="code-block"><code class="shell">$ rbenv global [バージョン番号]</code></pre>
 <h3 class="desc">gemパッケージをインストールする</h3>
-<pre class="block"><code class="shell">$ gem install [gemパッケージ名]
+<pre class="code-block"><code class="shell">$ gem install [gemパッケージ名]
 $ rbenv rehash</code></pre>
 @endsection

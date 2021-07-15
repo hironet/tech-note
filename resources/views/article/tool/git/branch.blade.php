@@ -16,27 +16,27 @@
 </header>
 <h2 id="branch" class="title">ブランチ</h2>
 <h3 class="desc">ブランチの一覧を確認する</h3>
-<pre class="block"><code class="shell">$ git branch</code></pre>
+<pre class="code-block"><code class="shell">$ git branch</code></pre>
 <h3 class="desc">ブランチを作成する</h3>
-<pre class="block"><code class="shell">$ git branch [ブランチ名]</code></pre>
+<pre class="code-block"><code class="shell">$ git branch [ブランチ名]</code></pre>
 <h3 class="desc">ブランチを切り替える</h3>
-<pre class="block"><code class="shell">$ git checkout [ブランチ名]</code></pre>
+<pre class="code-block"><code class="shell">$ git checkout [ブランチ名]</code></pre>
 <h3 class="desc">ブランチの作成と切り替えを同時に行う</h3>
-<pre class="block"><code class="shell">$ git checkout -b [ブランチ名]</code></pre>
+<pre class="code-block"><code class="shell">$ git checkout -b [ブランチ名]</code></pre>
 <h3 class="desc">ブランチ名を変更する</h3>
-<pre class="block"><code class="shell">$ git branch -m [ブランチ名]</code></pre>
+<pre class="code-block"><code class="shell">$ git branch -m [ブランチ名]</code></pre>
 <h3 class="desc">ブランチを削除する</h3>
-<pre class="block"><code class="shell">$ git branch -d [ブランチ名]</code></pre>
+<pre class="code-block"><code class="shell">$ git branch -d [ブランチ名]</code></pre>
 <ul>
   <li>masterブランチにマージされていない変更が残っていると削除できない。</li>
 </ul>
 <h3 class="desc">ブランチを強制削除する</h3>
-<pre class="block"><code class="shell">$ git branch -D [ブランチ名]</code></pre>
+<pre class="code-block"><code class="shell">$ git branch -D [ブランチ名]</code></pre>
 <ul>
   <li>masterブランチにマージされていない変更が残っていても削除する。</li>
 </ul>
 <h2 id="merge" class="title">マージ</h2>
 <h3 class="desc">ブランチをマージする</h3>
-<pre class="block"><code class="shell">$ git checkout [マージ先のブランチ名]
+<pre class="code-block"><code class="shell">$ git checkout [マージ先のブランチ名]
 $ git merge [マージ元のブランチ名]</code></pre>
 @endsection

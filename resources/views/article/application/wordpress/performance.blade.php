@@ -17,7 +17,7 @@
 <h2 id="revision" class="title">リビジョン削除</h2>
 <p>1. データベース（MySQL）に接続する。</p>
 <p>2. 以下SQLを実行する。</p>
-<pre class="block"><code class="sql">USE wordpress;
+<pre class="code-block"><code class="sql">USE wordpress;
 SELECT COUNT(*) FROM wp_posts WHERE post_type='revision';
 DELETE FROM wp_posts WHERE post_type='revision';
 SELECT COUNT(*) FROM wp_posts WHERE post_type='revision';</code></pre>
@@ -25,7 +25,7 @@ SELECT COUNT(*) FROM wp_posts WHERE post_type='revision';</code></pre>
 <p>1. データベース（MySQL）に接続する。</p>
 <p>2. リビジョンを削除する。</p>
 <p>3. 以下SQLを実行する。</p>
-<pre class="block"><code class="sql">USE wordpress;
+<pre class="code-block"><code class="sql">USE wordpress;
 SELECT @@sql_mode;
 SET sql_mode = '';
 SELECT @@sql_mode;

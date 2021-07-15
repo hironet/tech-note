@@ -35,6 +35,10 @@
       <td>ウィンドウを撮る</td>
       <td><kbd>&#8679; + &#8984; + 4 + space</kbd></td>
     </tr>
+    <tr>
+      <td>スクリーンショットのツールバーを使う</td>
+      <td><kbd>&#8679; + &#8984; + 5</kbd></td>
+    </tr>
   </tbody>
 </table>
 <h2 id="other" class="title">その他</h2>

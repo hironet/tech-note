@@ -40,7 +40,9 @@ Before continuing, verify the record is deployed.
 Press Enter to Continue
 </code></pre>
 <p>2. 出力メッセージに従って、DNSサーバにTXTレコードを登録する。</p>
-<p>3. <kbd>Enter</kbd>を押す。</p>
+<p>3. DNSサーバにTXTレコードが登録されたことを確認するため、以下のコマンドを実行する。</p>
+<pre class="code-block"><code class="shell"># nslookup -type=txt _acme-challenge.[ドメイン名] 8.8.8.8</code></pre>
+<p>4. <kbd>Enter</kbd>を押す。</p>
 <pre class="code-block"><code class="shell">
 Waiting for verification...
 Cleaning up challenges
@@ -58,9 +60,11 @@ IMPORTANT NOTES:
 
    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le</code></pre>
-<p>4. <code>Congratulations!</code>と出力されたことを確認する。</p>
-<p>5. DNSサーバからTXTレコードを削除する。</p>
-<p>6. Webサーバに設定ファイルを再読み込みさせる。</p>
+<p>5. <code>Congratulations!</code>と出力されたことを確認する。</p>
+<p>6. DNSサーバからTXTレコードを削除する。</p>
+<p>7. DNSサーバからTXTレコードが削除されたことを確認するため、以下のコマンドを実行する。</p>
+<pre class="code-block"><code class="shell"># nslookup -type=txt _acme-challenge.[ドメイン名] 8.8.8.8</code></pre>
+<p>8. Webサーバに設定ファイルを再読み込みさせる。</p>
 <h2 id="update" class="title">SSLサーバ証明書の更新</h2>
 <p>1. 以下のコマンドを実行する。</p>
 <pre class="code-block"><code class="shell"># /usr/bin/certbot renew \
@@ -72,10 +76,14 @@ IMPORTANT NOTES:
 --server https://acme-v02.api.letsencrypt.org/directory \
 -m "[メールアドレス]"</code></pre>
 <p>2. 出力メッセージに従って、DNSサーバにTXTレコードを登録する。</p>
-<p>3. <kbd>Enter</kbd>を押す。</p>
-<p>4. <code>Congratulations!</code>と出力されたことを確認する。</p>
-<p>5. DNSサーバからTXTレコードを削除する。</p>
-<p>6. Webサーバに設定ファイルを再読み込みさせる。</p>
+<p>3. DNSサーバにTXTレコードが登録されたことを確認するため、以下のコマンドを実行する。</p>
+<pre class="code-block"><code class="shell"># nslookup -type=txt _acme-challenge.[ドメイン名] 8.8.8.8</code></pre>
+<p>4. <kbd>Enter</kbd>を押す。</p>
+<p>5. <code>Congratulations!</code>と出力されたことを確認する。</p>
+<p>6. DNSサーバからTXTレコードを削除する。</p>
+<p>7. DNSサーバからTXTレコードが削除されたことを確認するため、以下のコマンドを実行する。</p>
+<pre class="code-block"><code class="shell"># nslookup -type=txt _acme-challenge.[ドメイン名] 8.8.8.8</code></pre>
+<p>8. Webサーバに設定ファイルを再読み込みさせる。</p>
 <h2 id="delete" class="title">SSLサーバ証明書の削除</h2>
 <p>1. 以下のコマンドを実行する。</p>
 <pre class="code-block"><code class="shell"># certbot revoke --cert-path /etc/letsencrypt/live/[ドメイン名]/cert.pem

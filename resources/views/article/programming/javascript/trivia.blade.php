@@ -12,7 +12,7 @@
   </nav>
 </header>
 <h2 id="immediate" class="heading color-heading">即時実行関数</h2>
-<h3 class="heading underline-heading">functionを使用する場合</h3>
+<h3 class="heading lowerleftline-heading">functionを使用する場合</h3>
 <p>書き方は、以下の2パターンのどちらでもよい。</p>
 <pre class="code-block"><code class="javascript">(function () {
   // 処理内容
@@ -20,7 +20,7 @@
 <pre class="code-block"><code class="javascript">(function () {
   // 処理内容
 })();</code></pre>
-<h3 class="heading underline-heading">アロー関数を使用する場合</h3>
+<h3 class="heading lowerleftline-heading">アロー関数を使用する場合</h3>
 <p>以下のように書く。</p>
 <pre class="code-block"><code class="javascript">(() => {
   // 処理内容

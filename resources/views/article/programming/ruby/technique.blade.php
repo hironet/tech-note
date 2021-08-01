@@ -15,14 +15,14 @@
   </nav>
 </header>
 <h2 id="var" class="heading color-heading">変数</h2>
-<h3 class="heading desc">変数がnilであることを防ぐ</h3>
+<h3 class="heading bottomline-heading">変数がnilであることを防ぐ</h3>
 <pre class="code-block"><code class="ruby">array ||= []
 # array || (array = []) と同じ。</code></pre>
 <ul>
   <li>変数<code>array</code>が存在すれば何もせず、存在しなければ<code>array</code>に空の配列を代入する。</li>
 </ul>
 <h2 id="method" class="heading color-heading">メソッド</h2>
-<h3 class="heading desc">メソッド呼び出し時のNoMethodErrorを防ぐ</h3>
+<h3 class="heading bottomline-heading">メソッド呼び出し時のNoMethodErrorを防ぐ</h3>
 <pre class="code-block"><code class="ruby">str = nil
 len = str&amp;.length
 => nil

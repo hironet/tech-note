@@ -18,15 +18,15 @@
   </nav>
 </header>
 <h2 id="startup" class="heading color-heading">mysqlコマンドラインクライアントの起動</h2>
-<h3 class="heading desc">MySQLサーバに接続する</h3>
+<h3 class="heading bottomline-heading">MySQLサーバに接続する</h3>
 <pre class="code-block"><code class="shell">$ mysql -u [ユーザ名] -p -h[ホスト名] [データベース名]</code></pre>
-<h3 class="heading desc">SQL文を実行する</h3>
+<h3 class="heading bottomline-heading">SQL文を実行する</h3>
 <pre class="code-block"><code class="shell">$ mysql -u [ユーザ名] -p -h[ホスト名] [データベース名] -e "[コマンド]"</code></pre>
 <pre class="code-block"><code class="shell">$ mysql -u [ユーザ名] -p -h[ホスト名] [データベース名] -e "SOURCE [ファイル名]"</code></pre>
-<h3 class="heading desc">使用するデータベースを選択する</h3>
+<h3 class="heading bottomline-heading">使用するデータベースを選択する</h3>
 <pre class="code-block"><code class="sql">use [データベース名]</code></pre>
 <h2 id="operation" class="heading color-heading">mysqlコマンドラインクライアントの操作</h2>
-<h3 class="heading desc">プロンプトの文字列を変更する</h3>
+<h3 class="heading bottomline-heading">プロンプトの文字列を変更する</h3>
 <pre class="code-block"><code class="sql">prompt [プロンプトとして表示する文字列]</code></pre>
 <ul>
   <li>[プロンプトとして表示する文字列]には、以下の表に示すシーケンスを使用できる。</li>
@@ -61,34 +61,34 @@
     </tbody>
   </table>
 </div><!-- /.table-responsive -->
-<h3 class="heading desc">入力中の命令を<code>;</code>で実行する前にキャンセルする</h3>
+<h3 class="heading bottomline-heading">入力中の命令を<code>;</code>で実行する前にキャンセルする</h3>
 <pre class="code-block"><code class="sql">SELECT * FROM user
 ¥c</code></pre>
-<h3 class="heading desc">結果を縦に出力する</h3>
+<h3 class="heading bottomline-heading">結果を縦に出力する</h3>
 <pre class="code-block"><code class="sql">SELECT * FROM user¥G</code></pre>
-<h3 class="heading desc">SQL文が保存されたテキストファイルを実行する</h3>
+<h3 class="heading bottomline-heading">SQL文が保存されたテキストファイルを実行する</h3>
 <pre class="code-block"><code class="sql">SOURCE [ファイル名]</code></pre>
 <h2 id="show" class="heading color-heading">各種情報の表示</h2>
-<h3 class="heading desc">MySQLサーバのバージョンを表示する</h3>
+<h3 class="heading bottomline-heading">MySQLサーバのバージョンを表示する</h3>
 <pre class="code-block"><code class="sql">SELECT version();</code></pre>
-<h3 class="heading desc">現在のユーザ名を表示する</h3>
+<h3 class="heading bottomline-heading">現在のユーザ名を表示する</h3>
 <pre class="code-block"><code class="sql">SELECT user();</code></pre>
-<h3 class="heading desc">ユーザ一覧を表示する</h3>
+<h3 class="heading bottomline-heading">ユーザ一覧を表示する</h3>
 <pre class="code-block"><code class="sql">SELECT user, host FROM mysql.user;</code></pre>
-<h3 class="heading desc">ユーザの権限を表示する</h3>
+<h3 class="heading bottomline-heading">ユーザの権限を表示する</h3>
 <pre class="code-block"><code class="sql">SHOW GRANTS FOR [ユーザ名];</code></pre>
-<h3 class="heading desc">現在のデータベース名を表示する</h3>
+<h3 class="heading bottomline-heading">現在のデータベース名を表示する</h3>
 <pre class="code-block"><code class="sql">SELECT database();</code></pre>
-<h3 class="heading desc">データベース一覧を表示する</h3>
+<h3 class="heading bottomline-heading">データベース一覧を表示する</h3>
 <pre class="code-block"><code class="sql">SHOW DATABASES;</code></pre>
-<h3 class="heading desc">テーブル一覧を表示する</h3>
+<h3 class="heading bottomline-heading">テーブル一覧を表示する</h3>
 <pre class="code-block"><code class="sql">SHOW TABLES;</code></pre>
-<h3 class="heading desc">トリガ一覧を表示する</h3>
+<h3 class="heading bottomline-heading">トリガ一覧を表示する</h3>
 <pre class="code-block"><code class="sql">SHOW TRIGGERS;</code></pre>
-<h3 class="heading desc">テーブルのカラム構造を表示する</h3>
-<pre class="code-block"><code class="sql">DESC [テーブル名];</code></pre>
-<h3 class="heading desc">ストアドプロシージャの内容を表示する</h3>
+<h3 class="heading bottomline-heading">テーブルのカラム構造を表示する</h3>
+<pre class="code-block"><code class="sql">bottomline-heading [テーブル名];</code></pre>
+<h3 class="heading bottomline-heading">ストアドプロシージャの内容を表示する</h3>
 <pre class="code-block"><code class="sql">SHOW CREATE PROCEDURE [ストアドプロシージャ名];</code></pre>
-<h3 class="heading desc">ストアドファンクションの内容を表示する</h3>
+<h3 class="heading bottomline-heading">ストアドファンクションの内容を表示する</h3>
 <pre class="code-block"><code class="sql">SHOW CREATE FUNCTION [ストアドファンクション名];</code></pre>
 @endsection

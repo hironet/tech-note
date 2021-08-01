@@ -108,60 +108,60 @@
   </nav>
 </header>
 <h2 id="arping" class="heading color-heading">arping</h2>
-<h3 class="heading desc">同一セグメント上で、pingに応答しないノードの存在を確認する</h3>
+<h3 class="heading bottomline-heading">同一セグメント上で、pingに応答しないノードの存在を確認する</h3>
 <pre class="code-block"><code class="shell">$ arping [IPアドレス]</code></pre>
-<h3 class="heading desc">IPアドレスの重複が発生していないかをGratuitous ARPで確認する</h3>
+<h3 class="heading bottomline-heading">IPアドレスの重複が発生していないかをGratuitous ARPで確認する</h3>
 <pre class="code-block"><code class="shell">$ arping -D [IPアドレス]</code></pre>
-<h3 class="heading desc">IPアドレスの変更をGratuitous ARPで他のノードに通知し、MACアドレステーブルおよびARPテーブルを更新させる</h3>
+<h3 class="heading bottomline-heading">IPアドレスの変更をGratuitous ARPで他のノードに通知し、MACアドレステーブルおよびARPテーブルを更新させる</h3>
 <pre class="code-block"><code class="shell">$ arping -A [IPアドレス]</code></pre>
 <h2 id="awk" class="heading color-heading">awk</h2>
-<h3 class="heading desc">ファイルの2列目のみ表示する</h3>
+<h3 class="heading bottomline-heading">ファイルの2列目のみ表示する</h3>
 <pre class="code-block"><code class="shell">$ cat [ファイルパス] | awk '{ print $2 }'</code></pre>
-<h3 class="heading desc">ファイルの2列目の値が50以上の行のみ表示する</h3>
+<h3 class="heading bottomline-heading">ファイルの2列目の値が50以上の行のみ表示する</h3>
 <pre class="code-block"><code class="shell">$ cat [ファイルパス] | awk '{ if ($2 >= 50) print $0 }'</code></pre>
-<h3 class="heading desc">ファイルの各レコードが","で区切られており、5フィールド目の値が"ok"、かつ、6フィールド目の値が"dev"にマッチする行のみ表示する</h3>
+<h3 class="heading bottomline-heading">ファイルの各レコードが","で区切られており、5フィールド目の値が"ok"、かつ、6フィールド目の値が"dev"にマッチする行のみ表示する</h3>
 <pre class="code-block"><code class="shell">$ cat [ファイルパス] | awk -F ',' '{ if ($5 == "ok" &amp;&amp; $6 ~ /dev/) print $0 }'</code></pre>
-<h3 class="heading desc">ログファイルから特定の時間帯の行のみ表示する</h3>
+<h3 class="heading bottomline-heading">ログファイルから特定の時間帯の行のみ表示する</h3>
 <pre class="code-block"><code class="shell">$ awk -F - '"2018/07/20 03:30:00" &lt; $1 &amp;&amp; $1 &lt;= "2018/07/20 03:35:00"' [ファイルパス]</code></pre>
 <h2 id="basename" class="heading color-heading">basename</h2>
-<h3 class="heading desc">ファイルパスからファイル名部分を取り出す</h3>
+<h3 class="heading bottomline-heading">ファイルパスからファイル名部分を取り出す</h3>
 <pre class="code-block"><code class="shell">$ basename /var/log/messages
 messages</code></pre>
 <h2 id="chmod" class="heading color-heading">chmod</h2>
-<h3 class="heading desc">ディレクトリにSticky Bitを設定する</h3>
+<h3 class="heading bottomline-heading">ディレクトリにSticky Bitを設定する</h3>
 <pre class="code-block"><code class="shell">$ chmod +t [ディレクトリパス]</code></pre>
 <ul>
   <li>Sticky Bitが設定されたディレクトリでは、全てのユーザがディレクトリおよびファイルを書き込みできるが、所有者のみが削除を行える。</li>
 </ul>
 <h2 id="chown" class="heading color-heading">chown</h2>
-<h3 class="heading desc">シンボリックリンクの所有者・所有グループを変更する</h3>
+<h3 class="heading bottomline-heading">シンボリックリンクの所有者・所有グループを変更する</h3>
 <pre class="code-block"><code class="shell">$ chown -h [所有者]:[所有グループ] [ファイルパス]</code></pre>
 <h2 id="curl" class="heading color-heading">curl</h2>
-<h3 class="heading desc">WebサーバからHTTPヘッダとデータを取得する</h3>
+<h3 class="heading bottomline-heading">WebサーバからHTTPヘッダとデータを取得する</h3>
 <pre class="code-block"><code class="shell">$ curl -i [URL]</code></pre>
-<h3 class="heading desc">WebサーバからHTTPヘッダのみを取得する</h3>
+<h3 class="heading bottomline-heading">WebサーバからHTTPヘッダのみを取得する</h3>
 <pre class="code-block"><code class="shell">$ curl -I [URL]</code></pre>
-<h3 class="heading desc">SSLサーバ証明書に問題のあるWebサーバからデータを取得する</h3>
+<h3 class="heading bottomline-heading">SSLサーバ証明書に問題のあるWebサーバからデータを取得する</h3>
 <pre class="code-block"><code class="shell">$ curl -k [URL]</code></pre>
 <h2 id="dd" class="heading color-heading">dd</h2>
-<h3 class="heading desc">I/O負荷をかける</h3>
+<h3 class="heading bottomline-heading">I/O負荷をかける</h3>
 <pre class="code-block"><code class="shell">$ dd if=/dev/zero of=test bs=1M count=512 oflag=direct</code></pre>
 <h2 id="dirname" class="heading color-heading">dirname</h2>
-<h3 class="heading desc">ファイルパスからディレクトリ部分を取り出す</h3>
+<h3 class="heading bottomline-heading">ファイルパスからディレクトリ部分を取り出す</h3>
 <pre class="code-block"><code class="shell">$ dirname /var/log/messages
 /var/log</code></pre>
 <h2 id="dmidecode" class="heading color-heading">dmidecode</h2>
-<h3 class="heading desc">ハードウェア情報を表示する</h3>
+<h3 class="heading bottomline-heading">ハードウェア情報を表示する</h3>
 <pre class="code-block"><code class="shell">$ dmidecode</code></pre>
 <h2 id="echo" class="heading color-heading">echo</h2>
-<h3 class="heading desc">空ファイルを作成する</h3>
+<h3 class="heading bottomline-heading">空ファイルを作成する</h3>
 <pre class="code-block"><code class="shell">$ echo -n > [ファイルパス]</code></pre>
-<h3 class="heading desc"><code>\n</code>の位置で改行する</h3>
+<h3 class="heading bottomline-heading"><code>\n</code>の位置で改行する</h3>
 <pre class="code-block"><code class="shell">$ echo -e 'hello\nworld'
 hello
 world</code></pre>
 <h2 id="expr" class="heading color-heading">expr</h2>
-<h3 class="heading desc">四則演算をする</h3>
+<h3 class="heading bottomline-heading">四則演算をする</h3>
 <pre class="code-block"><code class="shell">$ expr 100 + 200
 300
 $ expr 300 - 200
@@ -171,122 +171,122 @@ $ expr 11 '*' 11
 $ expr 400 / 2
 200</code></pre>
 <h2 id="find" class="heading color-heading">find</h2>
-<h3 class="heading desc">所有者がrootまたは所有グループがrootのファイルを検索する</h3>
+<h3 class="heading bottomline-heading">所有者がrootまたは所有グループがrootのファイルを検索する</h3>
 <pre class="code-block"><code class="shell">$ find [ディレクトリパス] \( -user root -o -group root \)</code></pre>
-<h3 class="heading desc">所有者が存在しないファイルを検索する</h3>
+<h3 class="heading bottomline-heading">所有者が存在しないファイルを検索する</h3>
 <pre class="code-block"><code class="shell">$ find / -nouser</code></pre>
-<h3 class="heading desc">所有グループが存在しないファイルを検索する</h3>
+<h3 class="heading bottomline-heading">所有グループが存在しないファイルを検索する</h3>
 <pre class="code-block"><code class="shell">$ find / -nogroup</code></pre>
-<h3 class="heading desc">更新日時が指定した時刻より新しいファイルを検索する</h3>
+<h3 class="heading bottomline-heading">更新日時が指定した時刻より新しいファイルを検索する</h3>
 <pre class="code-block"><code class="shell">$ find [ディレクトリパス] -newermt 'YYYYMMDD HH:MM'</code></pre>
-<h3 class="heading desc">特定のディレクトリ（<code>/home</code>および<code>/proc</code>）配下を検索しないようにする</h3>
+<h3 class="heading bottomline-heading">特定のディレクトリ（<code>/home</code>および<code>/proc</code>）配下を検索しないようにする</h3>
 <pre class="code-block"><code class="shell">$ find [ディレクトリパス] -not -path '/home/*' -not -path '/proc/*'</code></pre>
-<h3 class="heading desc">検索結果のファイル名だけ取り出す</h3>
+<h3 class="heading bottomline-heading">検索結果のファイル名だけ取り出す</h3>
 <pre class="code-block"><code class="shell">$ find [ディレクトリパス] -type f -exec basename {} \;</code></pre>
-<h3 class="heading desc">ディレクトリのパーミッションを再帰的に変更する</h3>
+<h3 class="heading bottomline-heading">ディレクトリのパーミッションを再帰的に変更する</h3>
 <pre class="code-block"><code class="shell">$ find [ディレクトリパス] -type d -exec chmod 755 {} \;</code></pre>
 <h2 id="grep" class="heading color-heading">grep</h2>
-<h3 class="heading desc">パターン文字列にマッチした前後の行も表示する</h3>
+<h3 class="heading bottomline-heading">パターン文字列にマッチした前後の行も表示する</h3>
 <pre class="code-block"><code class="shell">$ grep -C [行数] [パターン文字列] [ファイルパス]</code></pre>
-<h3 class="heading desc">設定ファイルのコメントと空行以外を表示する</h3>
+<h3 class="heading bottomline-heading">設定ファイルのコメントと空行以外を表示する</h3>
 <pre class="code-block"><code class="shell">$ grep -v -e '^\s*#' -e '^\s*$' [ファイルパス]</code></pre>
-<h3 class="heading desc">パターン文字列のリストをファイルから読み込む</h3>
+<h3 class="heading bottomline-heading">パターン文字列のリストをファイルから読み込む</h3>
 <pre class="code-block"><code class="shell">$ grep -f [パターン文字列を記載したファイル] [ファイルパス]</code></pre>
-<h3 class="heading desc">ハイフンから始まる文字列を検索する</h3>
+<h3 class="heading bottomline-heading">ハイフンから始まる文字列を検索する</h3>
 <pre class="code-block"><code class="shell">$ grep -- [ハイフンから始まるパターン文字列] [ファイルパス]</code></pre>
-<h3 class="heading desc">psコマンドのヘッダを表示し、grep自身は除いて表示する</h3>
+<h3 class="heading bottomline-heading">psコマンドのヘッダを表示し、grep自身は除いて表示する</h3>
 <pre class="code-block"><code class="shell">$ ps aux | grep -e [U]SER -e [パターン文字列]</code></pre>
 <h2 id="ip" class="heading color-heading">ip</h2>
-<h3 class="heading desc">指定したIPアドレスに到達するための経路を表示する</h3>
+<h3 class="heading bottomline-heading">指定したIPアドレスに到達するための経路を表示する</h3>
 <pre class="code-block"><code class="shell">$ ip route get [IPアドレス]</code></pre>
-<h3 class="heading desc">ARPテーブルのエントリを表示する</h3>
+<h3 class="heading bottomline-heading">ARPテーブルのエントリを表示する</h3>
 <pre class="code-block"><code class="shell">$ ip n</code></pre>
 <h2 id="lsblk" class="heading color-heading">lsblk</h2>
-<h3 class="heading desc">ブロックデバイスを一覧表示する</h3>
+<h3 class="heading bottomline-heading">ブロックデバイスを一覧表示する</h3>
 <pre class="code-block"><code class="shell">$ lsblk</code></pre>
 <h2 id="lsof" class="heading color-heading">lsof</h2>
-<h3 class="heading desc">ファイルを使用しているプロセスを表示する</h3>
+<h3 class="heading bottomline-heading">ファイルを使用しているプロセスを表示する</h3>
 <pre class="code-block"><code class="shell">$ lsof [ファイルパス]</code></pre>
-<h3 class="heading desc">ポートを使用しているプロセスを表示する</h3>
+<h3 class="heading bottomline-heading">ポートを使用しているプロセスを表示する</h3>
 <pre class="code-block"><code class="shell">$ lsof -i:[ポート番号]</code></pre>
-<h3 class="heading desc">プロセスが使用しているファイルを表示する</h3>
+<h3 class="heading bottomline-heading">プロセスが使用しているファイルを表示する</h3>
 <pre class="code-block"><code class="shell">$ lsof -p [プロセスIDまたはプロセス名]</code></pre>
-<h3 class="heading desc">ユーザが使用しているファイルを表示する</h3>
+<h3 class="heading bottomline-heading">ユーザが使用しているファイルを表示する</h3>
 <pre class="code-block"><code class="shell">$ lsof -u [ユーザ名]</code></pre>
 <h2 id="mkpasswd" class="heading color-heading">mkpasswd</h2>
-<h3 class="heading desc">10文字のパスワードを生成する</h3>
+<h3 class="heading bottomline-heading">10文字のパスワードを生成する</h3>
 <pre class="code-block"><code class="shell">$ mkpasswd -l 10</code></pre>
 <h2 id="mktemp" class="heading color-heading">mktemp</h2>
-<h3 class="heading desc">一時ファイルを作成する</h3>
+<h3 class="heading bottomline-heading">一時ファイルを作成する</h3>
 <pre class="code-block"><code class="shell">$ mktemp</code></pre>
-<h3 class="heading desc">一時ディレクトリを作成する</h3>
+<h3 class="heading bottomline-heading">一時ディレクトリを作成する</h3>
 <pre class="code-block"><code class="shell">$ mktemp -d</code></pre>
 <h2 id="nc" class="heading color-heading">nc</h2>
-<h3 class="heading desc">適当なポートをLISTEN状態にする</h3>
+<h3 class="heading bottomline-heading">適当なポートをLISTEN状態にする</h3>
 <pre class="code-block"><code class="shell">$ nc -lkv -p [ポート番号]</code></pre>
 <ul>
   <li><code>-k</code>オプション … 複数コネクションを受け付ける。</li>
   <li><code>-v</code>オプション … 詳細情報を出力する。</li>
 </ul>
-<h3 class="heading desc">サーバに接続する</h3>
+<h3 class="heading bottomline-heading">サーバに接続する</h3>
 <pre class="code-block"><code class="shell">$ nc -zv [宛先ホスト] [ポート番号]</code></pre>
 <ul>
   <li><code>-z</code>オプション … 接続した後、すぐに切断する。</li>
 </ul>
-<h3 class="heading desc">簡易Webサーバを立ち上げる</h3>
+<h3 class="heading bottomline-heading">簡易Webサーバを立ち上げる</h3>
 <pre class="code-block"><code class="shell">$ while true; do ( echo -e 'HTTP/1.1 200 OK\n\nhello'; ) | nc -l 8000; done</code></pre>
 <pre class="code-block"><code class="shell">$ while true; do ( echo -e 'HTTP/1.1 200 OK\n\n'; cat index.html; ) | nc -l 8000; done</code></pre>
 <h2 id="nohup" class="heading color-heading">nohup</h2>
-<h3 class="heading desc">ログアウト後もコマンドを実行し続ける</h3>
+<h3 class="heading bottomline-heading">ログアウト後もコマンドを実行し続ける</h3>
 <pre class="code-block"><code class="shell">$ nohup [コマンド] &amp;</code></pre>
 <h2 id="readlink" class="heading color-heading">readlink</h2>
-<h3 class="heading desc">相対パスを絶対パスに変換する</h3>
+<h3 class="heading bottomline-heading">相対パスを絶対パスに変換する</h3>
 <pre class="code-block"><code class="shell">$ readlink -f [相対パス]</code></pre>
 <h2 id="sed" class="heading color-heading">sed</h2>
-<h3 class="heading desc">ファイルの5行目を表示する</h3>
+<h3 class="heading bottomline-heading">ファイルの5行目を表示する</h3>
 <pre class="code-block"><code class="shell">$ sed -n 5p [ファイルパス]</code></pre>
-<h3 class="heading desc">ファイルの10～20行目を表示する</h3>
+<h3 class="heading bottomline-heading">ファイルの10～20行目を表示する</h3>
 <pre class="code-block"><code class="shell">$ sed -n 10,20p [ファイルパス]</code></pre>
-<h3 class="heading desc">ファイルの5行目を削除する</h3>
+<h3 class="heading bottomline-heading">ファイルの5行目を削除する</h3>
 <pre class="code-block"><code class="shell">$ sed -e '5d' [ファイルパス]</code></pre>
-<h3 class="heading desc">ファイルの10～20行目を削除する</h3>
+<h3 class="heading bottomline-heading">ファイルの10～20行目を削除する</h3>
 <pre class="code-block"><code class="shell">$ sed -e '10,20d' [ファイルパス]</code></pre>
-<h3 class="heading desc">特定の文字列を含む行を削除する</h3>
+<h3 class="heading bottomline-heading">特定の文字列を含む行を削除する</h3>
 <pre class="code-block"><code class="shell">$ sed -i -e '/[文字列>/d' [ファイルパス]</code></pre>
 <ul>
   <li><code>-i</code>オプション … ファイルを直接編集する。</li>
 </ul>
-<h3 class="heading desc">特定の文字列全てを別の文字列に置換する</h3>
+<h3 class="heading bottomline-heading">特定の文字列全てを別の文字列に置換する</h3>
 <pre class="code-block"><code class="shell">$ sed -e 's/[置換前の文字列>/[置換後の文字列>/g' [ファイルパス]</code></pre>
 <h2 id="snmpwalk" class="heading color-heading">snmpwalk</h2>
-<h3 class="heading desc">全MIBを取得する</h3>
+<h3 class="heading bottomline-heading">全MIBを取得する</h3>
 <pre class="code-block"><code class="shell">$ snmpwalk -v 2c -c [コミュニティ名] [IPアドレス]</code></pre>
 <h2 id="ssh" class="heading color-heading">ssh</h2>
-<h3 class="heading desc">データベースにないホストへの接続時に警告メッセージを表示しない</h3>
+<h3 class="heading bottomline-heading">データベースにないホストへの接続時に警告メッセージを表示しない</h3>
 <pre class="code-block"><code class="shell">$ ssh -o StrictHostKeyChecking=no [ユーザ名]@[ホスト名またはIPアドレス]</code></pre>
-<h3 class="heading desc">ローカルのシェルスクリプトをリモートホストで実行する</h3>
+<h3 class="heading bottomline-heading">ローカルのシェルスクリプトをリモートホストで実行する</h3>
 <pre class="code-block"><code class="shell">$ cat [ファイルパス] | ssh [ユーザ名]@[ホスト名またはIPアドレス] bash</code></pre>
 <h2 id="strace" class="heading color-heading">strace</h2>
-<h3 class="heading desc">プロセスが呼び出すシステムコールをトレースする</h3>
+<h3 class="heading bottomline-heading">プロセスが呼び出すシステムコールをトレースする</h3>
 <pre class="code-block"><code class="shell">$ strace [コマンド]</code></pre>
-<h3 class="heading desc">既に実行されているプロセスが呼び出すシステムコールをトレースする</h3>
+<h3 class="heading bottomline-heading">既に実行されているプロセスが呼び出すシステムコールをトレースする</h3>
 <pre class="code-block"><code class="shell">$ strace -h3 [プロセスID]</code></pre>
 <h2 id="tail" class="heading color-heading">tail</h2>
-<h3 class="heading desc">ファイルの2行目以降を表示する</h3>
+<h3 class="heading bottomline-heading">ファイルの2行目以降を表示する</h3>
 <pre class="code-block"><code class="shell">$ tail -n +2 [ファイルパス]</code></pre>
 <h2 id="tar" class="heading color-heading">tar</h2>
-<h3 class="heading desc">tar.gzファイルに格納されているファイル一覧を表示する</h3>
+<h3 class="heading bottomline-heading">tar.gzファイルに格納されているファイル一覧を表示する</h3>
 <pre class="code-block"><code class="shell">$ tar ztvf [ファイルパス]</code></pre>
 <h2 id="tcpdump" class="heading color-heading">tcpdump</h2>
-<h3 class="heading desc">Wiresharkを使って解析するためのキャプチャファイルを取得する</h3>
+<h3 class="heading bottomline-heading">Wiresharkを使って解析するためのキャプチャファイルを取得する</h3>
 <pre class="code-block"><code class="shell">$ tcpdump -n -i [ネットワークインタフェース名] -s 0 not port 22 -w [保存先のファイルパス]</code></pre>
 <h2 id="tcpslice" class="heading color-heading">tcpslice</h2>
-<h3 class="heading desc">tcpdumpのファイルがいつからいつまでのデータを含んでいるかを確認する</h3>
+<h3 class="heading bottomline-heading">tcpdumpのファイルがいつからいつまでのデータを含んでいるかを確認する</h3>
 <pre class="code-block"><code class="shell">$ tcpslice -t [tcpdumpのファイルパス]</code></pre>
-<h3 class="heading desc">tcpdumpのファイルから、2018/07/24 02:50:00～3600秒後の範囲を抽出する</h3>
+<h3 class="heading bottomline-heading">tcpdumpのファイルから、2018/07/24 02:50:00～3600秒後の範囲を抽出する</h3>
 <pre class="code-block"><code class="shell">$ tcpslice -w [保存先のファイルパス] 18y07m24d02h50m00s +3600 [tcpdumpのファイルパス]</code></pre>
 <h2 id="tee" class="heading color-heading">tee</h2>
-<h3 class="heading desc">標準入力から読み込んだ内容を標準出力とファイルに出力する</h3>
+<h3 class="heading bottomline-heading">標準入力から読み込んだ内容を標準出力とファイルに出力する</h3>
 <pre class="code-block"><code class="shell">$ [コマンド] 2&gt;&amp;1 | tee [オプション] [ファイルパス]</code></pre>
 <ul>
   <li><code>2&gt;&amp;1</code>を付けることで、標準エラー出力も<code>tee</code>に読み込ませることができる。</li>
@@ -343,12 +343,12 @@ $ expr 400 / 2
   </table>
 </div><!-- /.table-responsive -->
 <h2 id="view" class="heading color-heading">view</h2>
-<h3 class="heading desc">viをreadonlyモードで起動する</h3>
+<h3 class="heading bottomline-heading">viをreadonlyモードで起動する</h3>
 <pre class="code-block"><code class="shell">$ view [ファイルパス]</code></pre>
 <ul>
   <li><code>vi -R</code>と同じ。</li>
 </ul>
 <h2 id="yes" class="heading color-heading">yes</h2>
-<h3 class="heading desc">CPUに高い負荷をかける</h3>
+<h3 class="heading bottomline-heading">CPUに高い負荷をかける</h3>
 <pre class="code-block"><code class="shell">$ yes > /dev/null</code></pre>
 @endsection

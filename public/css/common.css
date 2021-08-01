@@ -75,8 +75,8 @@ a:hover {
   font-size: 1.6rem;
 }
 
-/* 下線付きの見出し */
-.underline-heading {
+/* 左下線付きの見出し */
+.lowerleftline-heading {
   border-bottom: solid 3px #5c73b7;
   border-left: solid 8px #5c73b7;
   font-size: 1.4rem;
@@ -88,7 +88,8 @@ a:hover {
   font-size: 1.2rem;
 }
 
-.desc {
+/* 下線付きの見出し */
+.bottomline-heading {
   border-bottom: solid 2px #5c73b7;
   font-size: 1.2rem;
 }

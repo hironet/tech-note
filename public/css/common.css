@@ -61,25 +61,29 @@ a:hover {
   transform: scale(1.1);
 }
 
+/* 見出し */
 .heading {
   margin: 1rem 0;
   opacity: 0.9;
   padding: 0.2rem 0.5rem;
 }
 
-.title-2 {
+/* 背景色付きの見出し */
+.color-heading {
   background-color: #5c73b7;
   color: #ffffff;
   font-size: 1.6rem;
 }
 
-.title-3 {
+/* 下線付きの見出し */
+.underline-heading {
   border-bottom: solid 3px #5c73b7;
   border-left: solid 8px #5c73b7;
   font-size: 1.4rem;
 }
 
-.title-4 {
+/* 左線付きの見出し */
+.leftline-heading {
   border-left: solid 8px #5c73b7;
   font-size: 1.2rem;
 }

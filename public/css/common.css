@@ -21,6 +21,14 @@ h4 {
   font-size: 1.2rem;
 }
 
+h5 {
+  font-size: 1.0rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
 a:link, a:visited {
   outline: none;
   text-decoration: none;
@@ -30,47 +38,6 @@ a:hover {
   color: #000000;
   outline: none;
   text-decoration: none;
-}
-
-/* ページトップに戻るボタン */
-#page-top {
-  /* buttonタグのリセットCSS */
-  appearance: none;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 0;
-
-  /* ボタンの装飾 */
-  align-items: center;
-  background-color: #212529;
-  border-radius: 50%;
-  bottom: 15px;
-  display: flex;
-  height: 50px;
-  justify-content: center;
-  opacity: 0.7;
-  position: fixed;
-  right: 15px;
-  transition: all 0.3s ease;
-  width: 50px;
-  z-index: 100;
-}
-
-/* ページトップに戻るボタン：矢印 */
-#page-top::before {
-  border-right: solid 3px #fff;
-  border-top: solid 3px #fff;
-  content: "";
-  height: 12px;
-  margin-bottom: -6px;
-  transform: rotate(-45deg);
-  width: 12px;
-}
-
-/* ページトップに戻るボタン：ホバー時 */
-#page-top:hover {
-  transform: scale(1.1);
 }
 
 /* 見出し */
@@ -197,4 +164,45 @@ a:hover {
   font-family: Monaco, Menlo, Consolas, 'Courier New', Courier, monospace, sans-serif;
   margin: 1rem 0;
   padding: 0.2rem 0.5rem;
+}
+
+/* ページトップに戻るボタン */
+#page-top {
+  /* buttonタグのリセットCSS */
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+
+  /* ボタンの装飾 */
+  align-items: center;
+  background-color: #212529;
+  border-radius: 50%;
+  bottom: 15px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  opacity: 0.7;
+  position: fixed;
+  right: 15px;
+  transition: all 0.3s ease;
+  width: 50px;
+  z-index: 100;
+}
+
+/* ページトップに戻るボタン：矢印 */
+#page-top::before {
+  border-right: solid 3px #fff;
+  border-top: solid 3px #fff;
+  content: "";
+  height: 12px;
+  margin-bottom: -6px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+/* ページトップに戻るボタン：ホバー時 */
+#page-top:hover {
+  transform: scale(1.1);
 }

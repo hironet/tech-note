@@ -87,7 +87,7 @@ h4.title {
   padding: 0.2rem 0.5rem;
 }
 
-h3.desc, h4.desc {
+.desc {
   border-bottom: solid 2px #5c73b7;
   font-size: 1.2rem;
   margin: 1rem 0;

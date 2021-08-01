@@ -14,7 +14,7 @@
     </ul>
   </nav>
 </header>
-<h2 id="install" class="title">システムワイドなインストール</h2>
+<h2 id="install" class="heading title-2">システムワイドなインストール</h2>
 <p>1. <a href="https://github.com/rbenv/rbenv" target="_blank" rel="noopener noreferrer">rbenv</a>をインストールする。インストール先は<code>/usr/local/rbenv</code>とする。</p>
 <pre class="code-block"><code class="shell">$ git clone https://github.com/rbenv/rbenv /usr/local/rbenv</code></pre>
 <p>2. <a href="https://github.com/rbenv/ruby-build" target="_blank" rel="noopener noreferrer">ruby-build</a>をインストールする。インストール先は<code>/usr/local/rbenv/plugins/ruby-build</code>とする。</p>
@@ -26,22 +26,22 @@ if [ -d /usr/local/rbenv/bin ]; then
     export PATH="${RBENV_ROOT}/bin:${PATH}"
     eval "$(rbenv init -)"
 fi</code></pre>
-<h2 id="command" class="title">rbenvのコマンド</h2>
-<h3 class="desc">インストールしたRubyの全てのバージョンを表示する</h3>
+<h2 id="command" class="heading title-2">rbenvのコマンド</h2>
+<h3 class="heading desc">インストールしたRubyの全てのバージョンを表示する</h3>
 <pre class="code-block"><code class="shell">$ rbenv versions</code></pre>
-<h3 class="desc">現在使用しているRubyのバージョンを表示する</h3>
+<h3 class="heading desc">現在使用しているRubyのバージョンを表示する</h3>
 <pre class="code-block"><code class="shell">$ rbenv version</code></pre>
-<h3 class="desc">インストール可能なRubyのバージョンを表示する</h3>
+<h3 class="heading desc">インストール可能なRubyのバージョンを表示する</h3>
 <pre class="code-block"><code class="shell">$ rbenv install -l</code></pre>
-<h3 class="desc">特定のバージョンのRubyをインストールする</h3>
+<h3 class="heading desc">特定のバージョンのRubyをインストールする</h3>
 <pre class="code-block"><code class="shell">$ rbenv install [バージョン番号]
 $ rbenv rehash</code></pre>
-<h3 class="desc">特定のバージョンのRubyをアンインストールする</h3>
+<h3 class="heading desc">特定のバージョンのRubyをアンインストールする</h3>
 <pre class="code-block"><code class="shell">$ rbenv uninstall [バージョン番号]
 $ rbenv rehash</code></pre>
-<h3 class="desc">使用するRubyのバージョンを設定する</h3>
+<h3 class="heading desc">使用するRubyのバージョンを設定する</h3>
 <pre class="code-block"><code class="shell">$ rbenv global [バージョン番号]</code></pre>
-<h3 class="desc">gemパッケージをインストールする</h3>
+<h3 class="heading desc">gemパッケージをインストールする</h3>
 <pre class="code-block"><code class="shell">$ gem install [gemパッケージ名]
 $ rbenv rehash</code></pre>
 @endsection

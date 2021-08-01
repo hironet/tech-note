@@ -14,14 +14,14 @@
     </ul>
   </nav>
 </header>
-<h2 id="revision" class="title">リビジョン削除</h2>
+<h2 id="revision" class="heading title-2">リビジョン削除</h2>
 <p>1. データベース（MySQL）に接続する。</p>
 <p>2. 以下SQLを実行する。</p>
 <pre class="code-block"><code class="sql">USE wordpress;
 SELECT COUNT(*) FROM wp_posts WHERE post_type='revision';
 DELETE FROM wp_posts WHERE post_type='revision';
 SELECT COUNT(*) FROM wp_posts WHERE post_type='revision';</code></pre>
-<h2 id="fragment" class="title">wp-postsテーブルのフラグメント化解消</h2>
+<h2 id="fragment" class="heading title-2">wp-postsテーブルのフラグメント化解消</h2>
 <p>1. データベース（MySQL）に接続する。</p>
 <p>2. リビジョンを削除する。</p>
 <p>3. 以下SQLを実行する。</p>

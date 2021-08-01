@@ -11,7 +11,7 @@
     </ul>
   </nav>
 </header>
-<h2 id="list" class="title">文字参照一覧</h2>
+<h2 id="list" class="heading title-2">文字参照一覧</h2>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>

@@ -14,20 +14,20 @@
     </ul>
   </nav>
 </header>
-<h2 id="system" class="title">システム全体の設定</h2>
-<h3 class="desc">CapsLockキーをControlキーに変更する</h3>
+<h2 id="system" class="heading title-2">システム全体の設定</h2>
+<h3 class="heading desc">CapsLockキーをControlキーに変更する</h3>
 <p>1. ctrl2capをインストールする。</p>
 <pre class="code-block"><code class="shell">&gt; choco install -y ctrl2cap</code></pre>
 <p>2. ctrl2capを実行する。</p>
 <pre class="code-block"><code class="shell">&gt; cd C:\ProgramData\chocolatey\lib\ctrl2cap\tools
 &gt; .\ctrl2cap.exe /install</code></pre>
 <p>3. Windowsを再起動する。</p>
-<h3 class="desc">ユーザ共通のスタートメニューを設定する</h3>
+<h3 class="heading desc">ユーザ共通のスタートメニューを設定する</h3>
 <p>1. エクスプローラーを起動する。</p>
 <p>2. アドレスバーに<code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs</code>を入力し、<kbd>Enter</kbd>を押す。</p>
 <p>3. スタートメニューに表示したいショートカットを配置する、または、非表示にしたいショートカットを削除する。</p>
-<h2 id="user" class="title">ユーザ個別の設定</h2>
-<h3 class="desc">スタートメニューを設定する</h3>
+<h2 id="user" class="heading title-2">ユーザ個別の設定</h2>
+<h3 class="heading desc">スタートメニューを設定する</h3>
 <p>1. エクスプローラーを起動する。</p>
 <p>2. アドレスバーに<code>C:\Users\[ユーザ名]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs</code>を入力し、<kbd>Enter</kbd>を押す。</p>
 <ul>

@@ -17,8 +17,8 @@
     </ul>
   </nav>
 </header>
-<h2 id="command" class="title">コマンド</h2>
-<h3 class="title">文字列操作</h3>
+<h2 id="command" class="heading title-2">コマンド</h2>
+<h3 class="heading title-3">文字列操作</h3>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>
@@ -51,7 +51,7 @@
     </tbody>
   </table>
 </div><!-- /.table-responsive -->
-<h3 class="title">文字コード・改行コード操作</h3>
+<h3 class="heading title-3">文字コード・改行コード操作</h3>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>
@@ -80,7 +80,7 @@
     </tbody>
   </table>
 </div><!-- /.table-responsive -->
-<h4 class="title">指定できる文字コード</h4>
+<h4 class="heading title-4">指定できる文字コード</h4>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>
@@ -109,7 +109,7 @@
     </tbody>
   </table>
 </div><!-- /.table-responsive -->
-<h4 class="title">指定できる改行コード</h4>
+<h4 class="heading title-4">指定できる改行コード</h4>
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>
@@ -134,24 +134,24 @@
     </tbody>
   </table>
 </div><!-- /.table-responsive -->
-<h2 id="macro" class="title">マクロ</h2>
-<h3 class="desc">マクロを登録する</h3>
+<h2 id="macro" class="heading title-2">マクロ</h2>
+<h3 class="heading desc">マクロを登録する</h3>
 <p>1. <code>[登録するアルファベット1文字]</code>に対してマクロの登録を開始する。</p>
 <pre class="code-block"><code class="shell">q [登録するアルファベット1文字]</code></pre>
 <p>2. 登録したい操作を行う。</p>
 <p>3. マクロの登録を終了する。</p>
 <pre class="code-block"><code class="shell">q</code></pre>
-<h3 class="desc">登録したマクロを1回だけ実行する</h3>
+<h3 class="heading desc">登録したマクロを1回だけ実行する</h3>
 <pre class="code-block"><code class="shell">@[登録したアルファベット1文字]</code></pre>
-<h3 class="desc">登録したマクロを5回実行する</h3>
+<h3 class="heading desc">登録したマクロを5回実行する</h3>
 <pre class="code-block"><code class="shell">5@[登録したアルファベット1文字]</code></pre>
-<h2 id="other" class="title">その他</h2>
-<h3 class="desc">設定ファイル（.vimrcなど）を再読み込みする</h3>
+<h2 id="other" class="heading title-2">その他</h2>
+<h3 class="heading desc">設定ファイル（.vimrcなど）を再読み込みする</h3>
 <pre class="code-block"><code class="shell">:source [設定ファイル]</code></pre>
-<h3 class="desc">特定の文字列が含まれる行を削除する</h3>
+<h3 class="heading desc">特定の文字列が含まれる行を削除する</h3>
 <pre class="code-block"><code class="shell">:g/[特定の文字列]/d</code></pre>
-<h3 class="desc">数値を別の文字列に置換する</h3>
+<h3 class="heading desc">数値を別の文字列に置換する</h3>
 <pre class="code-block"><code class="shell">:%s/\d\+/[置換後の文字列]/g</code></pre>
-<h3 class="desc">100文字で改行する</h3>
+<h3 class="heading desc">100文字で改行する</h3>
 <pre class="code-block"><code class="shell">:%s/.\{100}/&amp;\r/g</code></pre>
 @endsection

@@ -27,7 +27,7 @@ $ chown -R www-data:www-data [プロジェクト名]/storage/</code></pre>
 <h4 class="heading bottomline-heading">プロジェクトのGitリポジトリをクローンして作成する</h4>
 <pre class="code-block"><code class="shell">$ git clone [GitリポジトリのURL]
 $ cd [Gitリポジトリ]
-$ compose install
+$ composer install
 $ chown -R www-data:www-data vendor</code></pre>
 <ul>
   <li><code>www-data</code>は、Apacheの実行ユーザ・グループ。</li>

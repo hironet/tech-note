@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+@section('head')
 @if ( config('app.env') === 'production')
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KYRNHWQZPC"></script>
@@ -8,15 +9,12 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
+
     gtag('config', 'G-KYRNHWQZPC');
   </script>
 @endif
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-@isset ($noindex)
-  <meta name="robots" content="noindex">
-@endisset
 @empty ($article_description)
   <meta name="description" content="{{ config('article.SITE_DESC') }}">
 @else
@@ -29,6 +27,7 @@
 @else
   <title>{{ $article_title }} | {{ config('article.SITE_NAME') }}</title>
 @endempty
+@show
 </head>
 <body>
   <header>

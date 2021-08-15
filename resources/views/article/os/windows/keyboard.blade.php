@@ -32,7 +32,7 @@
     <tbody>
       <tr>
         <td>「ファイル名を指定して実行」を起動する</td>
-        <td><kbd>Windows + R</kbd></td>
+        <td><kbd>Windows R</kbd></td>
       </tr>
     </tbody>
   </table>
@@ -89,15 +89,15 @@
     <tbody>
       <tr>
         <td>エクスプローラーを起動する</td>
-        <td><kbd>Windows + E</kbd></td>
+        <td><kbd>Windows E</kbd></td>
       </tr>
       <tr>
         <td>新しいフォルダを作成する</td>
-        <td><kbd>Ctrl + Shift + N</kbd></td>
+        <td><kbd>Ctrl Shift N</kbd></td>
       </tr>
       <tr>
         <td>デスクロップを表示する</td>
-        <td><kbd>Windows + D</kbd></td>
+        <td><kbd>Windows D</kbd></td>
       </tr>
     </tbody>
   </table>
@@ -114,7 +114,7 @@
     <tbody>
       <tr>
         <td>入力中の文字を全角カタカナに変換する</td>
-        <td><kbd>Ctrl + I</kbd></td>
+        <td><kbd>Ctrl I</kbd></td>
       </tr>
     </tbody>
   </table>
@@ -135,19 +135,19 @@
       </tr>
       <tr>
         <td>最前面のウィンドウのスクリーンショットをクリップボードにコピーする</td>
-        <td><kbd>Alt + PrintScreen</kbd></td>
+        <td><kbd>Alt PrintScreen</kbd></td>
       </tr>
       <tr>
         <td>デスクトップ全体のスクリーンショットをフォルダに自動保存する</td>
-        <td><kbd>Windows + PrintScreen</kbd></td>
+        <td><kbd>Windows PrintScreen</kbd></td>
       </tr>
       <tr>
         <td>最前面のウィンドウのスクリーンショットをフォルダに自動保存する</td>
-        <td><kbd>Windows + Alt + PrintScreen</kbd></td>
+        <td><kbd>Windows Alt PrintScreen</kbd></td>
       </tr>
       <tr>
         <td>範囲を指定してスクリーンショットをクリップボードにコピーする</td>
-        <td><kbd>Windows + Shift + S</kbd></td>
+        <td><kbd>Windows Shift S</kbd></td>
       </tr>
     </tbody>
   </table>

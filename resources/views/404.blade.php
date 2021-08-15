@@ -1,8 +1,9 @@
 @extends('layouts/app')
 
-@php
-$noindex = true;
-@endphp
+@section('head')
+@parent
+<meta name="robots" content="noindex">
+@endsection
 
 @section('contents')
 <header>

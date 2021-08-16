@@ -26,7 +26,7 @@
 <h3 class="heading bottomline-heading">パッケージをインストールする</h3>
 <pre class="code-block"><code class="shell"># brew install [Formula]</code></pre>
 <h3 class="heading bottomline-heading">GUIパッケージをインストールする</h3>
-<pre class="code-block"><code class="shell"># brew install [Formula] --cask</code></pre>
+<pre class="code-block"><code class="shell"># brew install --cask [Formula]</code></pre>
 <h3 class="heading bottomline-heading">パッケージをアンインストールする</h3>
 <pre class="code-block"><code class="shell"># brew uninstall [Formula]</code></pre>
 <h3 class="heading bottomline-heading">Homebrew本体とFormulaを更新する</h3>

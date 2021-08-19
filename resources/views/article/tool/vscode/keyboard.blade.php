@@ -245,7 +245,7 @@
     <tbody>
       <tr>
         <td>新しいターミナルを開く</td>
-        <td></td>
+        <td><kbd>Ctrl Shift @</kbd></td>
         <td><kbd>&#8963; &#8679; ^</kbd></td>
       </tr>
     </tbody>

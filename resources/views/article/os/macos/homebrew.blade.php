@@ -35,8 +35,6 @@
 <pre class="code-block"><code class="shell"># brew outdated</code></pre>
 <h3 class="heading bottomline-heading">インストールされている全てのパッケージを更新する</h3>
 <pre class="code-block"><code class="shell"># brew upgrade</code></pre>
-<h3 class="heading bottomline-heading">インストールされている全てのGUIパッケージを更新する</h3>
-<pre class="code-block"><code class="shell"># brew upgrade --cask --greedy</code></pre>
 <h3 class="heading bottomline-heading">インストールされている個別のパッケージを更新する</h3>
 <pre class="code-block"><code class="shell"># brew upgrade [Formula]</code></pre>
 <h3 class="heading bottomline-heading">Homebrewの問題を診断する</h3>

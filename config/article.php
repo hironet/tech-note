@@ -454,6 +454,12 @@ return [
                     'Laravelの基本的な操作方法について書いています。',
                     '2021-05-05',
                 ],
+                'trivia' => [
+                    '/article/framework/laravel/trivia',
+                    'Laravelの豆知識',
+                    '知っておくと便利なLaravelの豆知識について書いています。',
+                    '2021-09-05',
+                ],
             ],
         ],
         'security' => [

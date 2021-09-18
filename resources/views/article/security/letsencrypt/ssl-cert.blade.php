@@ -43,8 +43,25 @@ Press Enter to Continue
 <p>3. DNSサーバにTXTレコードが登録されたことを確認するため、以下のコマンドを実行する。</p>
 <pre class="code-block"><code class="shell"># nslookup -type=txt _acme-challenge.[ドメイン名] 8.8.8.8</code></pre>
 <p>4. <kbd>Enter</kbd>を押す。</p>
-<pre class="code-block"><code class="shell">
-Waiting for verification...
+<pre class="code-block"><code class="shell">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Please deploy a DNS TXT record under the name
+_acme-challenge.[ドメイン名] with the following value:
+
+ZnuMZosgkM7F-3EUxHEqq2Y3OZbCudL4XTgdaR77nmU
+
+Before continuing, verify the record is deployed.
+(This must be set up in addition to the previous challenges; do not remove,
+replace, or undo the previous challenge tasks yet. Note that you might be
+asked to create multiple distinct TXT records with the same name. This is
+permitted by DNS standards.)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Press Enter to Continue</code></pre>
+<p>5. 出力メッセージに従って、DNSサーバにTXTレコードを登録する（先程登録したTXTレコードの値を改行して2つ目の値を追記する）。</p>
+<p>6. DNSサーバにTXTレコードが登録されたことを確認するため、以下のコマンドを実行する。</p>
+<pre class="code-block"><code class="shell"># nslookup -type=txt _acme-challenge.[ドメイン名] 8.8.8.8</code></pre>
+<p>7. <kbd>Enter</kbd>を押す。</p>
+<pre class="code-block"><code class="shell">Waiting for verification...
 Cleaning up challenges
 
 IMPORTANT NOTES:
@@ -60,11 +77,8 @@ IMPORTANT NOTES:
 
    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le</code></pre>
-<p>5. <code>Congratulations!</code>と出力されたことを確認する。</p>
-<p>6. DNSサーバからTXTレコードを削除する。</p>
-<p>7. DNSサーバからTXTレコードが削除されたことを確認するため、以下のコマンドを実行する。</p>
-<pre class="code-block"><code class="shell"># nslookup -type=txt _acme-challenge.[ドメイン名] 8.8.8.8</code></pre>
-<p>8. Webサーバに設定ファイルを再読み込みさせる。</p>
+<p>8. <code>Congratulations!</code>と出力されたことを確認する。</p>
+<p>9. Webサーバに設定ファイルを再読み込みさせる。</p>
 <h2 id="update" class="heading bgcolor-heading">SSLサーバ証明書の更新</h2>
 <p>1. 以下のコマンドを実行する。</p>
 <pre class="code-block"><code class="shell"># /usr/bin/certbot renew \

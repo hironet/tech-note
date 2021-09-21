@@ -91,3 +91,8 @@
   </ul>
 </div><!-- /.html-result -->
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

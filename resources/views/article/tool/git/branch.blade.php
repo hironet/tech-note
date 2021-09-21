@@ -40,3 +40,8 @@
 <pre class="code-block"><code class="shell">$ git checkout [マージ先のブランチ名]
 $ git merge [マージ元のブランチ名]</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

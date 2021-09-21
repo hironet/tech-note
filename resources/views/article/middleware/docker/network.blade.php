@@ -30,3 +30,8 @@
   <li>ホストOSの8000番ポートをコンテナ内の80番ポートに紐付ける。</li>
 </ul>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

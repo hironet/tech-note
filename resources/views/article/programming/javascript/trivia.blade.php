@@ -30,3 +30,8 @@
   // 処理内容
 }());</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

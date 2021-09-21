@@ -45,3 +45,8 @@ $ rbenv rehash</code></pre>
 <pre class="code-block"><code class="shell">$ gem install [gemパッケージ名]
 $ rbenv rehash</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

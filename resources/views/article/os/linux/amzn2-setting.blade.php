@@ -136,3 +136,8 @@ export NO_PROXY=$no_proxy</code></pre>
   <li>フォーマット中の<code>%</code>は、<code>\</code>でエスケープする必要がある点に注意。</li>
 </ul>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

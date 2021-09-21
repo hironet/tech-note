@@ -71,3 +71,8 @@ APP_URL=[URL]
 &lt;/IfModule&gt;
 </code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

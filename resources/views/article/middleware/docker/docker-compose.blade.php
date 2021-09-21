@@ -42,3 +42,8 @@
 <h3 class="heading bottomline-heading">コンテナのログを確認する</h3>
 <pre class="code-block"><code class="shell">$ docker-compose logs</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

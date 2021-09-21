@@ -52,3 +52,8 @@
 &lt;/packages></code></pre>
 <pre class="code-block"><code class="shell">&gt; choco install -y choco.config</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

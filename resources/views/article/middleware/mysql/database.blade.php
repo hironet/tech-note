@@ -29,3 +29,8 @@
 <p>3. 削除したデータベースが存在しないことを確認する。</p>
 <pre class="code-block"><code class="sql">SHOW DATABASES;</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

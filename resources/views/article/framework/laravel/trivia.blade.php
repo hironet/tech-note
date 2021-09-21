@@ -16,3 +16,8 @@
 <pre class="code-block"><code class="shell">$ cd [プロジェクトのディレクトリ]
 $ cat storage/logs/laravel.log</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

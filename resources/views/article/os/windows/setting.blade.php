@@ -35,3 +35,8 @@
 </ul>
 <p>3. スタートメニューに表示したいショートカットを配置する、または、非表示にしたいショートカットを削除する。</p>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

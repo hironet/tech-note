@@ -107,3 +107,8 @@ $ git push</code></pre>
 $ cd tech-note
 $ git config http.sslVerify false</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

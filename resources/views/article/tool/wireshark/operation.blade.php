@@ -41,3 +41,8 @@ http.request.method=="CONNECT"</code></pre>
 <h4 class="heading bottomline-heading">特定のURLでフィルタする</h4>
 <pre class="code-block"><code class="shell">http.request.uri contains "google.co.jp"</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

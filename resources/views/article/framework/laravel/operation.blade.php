@@ -42,3 +42,8 @@ $ php artisan route:list</code></pre>
 <pre class="code-block"><code class="shell">$ cd [プロジェクト名]
 $ php artisan make:controller [コントローラ名]</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

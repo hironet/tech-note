@@ -275,3 +275,8 @@
   &lt;li>&lt;/li>
 &lt;/ul></code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

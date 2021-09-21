@@ -31,3 +31,8 @@ len = str&amp;.length
   <li>Safe Navigation Operator（<code>&amp;.</code>）を使用してメソッドを呼び出すと、レシーバが<code>nil</code>の場合でも<code>NoMethodError</code>が発生せず、<code>nil</code>を返す。</li>
 </ul>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

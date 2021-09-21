@@ -155,3 +155,8 @@
 <h3 class="heading bottomline-heading">100文字で改行する</h3>
 <pre class="code-block"><code class="shell">:%s/.\{100}/&amp;\r/g</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

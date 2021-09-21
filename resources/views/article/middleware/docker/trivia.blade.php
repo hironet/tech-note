@@ -45,3 +45,8 @@
 <h3 class="heading bottomline-heading">プロセスIDからコンテナIDを特定する</h3>
 <pre class="code-block"><code class="shell">$ cat /proc/[プロセスID]/cgroup</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

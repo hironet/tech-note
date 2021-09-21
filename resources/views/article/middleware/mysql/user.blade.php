@@ -35,3 +35,8 @@
 <p>3. 削除したユーザが存在しないことを確認する。</p>
 <pre class="code-block"><code class="sql">SELECT user, host FROM mysql.user;</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

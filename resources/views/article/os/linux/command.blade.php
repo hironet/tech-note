@@ -352,3 +352,8 @@ $ expr 400 / 2
 <h3 class="heading bottomline-heading">CPUに高い負荷をかける</h3>
 <pre class="code-block"><code class="shell">$ yes > /dev/null</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

@@ -161,3 +161,8 @@ echo $color_3, PHP_EOL;  # blue</code></pre>
 <pre class="code-block"><code class="php">$colors = ['red', 'green', 'blue'];
 echo count($colors);  # 3</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

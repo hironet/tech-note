@@ -92,3 +92,8 @@
 <h3 class="heading bottomline-heading">ストアドファンクションの内容を表示する</h3>
 <pre class="code-block"><code class="sql">SHOW CREATE FUNCTION [ストアドファンクション名];</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

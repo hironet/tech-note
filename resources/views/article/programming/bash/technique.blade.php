@@ -285,3 +285,8 @@ var=${var:='/tmp'}</code></pre>
   <li>変数<code>var</code>が空だった場合、<code>'/tmp'</code>を設定する。</li>
 </ul>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

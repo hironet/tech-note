@@ -38,3 +38,8 @@
   <li>ホストOSの<code>/root/data/nginx</code>をコンテナ内の<code>/usr/share/nginx/html</code>に読み取り専用でマウントする。</li>
 </ul>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

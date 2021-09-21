@@ -21,3 +21,8 @@
 var div = document.getElementsByTagName("div");
 console.log(typeOf(div));  // 「HTMLCollection」と表示される</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

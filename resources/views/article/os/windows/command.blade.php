@@ -26,3 +26,8 @@
 <p>6. diskpartを終了する。</p>
 <pre class="code-block"><code class="shell">DISKPART&gt; exit</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

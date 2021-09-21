@@ -73,3 +73,8 @@ $ docker push [イメージ名]:[タグ]</code></pre>
 <h4 class="heading bottomline-heading">コンテナにログインする</h4>
 <pre class="code-block"><code class="shell">$ docker exec -it [コンテナID] bash</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

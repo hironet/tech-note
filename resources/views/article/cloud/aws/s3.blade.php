@@ -39,3 +39,8 @@
 <h3 class="heading bottomline-heading">カレントディレクトリをバケット内と同期する<br>（バケット内に存在しないファイルはカレントディレクトリから削除する）</h3>
 <pre class="code-block"><code class="shell">$ aws s3 sync s3://[バケット名] . --delete</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

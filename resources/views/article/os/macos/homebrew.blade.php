@@ -40,3 +40,8 @@
 <h3 class="heading bottomline-heading">Homebrewの問題を診断する</h3>
 <pre class="code-block"><code class="shell"># brew doctor</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

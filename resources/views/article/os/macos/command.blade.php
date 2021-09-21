@@ -30,3 +30,8 @@
 <h3 class="heading bottomline-heading">クリップボードから書式情報を削除する</h3>
 <pre class="code-block"><code class="shell">$ pbpaste -Prefer txt | pbcopy</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

@@ -124,3 +124,8 @@ at /etc/letsencrypt/live/[ドメイン名]/cert.pem
 <p>3. <code>Congratulations!</code>と出力されたことを確認する。</p>
 <p>4. Webサーバに設定ファイルを再読み込みさせる。</p>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

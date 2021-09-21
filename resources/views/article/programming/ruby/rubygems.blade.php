@@ -31,3 +31,8 @@
 <h3 class="heading bottomline-heading">インストールされている個別のパッケージを更新する</h3>
 <pre class="code-block"><code>$ gem update [パッケージ名]</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

@@ -31,3 +31,8 @@ SET sql_mode = '';
 SELECT @@sql_mode;
 OPTIMIZE TABLE wp_posts;</code></pre>
 @endsection
+
+@section('script')
+@parent
+@include('components.highlightjs')
+@endsection

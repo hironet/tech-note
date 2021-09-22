@@ -39,7 +39,7 @@ return [
             'セキュリティ',
         ],
     ],
-  
+
     'SUBCATEGORY_NAMES' => [
         'cloud' => [
             'aws' => [
@@ -146,7 +146,7 @@ return [
             ],
         ],
     ],
-  
+
     'ARTICLE_TITLES' => [
         'cloud' => [
             'aws' => [

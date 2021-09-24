@@ -1,4 +1,4 @@
-<nav id="nav" class="navbar navbar-expand-xl fixed-top navbar-dark">
+<nav id="g-nav" class="navbar navbar-expand-xl fixed-top navbar-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">{{ config('article.SITE_NAME') }}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

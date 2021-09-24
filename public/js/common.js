@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', function() {
           e.preventDefault();
           e.stopPropagation();
           const rect = targetElement.getBoundingClientRect().top;
-          const header = document.getElementById('nav');
+          const header = document.getElementById('g-nav');
           const headerHeight = header.offsetHeight;
           const target = rect + window.pageYOffset - headerHeight;
           const currentPostion = document.documentElement.scrollTop || document.body.scrollTop;  // クロスブラウザ対策
